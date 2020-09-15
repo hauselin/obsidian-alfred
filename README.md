@@ -1,6 +1,6 @@
 # Alfred workflow for Obsidian
 
-This very simple [Alfred](https://www.alfredapp.com/) workflow uses [Obsidian](obsidian.md/)'s URL scheme (available in Obsidian 0.8.15 and above) and bash scripts to open notes in their vaults.
+This very simple [Alfred](https://www.alfredapp.com/) workflow uses [Obsidian](https://obsidian.md/)'s URL scheme (available in Obsidian 0.8.15 and above) and bash scripts to open notes in their vaults.
 
 ## Features
 
