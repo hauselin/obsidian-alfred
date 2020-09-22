@@ -2,6 +2,8 @@
 
 This very simple [Alfred](https://www.alfredapp.com/) workflow uses [Obsidian](https://obsidian.md/)'s URL scheme (available in Obsidian 0.8.15 and above) and bash scripts to open notes in their vaults.
 
+This workflow has been tested with Obsidian 0.9.0.
+
 ## Features
 
 **Open a vault**: To open one of your many Obsidian vaults, type `ov your_vault_name`. You can change the keyword input subtext to remind yourself of the names of your vaults (default is set to "Available vaults: notes, journal").
@@ -13,3 +15,7 @@ This very simple [Alfred](https://www.alfredapp.com/) workflow uses [Obsidian](h
 - To search for all files with the term `xyz`, type `os xyz`.
 - To search for recent files (last 3 days) with the term `xyz`, type `or xyz`.
 - To search for files modified today, `xyz`, type `ot xyz`.
+
+## Known bugs
+
+If the Obsidian app isn't already opened, this workflow will always open the last recently opened vault. This bug is a known issue with Electron apps on MacOS. See [discussion on Obsidian's Discord](https://discordapp.com/channels/686053708261228577/716028884885307432/755203478413902036).
