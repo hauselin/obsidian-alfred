@@ -6,13 +6,13 @@ This workflow has been tested in Obsidian 0.9.6.
 
 ## Features that work out-of-the-box
 
-### Open a vault: ov
+### Open a vault: `ov`
 
 To open one of your many Obsidian vaults, type `ov your_vault_name`. You can change the keyword input subtext to remind yourself of the names of your vaults. Double-click **ov Keyword** to change the Subtext field.
 
 ## Features that require some (simple) setting up
 
-### Open a vault with autocomplete: oo
+### Open a vault with autocomplete: `oo`
 
 To autofill and autocomplete Obsidian vaults: Type `oo your_vault_name`. 
 - Double-click **oo List Filter** to add all your vaults. See screenshots below.
@@ -21,7 +21,7 @@ To autofill and autocomplete Obsidian vaults: Type `oo your_vault_name`.
 ![](img/oo.gif)
 ![](img/oo.png)
 
-### Open daily note: od
+### Open daily note: `od`
 
 - The Daily notes Obsidian plugin must be enabled.
 - Type `od`  or use a hotkey (double-click the empty Hotkey to set it up). 
