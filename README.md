@@ -4,6 +4,8 @@ This very simple [Alfred](https://www.alfredapp.com/) workflow uses [Obsidian](h
 
 This workflow has been tested in Obsidian 0.9.6.
 
+Alfred features/keywords: `ov`, `od`, `oo`, `os`, `or`, `ot`
+
 ## Features that work out-of-the-box
 
 ### Open a vault: `ov`
