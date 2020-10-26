@@ -15,7 +15,7 @@ To open one of your many Obsidian vaults, type `ov your_vault_name`. You can cha
 ### Open a vault with autocomplete: oo
 
 To autofill and autocomplete Obsidian vaults: Type `oo your_vault_name`. 
-- Double-click **oo List Filter** to add all your vaults. 
+- Double-click **oo List Filter** to add all your vaults. See screenshots below.
 - This feature is suggested by @hjklapp.
 
 ![](img/oo.gif)
