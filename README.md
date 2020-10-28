@@ -30,7 +30,7 @@ To autofill and autocomplete Obsidian vaults: Type `oo your_vault_name`.
 - Notes and comments are provided in the workflow/script to help you set things up. Double-click the **/usr/bin/osascript Run Script** associated with **od Keyword** to set it up. You need to specify your daily note date format (step 1 in script) and the vault name (step 2 in script). Click Save when you're done.
     - New in v0.1.3: Easily specify your date format in the /usr/bin/osacript by using yyyy, mm, dd. See screenshot below.
 
-![](img/od.png)
+![](img/odaily.png)
 
 ### Search Obsidian vaults with Alfred File Filters; `os`, `or`, `ot`
 
