@@ -1,10 +1,10 @@
 # Alfred workflow for Obsidian
 
-This very simple [Alfred](https://www.alfredapp.com/) workflow uses [Obsidian](https://obsidian.md/)'s [URI scheme](https://publish.obsidian.md/help/Advanced+use/Using+obsidian+URI) (available in version 0.8.15 and above) and bash scripts to open notes in their vaults.
+This simple [Alfred](https://www.alfredapp.com/) workflow uses [Obsidian](https://obsidian.md/)'s [URI scheme](https://publish.obsidian.md/help/Advanced+use/Using+obsidian+URI) (available in version 0.8.15 and above) and JXA actions/scripts (thanks to [@hjklapp](https://github.com/hjklapp)) to open notes in their vaults.
 
-This workflow has been tested in Obsidian 0.9.6.
+This workflow has been tested in Obsidian 0.9.7.
 
-Alfred features/keywords: `ov`, `od`, `oo`, `os`, `or`, `ot`
+Available Alfred features/keywords: `ov`, `od`, `oo`, `os`, `or`, `ot`
 
 ## Features that work out-of-the-box
 
@@ -18,7 +18,7 @@ To open one of your many Obsidian vaults, type `ov your_vault_name`. You can cha
 
 To autofill and autocomplete Obsidian vaults: Type `oo your_vault_name`. 
 - Double-click **oo List Filter** to add all your vaults. See screenshots below.
-- This feature is suggested by @hjklapp.
+- This feature is suggested by [@hjklapp](https://github.com/hjklapp).
 
 ![](img/oo.gif)
 ![](img/oo.png)
@@ -27,7 +27,8 @@ To autofill and autocomplete Obsidian vaults: Type `oo your_vault_name`.
 
 - The Daily notes Obsidian plugin must be enabled.
 - Type `od`  or use a hotkey (double-click the empty Hotkey to set it up). 
-- Notes and comments are provided in the workflow/script to help you set things up. Double-click the **/bin/bash Run Script** associated with **od Keyword** to set it up. You need to specify your daily note date format (step 1 in script) and the vault name (step 2 in script). Click Save when you're done.
+- Notes and comments are provided in the workflow/script to help you set things up. Double-click the **/usr/bin/osascript Run Script** associated with **od Keyword** to set it up. You need to specify your daily note date format (step 1 in script) and the vault name (step 2 in script). Click Save when you're done.
+    - New in v0.1.3: Easily specify your date format in the /usr/bin/osacript by using yyyy, mm, dd. See screenshot below.
 
 ![](img/od.png)
 
@@ -48,5 +49,3 @@ If you want to copy the path to a file instead of opening it in Obsidian, check 
 ## Known bugs
 
 If the Obsidian app isn't already opened, this workflow will always open the last recently opened vault. This bug is a known issue with Electron apps on MacOS. See [discussion on Obsidian's Discord](https://discordapp.com/channels/686053708261228577/716028884885307432/755203478413902036).
-
-This workflow might not work well with filenames containing accented characters like ã, é, ï, ô, ú (thanks @ldebritto for spotting this). 
