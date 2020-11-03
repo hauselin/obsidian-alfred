@@ -28,7 +28,7 @@ To autofill and autocomplete Obsidian vaults: Type `oo your_vault_name`.
 ### Open daily note: `od`
 
 - The Daily notes Obsidian plugin must be enabled.
-- Type `od`  or use a hotkey (double-click the empty Hotkey to set it up). 
+- Type `od`  or use a hotkey (double-click the empty Hotkey to set it up). Your daily note must already exist, otherwise you'll get "File not found message." (see [issue](https://github.com/hauselin/obsidian-alfred/issues/6)).
 - Notes and comments are provided in the workflow/script to help you set things up. Double-click the **/usr/bin/osascript Run Script** associated with **od Keyword** to set it up. You need to specify your daily note date format (step 1 in script) and the vault name (step 2 in script). Click Save when you're done.
     - New in v0.1.3: Easily specify your date format in the /usr/bin/osacript by using yyyy, mm, dd. See screenshot below.
 
