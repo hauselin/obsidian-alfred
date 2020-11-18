@@ -12,6 +12,10 @@ Available Alfred features/keywords (contributors in parentheses)
 - Open a daily note in a vault: `od` ([@technicalpickles](https://github.com/technicalpickles), [@luckman212](https://github.com/luckman212))
 - Fallback search when there are no results ([@technicalpickles](https://github.com/technicalpickles))
 
+# Installation
+
+Download the [Obsidian.alfredworkflow](https://github.com/hauselin/obsidian-alfred/raw/master/Obsidian.alfredworkflow). Only tested in Alfred 4.
+
 ## Features that work out-of-the-box
 
 ### Open a vault: `ov`
@@ -36,10 +40,10 @@ To autofill and autocomplete Obsidian vaults: Type `oo your_vault_name`.
 ### Open daily note: `od`
 
 - The Daily notes Obsidian plugin must be enabled.
-- Type `od`  or use a hotkey (double-click the empty Hotkey to set it up). Your daily note must already exist, otherwise you'll get "File not found message." (see [issue](https://github.com/hauselin/obsidian-alfred/issues/6)).
 - Notes and comments are provided in the workflow/script to help you set things up. Double-click the **/usr/bin/osascript Run Script** associated with **od Keyword** to set it up. You need to specify your daily note date format (step 1 in script) and the vault name (step 2 in script). Click Save when you're done.
     - New in v0.1.3: Specify your date format in the /usr/bin/osacript by using yyyy, mm, dd. See screenshot below (steps 1 and 2).
     - New in v0.1.5: Create a new daily note if it doesn't exist yet (see step 3, OPTIONAL step). Specify the absolute path to the directory (`fulldir_daily`) containing your daily notes; specify the template path (if you have a template) for your daily note (`fullpath_template`). If you don't specify these paths properly, Obsidian won't find your daily note and won't create it if the note doesn't exist yet.
+      - This feature addresses this [issue](https://github.com/hauselin/obsidian-alfred/issues/6), where you get the "File not found message." if your daily note doesn't exist.
 
 ![](img/odaily.png)
 
