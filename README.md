@@ -13,7 +13,7 @@ Available Alfred features/keywords (contributors in parentheses)
 - Fallback search when there are no results ([@technicalpickles](https://github.com/technicalpickles))
 
 Future features
-- Use workflow/environment variables to save vault names, daily note vault, date-time format etc., so there's no need to configure/edit the osascripts. See [issue](https://github.com/hauselin/obsidian-alfred/issues/8#issue-747087640).
+- Use workflow/environment variables to save vault names, daily note vault, date-time format etc., so there's no need to configure/edit the osascripts. See [issue](https://github.com/hauselin/obsidian-alfred/issues/8#issue-747087640). Will replace Alfred file filters with script filters.
 
 # Installation
 
