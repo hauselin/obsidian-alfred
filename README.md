@@ -25,20 +25,21 @@ To open one of your many Obsidian vaults, type `ov your_vault_name`. If you vaul
 
 ## Features that require some basic setting up
 
-When you first install the workflow, you'll the pane below. The README section on the left tells you how to set up your workflow environment variables (on the right). 
+After installing the workflow, click the `[x]` icon at the top right (yellow arrow below). Also, if you see **CONFIG** (red arrows) anywhere in the workflow, it means you need to modify that part of the workflow (more instructions below).
+
+![](img/config.png)
+
+After clicking the `[x]` icon, you should see the pane below. The README section (left) tells you how to set up your workflow environment variables (right). 
 
 - **Vaults**: If you have three vaults (e.g., vault names are *notes*, *secrets*, *jokes*), you should have three vault variables named `vault1`, `vault2`, `vault3`, with values *notes*, *secrets*, *jokes*. 
 - **Daily note** (`od` keyword): See README for full documentation of the four variables `dailyabspath`, `dailyformat`, `dailytempabspath`, `dailyvault`.
 
 ![](img/var.png)
 
-To reopen the pane, click the `[x]` icon at the top right (see yellow arrow below). If you see **CONFIG** (red arrows) anywhere in the workflow, it means you need to modify that part of the workflow.
-
-![](img/config.png)
-
 ### Open a vault with autocomplete: `oo`
 
-To autofill and autocomplete Obsidian vaults (suggested by [@hjklapp](https://github.com/hjklapp)): Type `oo your_vault_name`
+- To autofill and autocomplete Obsidian vaults (suggested by [@hjklapp](https://github.com/hjklapp)): `oo your_vault_name`
+- Works only if you've set up your vault variables properly (as indicated above).
 
 ![](img/oo.gif)
 
@@ -47,14 +48,15 @@ To autofill and autocomplete Obsidian vaults (suggested by [@hjklapp](https://gi
 
 - The Daily notes Obsidian plugin must be enabled.
 - `od` will open your daily note, assuming you've set up your workflow environment variable correctly (instructions above). Alternatively, you can use a hotkey.
+- Works only if you've set up your daily note variables properly (as indicated above).
 
 ### Search Obsidian vaults with Alfred File Filters; `os`, `or`, `ot`
 
 You'll have to edit the Scope of each File Filter to tell Alfred where to search for files on your computer. Double-click **os File Filter**, **or File Filter**, and **ot File Filter**. You can also change other settings via Basic Setup, Scope, Fields, Limit and Sort tabs.
 
-- Search for all files with the term `xyz`, type `os xyz`.
-- Search for recent files (last 3 days) with the term `xyz`, type `or xyz`.
-- Search for files modified today, `xyz`, type `ot xyz`.
+- Search for all files with the term `xyz`: `os xyz`
+- Search for recent files (last 3 days) with the term `xyz`: `or xyz`
+- Search for files modified today, `xyz`: `ot xyz`
 
 ![](img/or.gif)
 
@@ -63,6 +65,8 @@ You'll have to edit the Scope of each File Filter to tell Alfred where to search
 ### Alfred fallback search
 
 New in v0.1.5. Supports Alfred [fallback searches](https://www.alfredapp.com/help/features/default-results/fallback-searches/) (i.e., "Fallback searches are the list of search options you see when you search for a keyword that doesn't match a result on your local Mac."; see screenshot below). Thanks [@technicalpickles](https://github.com/technicalpickles) for suggesting this feature.
+
+- Works only if you've set up your vault variables properly (as indicated above).
 
 ![](img/fallback.png)
 
