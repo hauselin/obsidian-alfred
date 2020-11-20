@@ -12,6 +12,9 @@ Available Alfred features/keywords (contributors in parentheses)
 - Open a daily note in a vault: `od` ([@technicalpickles](https://github.com/technicalpickles), [@luckman212](https://github.com/luckman212))
 - Fallback search when there are no results ([@technicalpickles](https://github.com/technicalpickles))
 
+Future features
+- Use workflow/environment variables to save vault names, daily note vault, date-time format etc., so there's no need to configure/edit the osascripts. See [issue](https://github.com/hauselin/obsidian-alfred/issues/8#issue-747087640).
+
 # Installation
 
 Download the [Obsidian.alfredworkflow](https://github.com/hauselin/obsidian-alfred/raw/master/Obsidian.alfredworkflow) file. Add to Alfred and enjoy the workflow! Only tested in Alfred 4.
