@@ -19,6 +19,8 @@ Future features
 
 Download the [Obsidian.alfredworkflow](https://github.com/hauselin/obsidian-alfred/raw/master/Obsidian.alfredworkflow) file. Add to Alfred and enjoy the workflow! Only tested in Alfred 4.
 
+**If you want to to try a newer version I'm currently testing, check out [this branch](https://github.com/hauselin/obsidian-alfred/tree/scriptfilter).**
+
 ## Features that work out-of-the-box
 
 ### Open a vault: `ov`
