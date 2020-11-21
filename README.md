@@ -24,9 +24,11 @@ Download the [Obsidian.alfredworkflow](https://github.com/hauselin/obsidian-alfr
 
 To open one of your many Obsidian vaults, type `ov your_vault_name`. If you vault name is `my notes`, you type `ov my notes`. You can change the keyword input subtext to remind yourself of the names of your vaults. Double-click **ov Keyword** to change the Subtext field.
 
-All other features require a one-time set-up.
+All other features require a one-time set-up (v0.2.0 onward).
 
 ## Set up
+
+This version (≥ v0.2.0) of the workflow requires a one-time set-up. 
 
 - Add your vaults, one at a time: `oaddvault`
   - Note that Obsidian's help vault has been added by default.
