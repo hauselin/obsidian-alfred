@@ -9,6 +9,7 @@ This simple [Alfred](https://www.alfredapp.com/) workflow uses [Obsidian](https:
 Available Alfred features/keywords (contributors in parentheses)
 - Open a vault: `ov`,`oo` ([@hjklapp](https://github.com/hjklapp))
 - Search in vault(s): `os`, `or`, `ot`
+- Create a new empty note and open in selected vault: `on`
 - Open a daily note in a vault: `od` ([@technicalpickles](https://github.com/technicalpickles), [@luckman212](https://github.com/luckman212))
   - You can also use a Hotkey to open your daily note.
 - Fallback search when there are no results ([@technicalpickles](https://github.com/technicalpickles))
@@ -65,6 +66,10 @@ If you use Obsidian's Daily notes plugin, you'll also need to set it up.
 - Search for all files with the term `xyz`: `os xyz`
 - Search for recent files (last 3 days) with the term `xyz`: `or xyz`
 - Search for files modified today, `xyz`: `ot xyz`
+
+### Create a new note: `on`
+
+- `on` will ask you to select a vault. Then you'll enter the note name/title. The new note will open in the selected Obsidian vault.
 
 ### Alfred fallback search
 
