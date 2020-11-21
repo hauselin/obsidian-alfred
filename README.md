@@ -16,7 +16,7 @@ Available Alfred features/keywords (contributors in parentheses)
 
 ## Installation
 
-Download the [Obsidian.alfredworkflow](https://github.com/hauselin/obsidian-alfred/raw/master/Obsidian.alfredworkflow) file. Add to Alfred and enjoy the workflow! Only tested in Alfred 4.
+Download the [Obsidian.alfredworkflow](https://github.com/hauselin/obsidian-alfred/raw/scriptfilter/Obsidian.alfredworkflow) file. Add to Alfred and enjoy the workflow! Only tested in Alfred 4.
 
 ## Features that require no set-up
 
