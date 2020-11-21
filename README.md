@@ -70,6 +70,7 @@ If you use Obsidian's Daily notes plugin, you'll also need to set it up.
 ### Create a new note: `on`
 
 - `on` will ask you to select a vault. Then you'll enter the note name/title. The new note will open in the selected Obsidian vault.
+- If you don't enter a note name, the default note name will look something like `20201121_151123`, which is generated using [Alfred's dynamic placeholders](https://www.alfredapp.com/help/workflows/advanced/placeholders/): `{date:yyyyMMdd_HHmmss}`. 
 
 ### Alfred fallback search
 
