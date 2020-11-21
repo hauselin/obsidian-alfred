@@ -58,7 +58,7 @@ If you use Obsidian's Daily notes plugin, you'll also need to set it up.
 ### Open daily note: `od`
 
 - The Daily notes Obsidian plugin must be enabled.
-- `od` opens today's daily note. Alternatively, you can use a hotkey. If you've successfully followed all the set-up steps, `od` will also create today's daily note if it doesn't exist yet. If you see error messages, most likely you didn't set things up properly. follow the set-up instructions carefully and try again.
+- `od` opens today's daily note. Alternatively, you can use a hotkey. If you've successfully followed all the set-up steps, `od` will also create today's daily note if it doesn't exist yet. If you see error messages, most likely you haven't set things up properly. Follow the set-up instructions carefully and try again.
 
 ### Search Obsidian vaults with Alfred File Filters; `os`, `or`, `ot`
 
