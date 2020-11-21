@@ -4,7 +4,7 @@
 
 # Alfred workflow for Obsidian
 
-This simple [Alfred](https://www.alfredapp.com/) workflow uses [Obsidian](https://obsidian.md/)'s [URI scheme](https://publish.obsidian.md/help/Advanced+use/Using+obsidian+URI) (available in version 0.8.15 and above) and JXA actions/scripts (thanks to [@hjklapp](https://github.com/hjklapp)) to open notes in their vaults. This workflow has been tested in Obsidian 0.9.16.
+This simple [Alfred](https://www.alfredapp.com/) workflow uses [Obsidian](https://obsidian.md/)'s [URI scheme](https://publish.obsidian.md/help/Advanced+use/Using+obsidian+URI) and JXA actions/scripts (thanks to [@hjklapp](https://github.com/hjklapp)) to open notes in their vaults. This workflow has been tested in Obsidian 0.9.16.
 
 Available Alfred features/keywords (contributors in parentheses)
 - Open a vault: `ov`,`oo` ([@hjklapp](https://github.com/hjklapp))
@@ -35,12 +35,12 @@ All other features require a one-time set-up.
 If you use Obsidian's Daily notes plugin, you'll also need to set it up.
 
 - Specify daily vault: `odailyvault`
-- Specify daily note format: `odailyvault`
-- Specify daily note directory/path: `odailypath`
+- Specify daily note format: `odailyformat`
   - Example: The date is 1st March 1990. 
-    - If your date format is 1990-3-1, enter `yyyy-m-d`
-    - If your date format is 900301, enter `yymmdd`
-    - If your date format is 1_3-90, enter `d_m-yy`
+    - If your date format is `1990-3-1`, enter `yyyy-m-d`
+    - If your date format is `900301`, enter `yymmdd`
+    - If your date format is `1_3-90`, enter `d_m-yy`
+- Specify daily note directory/path: `odailypath`
 - Specify daily note template: `odailytemplate`
   - Required only if you have a template for daily notes.
 
@@ -56,7 +56,7 @@ If you use Obsidian's Daily notes plugin, you'll also need to set it up.
 ### Open daily note: `od`
 
 - The Daily notes Obsidian plugin must be enabled.
-- `od` will open your daily note, assuming you've set up your workflow environment variable correctly (instructions above). Alternatively, you can use a hotkey.
+- `od` opens today's daily note. Alternatively, you can use a hotkey. If you've successfully followed all the set-up steps, `od` will also create today's daily note if it doesn't exist yet. If you see error messages, most likely you didn't set things up properly. follow the set-up instructions carefully and try again.
 
 ### Search Obsidian vaults with Alfred File Filters; `os`, `or`, `ot`
 
@@ -66,7 +66,7 @@ If you use Obsidian's Daily notes plugin, you'll also need to set it up.
 
 ### Alfred fallback search
 
-New in v0.1.5. Supports Alfred [fallback searches](https://www.alfredapp.com/help/features/default-results/fallback-searches/) (i.e., "Fallback searches are the list of search options you see when you search for a keyword that doesn't match a result on your local Mac."; see screenshot below). Thanks [@technicalpickles](https://github.com/technicalpickles) for suggesting this feature.
+Supports Alfred [fallback searches](https://www.alfredapp.com/help/features/default-results/fallback-searches/) (i.e., "Fallback searches are the list of search options you see when you search for a keyword that doesn't match a result on your local Mac."; see screenshot below). Thanks [@technicalpickles](https://github.com/technicalpickles) for suggesting this feature.
 
 ![](img/fallback.png)
 
