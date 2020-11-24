@@ -4,81 +4,84 @@
 
 # Alfred workflow for Obsidian
 
-This simple [Alfred](https://www.alfredapp.com/) workflow uses [Obsidian](https://obsidian.md/)'s [URI scheme](https://publish.obsidian.md/help/Advanced+use/Using+obsidian+URI) (available in version 0.8.15 and above) and JXA actions/scripts (thanks to [@hjklapp](https://github.com/hjklapp)) to open notes in their vaults. This workflow has been tested in Obsidian 0.9.7.
+This simple [Alfred](https://www.alfredapp.com/) workflow uses [Obsidian](https://obsidian.md/)'s [URI scheme](https://publish.obsidian.md/help/Advanced+use/Using+obsidian+URI) and JXA actions/scripts (thanks to [@hjklapp](https://github.com/hjklapp)) to open notes in their vaults. This workflow has been tested in Obsidian 0.9.17.
 
 Available Alfred features/keywords (contributors in parentheses)
 - Open a vault: `ov`,`oo` ([@hjklapp](https://github.com/hjklapp))
 - Search in vault(s): `os`, `or`, `ot`
+- Create a new empty note and open in selected vault: `on`
 - Open a daily note in a vault: `od` ([@technicalpickles](https://github.com/technicalpickles), [@luckman212](https://github.com/luckman212))
+  - You can also use a Hotkey to open your daily note.
 - Fallback search when there are no results ([@technicalpickles](https://github.com/technicalpickles))
+- Get help by opening [help vault](https://publish.obsidian.md/help/Index) and [forum](https://forum.obsidian.md/): `o?` 
 
-Future features
-- Use workflow/environment variables to save vault names, daily note vault, date-time format etc., so there's no need to configure/edit the osascripts. See [issue](https://github.com/hauselin/obsidian-alfred/issues/8#issue-747087640). Will replace Alfred file filters with script filters.
+## Installation
 
-# Installation
+Download the [latest release](https://github.com/hauselin/obsidian-alfred/archive/v0.2.0.zip). Unzip and add the workflow to Alfred. Only tested in Alfred 4.
 
-Download the [Obsidian.alfredworkflow](https://github.com/hauselin/obsidian-alfred/raw/master/Obsidian.alfredworkflow) file. Add to Alfred and enjoy the workflow! Only tested in Alfred 4.
-
-**If you want to to try a newer version I'm currently testing, check out [this branch](https://github.com/hauselin/obsidian-alfred/tree/scriptfilter).**
-
-## Features that work out-of-the-box
+## Features that require no set-up
 
 ### Open a vault: `ov`
 
-To open one of your many Obsidian vaults, type `ov your_vault_name`. You can change the keyword input subtext to remind yourself of the names of your vaults. Double-click **ov Keyword** to change the Subtext field.
+To open one of your many Obsidian vaults, type `ov your_vault_name`. If you vault name is `my notes`, you type `ov my notes`. You can change the keyword input subtext to remind yourself of the names of your vaults. Double-click **ov Keyword** to change the Subtext field.
 
-## Features that require some simple setting up
+All other features require a one-time set-up (v0.2.0 onward).
 
-If you see **CONFIG** anywhere in the workflow, it means you need to modify that part of the workflow slightly to set things up.
+## Set up
 
-![](img/config.png)
+This version (≥ v0.2.0) of the workflow requires a one-time set-up. 
+
+- Add your vaults, one at a time: `oaddvault`
+  - Note that Obsidian's help vault has been added by default.
+- To clear all vaults other than Obsidian's help vault: `oclearvaults`
+
+If you use Obsidian's Daily notes plugin, you'll also need to set it up.
+
+- Specify daily vault: `odailyvault`
+- Specify daily note format: `odailyformat`
+  - Example: The date is 1st March 1990. 
+    - If your date format is `1990-3-1`, enter `yyyy-m-d`
+    - If your date format is `900301`, enter `yymmdd`
+    - If your date format is `1_3-90`, enter `d_m-yy`
+- Specify daily note directory/path: `odailypath`
+- Specify daily note template: `odailytemplate`
+  - Required only if you have a template for daily notes.
+
+## Features available after set-up
 
 ### Open a vault with autocomplete: `oo`
 
-To autofill and autocomplete Obsidian vaults: Type `oo your_vault_name`. 
-- Double-click **oo List Filter** to add all your vaults. See screenshots below.
-- This feature is suggested by [@hjklapp](https://github.com/hjklapp).
+- To autofill and autocomplete Obsidian vaults (suggested by [@hjklapp](https://github.com/hjklapp)): `oo your_vault_name`
 
 ![](img/oo.gif)
-![](img/oo.png)
+
 
 ### Open daily note: `od`
 
 - The Daily notes Obsidian plugin must be enabled.
-- Notes and comments are provided in the workflow/script to help you set things up. Double-click the **/usr/bin/osascript Run Script** associated with **od Keyword** to set it up. You need to specify your daily note date format (step 1 in script) and the vault name (step 2 in script). Click Save when you're done.
-    - New in v0.1.3: Specify your date format in the /usr/bin/osacript by using yyyy, mm, dd. See screenshot below (steps 1 and 2).
-    - New in v0.1.5: Create a new daily note if it doesn't exist yet (see step 3, OPTIONAL step). Specify the absolute path to the directory (`fulldir_daily`) containing your daily notes; specify the template path (if you have a template) for your daily note (`fullpath_template`). If you don't specify these paths properly, Obsidian won't find your daily note and won't create it if the note doesn't exist yet.
-      - This feature addresses this [issue](https://github.com/hauselin/obsidian-alfred/issues/6), where you get the "File not found message." if your daily note doesn't exist.
-
-![](img/odaily.png)
+- `od` opens today's daily note. Alternatively, you can use a hotkey. If you've successfully followed all the set-up steps, `od` will also create today's daily note if it doesn't exist yet. If you see error messages, most likely you haven't set things up properly. Follow the set-up instructions carefully and try again.
 
 ### Search Obsidian vaults with Alfred File Filters; `os`, `or`, `ot`
 
-You'll have to edit the Scope of each File Filter to tell Alfred where to search for files on your computer. Double-click **os File Filter**, **or File Filter**, and **ot File Filter**. You can also change other settings via Basic Setup, Scope, Fields, Limit and Sort tabs.
+- Search for all files with the term `xyz`: `os xyz`
+- Search for recent files (last 3 days) with the term `xyz`: `or xyz`
+- Search for files modified today, `xyz`: `ot xyz`
 
-- Search for all files with the term `xyz`, type `os xyz`.
-- Search for recent files (last 3 days) with the term `xyz`, type `or xyz`.
-- Search for files modified today, `xyz`, type `ot xyz`.
+### Create a new note: `on`
 
-![](img/or.gif)
-
-
+- `on` will ask you to select a vault. Then you'll enter the note name/title. The new note will open in the selected Obsidian vault.
+- If you don't enter a note name, the default note name will look something like `20201121_151123`, which is generated using [Alfred's dynamic placeholders](https://www.alfredapp.com/help/workflows/advanced/placeholders/): `{date:yyyyMMdd_HHmmss}`. 
 
 ### Alfred fallback search
 
-New in v0.1.5. Alfred supports [fallback searches](https://www.alfredapp.com/help/features/default-results/fallback-searches/) (i.e., "Fallback searches are the list of search options you see when you search for a keyword that doesn't match a result on your local Mac."; see screenshot below). 
+Supports Alfred [fallback searches](https://www.alfredapp.com/help/features/default-results/fallback-searches/) (i.e., "Fallback searches are the list of search options you see when you search for a keyword that doesn't match a result on your local Mac."; see screenshot below). Thanks [@technicalpickles](https://github.com/technicalpickles) for suggesting this feature.
 
 ![](img/fallback.png)
 
 When a fallback search is invoked, the workflow will ask which vault you want to search in. To set it up, follow these steps: 
 
-- Specify the vaults Alfred will suggest (as with the `oo` list filter).
+- Go to Alfred's **Features** pane, click **Default Results pane**, click **Setup fallback results** at the bottom, click the **+** icon, add a **Workflow Trigger**, add **Search Obsidian for {query}**, reorder the fallback searches however you prefer, and click **Save**.
 
-- Go to Alfred's Features pane, click Setup fallback results, click the + icon, add a Workflow Trigger, add Search Obsidian for {query}, reorder the fallback searches however you like, and click Save.
-
-  
-
-  ![](img/fallback1.png)
 
 ![](img/fallback2.gif)
 
