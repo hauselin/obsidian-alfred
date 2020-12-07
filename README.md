@@ -4,7 +4,7 @@
 
 # Alfred workflow for Obsidian
 
-This simple [Alfred](https://www.alfredapp.com/) workflow uses [Obsidian](https://obsidian.md/)'s [URI scheme](https://publish.obsidian.md/help/Advanced+use/Using+obsidian+URI) and JXA actions/scripts (thanks to [@hjklapp](https://github.com/hjklapp)) to open notes in their vaults. This workflow has been tested in Obsidian 0.9.17.
+This simple [Alfred](https://www.alfredapp.com/) workflow uses [Obsidian](https://obsidian.md/)'s [URI scheme](https://publish.obsidian.md/help/Advanced+topics/Using+obsidian+URI) and JXA actions/scripts (thanks to [@hjklapp](https://github.com/hjklapp)) to open notes in their vaults. This workflow has been tested in Obsidian 0.9.17.
 
 Available Alfred features/keywords (contributors in parentheses)
 - Open a vault: `ov`,`oo` ([@hjklapp](https://github.com/hjklapp))
@@ -12,6 +12,7 @@ Available Alfred features/keywords (contributors in parentheses)
 - Create a new empty note and open in selected vault: `on`
 - Open a daily note in a vault: `od` ([@technicalpickles](https://github.com/technicalpickles), [@luckman212](https://github.com/luckman212))
   - You can also use a Hotkey to open your daily note.
+- Create or open tomorrow's daily note: `otmr`
 - Fallback search when there are no results ([@technicalpickles](https://github.com/technicalpickles))
 - Get help by opening [help vault](https://publish.obsidian.md/help/Index) and [forum](https://forum.obsidian.md/): `o?` 
 
@@ -60,6 +61,10 @@ If you use Obsidian's Daily notes plugin, you'll also need to set it up.
 
 - The Daily notes Obsidian plugin must be enabled.
 - `od` opens today's daily note. Alternatively, you can use a hotkey. If you've successfully followed all the set-up steps, `od` will also create today's daily note if it doesn't exist yet. If you see error messages, most likely you haven't set things up properly. Follow the set-up instructions carefully and try again.
+
+### Create or open tomorrow's daily note: `otmr`
+
+Works the same way as `od`, but for tomorrow's daily note. Great for planning the next day.
 
 ### Search Obsidian vaults with Alfred File Filters; `os`, `or`, `ot`
 
