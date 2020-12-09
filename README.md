@@ -4,11 +4,12 @@
 
 # Alfred workflow for Obsidian
 
-This simple [Alfred](https://www.alfredapp.com/) workflow uses [Obsidian](https://obsidian.md/)'s [URI scheme](https://publish.obsidian.md/help/Advanced+topics/Using+obsidian+URI) and JXA actions/scripts (thanks to [@hjklapp](https://github.com/hjklapp)) to open notes in their vaults. This workflow has been tested in Obsidian 0.9.17.
+This simple [Alfred](https://www.alfredapp.com/) workflow uses [Obsidian](https://obsidian.md/)'s [URI scheme](https://publish.obsidian.md/help/Advanced+topics/Using+obsidian+URI) and JXA actions/scripts (thanks to [@hjklapp](https://github.com/hjklapp)) to open notes in their vaults. This workflow has been tested in Obsidian 0.9.22.
 
 Available Alfred features/keywords (contributors in parentheses)
 - Open a vault: `ov`,`oo` ([@hjklapp](https://github.com/hjklapp))
-- Search in vault(s): `os`, `or`, `ot`
+- Search for *all* markdown files on your computer: `os`, `or`, `ot`
+- Search for markdown files inside your vaults: `oss`, `orr`, `ott`
 - Create a new empty note and open in selected vault: `on`
 - Open a daily note in a vault: `od` ([@technicalpickles](https://github.com/technicalpickles), [@luckman212](https://github.com/luckman212))
   - You can also use a Hotkey to open your daily note.
@@ -18,7 +19,7 @@ Available Alfred features/keywords (contributors in parentheses)
 
 ## Installation
 
-Download the [latest release](https://github.com/hauselin/obsidian-alfred/archive/v0.2.0.zip). Unzip and add the workflow to Alfred. Only tested in Alfred 4.
+Download the [latest release](https://github.com/hauselin/obsidian-alfred/archive/v0.2.1.zip). Unzip and add the workflow to Alfred. Only tested in Alfred 4.
 
 ## Features that require no set-up
 
@@ -64,13 +65,17 @@ If you use Obsidian's Daily notes plugin, you'll also need to set it up.
 
 ### Create or open tomorrow's daily note: `otmr`
 
-Works the same way as `od`, but for tomorrow's daily note. Great for planning the next day.
+Works the same way as `od`, but for tomorrow's daily note. Great for planning your next day.
 
-### Search Obsidian vaults with Alfred File Filters; `os`, `or`, `ot`
+### Search for markdown files: `os`, `or`, `ot` (or `oss`, `orr`, `ott`)
 
-- Search for all files with the term `xyz`: `os xyz`
+The keywords `os`, `or`, and `ot` will look for markdown files *everywhere* on your system (i.e., not just your vaults).
+
+- Search for all markdown files with the term `xyz`: `os xyz`
 - Search for recent files (last 3 days) with the term `xyz`: `or xyz`
-- Search for files modified today, `xyz`: `ot xyz`
+- Search for files modified today with the term `xyz`: `ot xyz`
+
+To look for markdown files that are only inside your vaults, use `oss`, `orr`, and `ott` instead. These three keywords require you to first press enter before you can perform your search. You can also customize your hotekeys to perform these searches.
 
 ### Create a new note: `on`
 
