@@ -10,9 +10,10 @@ Available Alfred features/keywords (contributors in parentheses)
 - Open a vault: `ov`,`oo` ([@hjklapp](https://github.com/hjklapp))
 - Search for *all* markdown files on your computer: `os`, `or`, `ot`
 - Search for markdown files inside your vaults: `oss`, `orr`, `ott`
+  - You can also customize your Hotkeys instead. 
 - Create a new empty note and open in selected vault: `on`
 - Open a daily note in a vault: `od` ([@technicalpickles](https://github.com/technicalpickles), [@luckman212](https://github.com/luckman212))
-  - You can also use a Hotkey to open your daily note.
+  - You can also custommize your Hotkey to open your daily note.
 - Create or open tomorrow's daily note: `otmr`
 - Fallback search when there are no results ([@technicalpickles](https://github.com/technicalpickles))
 - Get help by opening [help vault](https://publish.obsidian.md/help/Index) and [forum](https://forum.obsidian.md/): `o?` 
