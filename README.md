@@ -20,7 +20,7 @@ Available Alfred features/keywords (contributors in parentheses)
 
 ## Installation
 
-Download the [latest release](https://github.com/hauselin/obsidian-alfred/archive/v0.2.1.zip). Unzip and add the workflow to Alfred. Only tested in Alfred 4.
+Download the [latest release](https://github.com/hauselin/obsidian-alfred/archive/v0.2.2.zip). Unzip and add the workflow to Alfred. Only tested in Alfred 4.
 
 ## Features that require no set-up
 
@@ -70,7 +70,7 @@ Works the same way as `od`, but for tomorrow's daily note. Great for planning yo
 
 ### Search for markdown files: `os`, `or`, `ot` (or `oss`, `orr`, `ott`)
 
-The keywords `os`, `or`, and `ot` will look for markdown files *everywhere* on your system (i.e., not just your vaults).
+The keywords `os`, `or`, and `ot` will look for markdown files *everywhere* on your system (i.e., not just your vaults). If a file isn't in any of your Obsidian vaults, the file will open in your default editor instead of Obsidian.
 
 - Search for all markdown files with the term `xyz`: `os xyz`
 - Search for recent files (last 3 days) with the term `xyz`: `or xyz`
