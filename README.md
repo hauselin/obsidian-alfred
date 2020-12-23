@@ -4,7 +4,7 @@
 
 # Alfred workflow for Obsidian
 
-This simple [Alfred](https://www.alfredapp.com/) workflow uses [Obsidian](https://obsidian.md/)'s [URI scheme](https://publish.obsidian.md/help/Advanced+topics/Using+obsidian+URI) and JXA actions/scripts (thanks to [@hjklapp](https://github.com/hjklapp)) to open notes in their vaults. This workflow has been tested in Obsidian 0.9.22.
+This simple [Alfred](https://www.alfredapp.com/) workflow uses [Obsidian](https://obsidian.md/)'s [URI scheme](https://publish.obsidian.md/help/Advanced+topics/Using+obsidian+URI) and JXA actions/scripts (thanks to [@hjklapp](https://github.com/hjklapp)) to open notes in their vaults. This workflow has been tested in Obsidian 0.10.2.
 
 Available Alfred features/keywords (contributors in parentheses)
 - Open a vault: `ov`,`oo` ([@hjklapp](https://github.com/hjklapp))
@@ -20,7 +20,7 @@ Available Alfred features/keywords (contributors in parentheses)
 
 ## Installation
 
-Download the [latest release](https://github.com/hauselin/obsidian-alfred/archive/v0.2.2.zip). Unzip and add the workflow to Alfred. Only tested in Alfred 4.
+Download the [latest release](https://github.com/hauselin/obsidian-alfred/archive/v0.2.3.zip). Unzip and add the workflow to Alfred. Only tested in Alfred 4.
 
 ## Features that require no set-up
 
@@ -46,6 +46,8 @@ If you use Obsidian's Daily notes plugin, you'll also need to set it up.
     - If your date format is `1990-3-1`, enter `yyyy-m-d`
     - If your date format is `900301`, enter `yymmdd`
     - If your date format is `1_3-90`, enter `d_m-yy`
+    - If your date format is `1 March 1990`, enter `d MMMM yyyy`
+    - If your date format is `Mar 01, 90`, enter `MM dd, yy`
 - Specify daily note directory/path: `odailypath`
 - Specify daily note template: `odailytemplate`
   - Required only if you have a template for daily notes.
