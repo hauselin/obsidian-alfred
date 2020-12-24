@@ -37,6 +37,7 @@ This version (≥ v0.2.0) of the workflow requires a one-time set-up.
 - Add your vaults, one at a time: `oaddvault`
   - Note that Obsidian's help vault has been added by default.
 - To clear all vaults other than Obsidian's help vault: `oclearvaults`
+- To clear a single vault: `oclearvault`
 
 If you use Obsidian's Daily notes plugin, you'll also need to set it up.
 
