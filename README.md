@@ -4,7 +4,7 @@
 
 # Alfred workflow for Obsidian
 
-This simple [Alfred](https://www.alfredapp.com/) workflow uses [Obsidian](https://obsidian.md/)'s [URI scheme](https://publish.obsidian.md/help/Advanced+topics/Using+obsidian+URI) and JXA actions/scripts (thanks to [@hjklapp](https://github.com/hjklapp)) to open notes in their vaults. This workflow has been tested in Obsidian 0.10.2.
+This simple [Alfred](https://www.alfredapp.com/) workflow uses [Obsidian](https://obsidian.md/)'s [URI scheme](https://publish.obsidian.md/help/Advanced+topics/Using+obsidian+URI) and JXA actions/scripts (thanks to [@hjklapp](https://github.com/hjklapp)) to open notes in their vaults. This workflow has been tested in Obsidian 0.10.9.
 
 Available Alfred features/keywords (contributors in parentheses)
 - Open a vault: `ov`,`oo` ([@hjklapp](https://github.com/hjklapp))
@@ -80,6 +80,8 @@ The keywords `os`, `or`, and `ot` will look for markdown files *everywhere* on y
 - Search for files modified today with the term `xyz`: `ot xyz`
 
 To look for markdown files that are only inside your vaults, use `oss`, `orr`, and `ott` instead. These three keywords require you to first press enter before you can perform your search. You can also customize your hotekeys to perform these searches.
+
+**Common problem: No matching file found (see [issue #15](https://github.com/hauselin/obsidian-alfred/issues/15))**. If this problem happens to you, [try the solutions described here](https://github.com/hauselin/obsidian-alfred/issues/15#issuecomment-753414360).
 
 ### Create a new note: `on`
 
