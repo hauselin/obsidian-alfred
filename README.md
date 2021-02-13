@@ -4,7 +4,7 @@
 
 # Alfred workflow for Obsidian
 
-This simple [Alfred](https://www.alfredapp.com/) workflow uses [Obsidian](https://obsidian.md/)'s [URI scheme](https://publish.obsidian.md/help/Advanced+topics/Using+obsidian+URI) and JXA actions/scripts (thanks to [@hjklapp](https://github.com/hjklapp)) to open notes in their vaults. This workflow has been tested in Obsidian 0.10.9.
+This simple [Alfred](https://www.alfredapp.com/) workflow uses [Obsidian](https://obsidian.md/)'s [URI scheme](https://publish.obsidian.md/help/Advanced+topics/Using+obsidian+URI) and JXA actions/scripts (thanks to [@hjklapp](https://github.com/hjklapp)) to open notes in their vaults. This workflow has been tested in Obsidian 0.11.0.
 
 Available Alfred features/keywords (contributors in parentheses)
 - Open a vault: `ov`,`oo` ([@hjklapp](https://github.com/hjklapp))
@@ -13,14 +13,16 @@ Available Alfred features/keywords (contributors in parentheses)
   - You can also customize your Hotkeys instead. 
 - Create a new empty note and open in selected vault: `on`
 - Open a daily note in a vault: `od` ([@technicalpickles](https://github.com/technicalpickles), [@luckman212](https://github.com/luckman212))
-  - You can also custommize your Hotkey to open your daily note.
+  - You can also customize your Hotkey to open your daily note.
 - Create or open tomorrow's daily note: `otmr`
+- Append text to an inbox note: `oi` ([@LouisInFlow](https://github.com/LouisInFlow))
+  - You can also customize your Hotkey to directly append clipboard contents to the inbox note.
 - Fallback search when there are no results ([@technicalpickles](https://github.com/technicalpickles))
 - Get help by opening [help vault](https://publish.obsidian.md/help/Index) and [forum](https://forum.obsidian.md/): `o?` 
 
 ## Installation
 
-Download the [latest release](https://github.com/hauselin/obsidian-alfred/archive/v0.2.3.zip). Unzip and add the workflow to Alfred. Only tested in Alfred 4.
+Download the [latest release](https://github.com/hauselin/obsidian-alfred/archive/v0.2.6.zip). Unzip and add the workflow to Alfred. Only tested in Alfred 4.
 
 ## Features that require no set-up
 
@@ -32,14 +34,14 @@ All other features require a one-time set-up (v0.2.0 onward).
 
 ## Set up
 
-This version (≥ v0.2.0) of the workflow requires a one-time set-up. 
+**This version (≥ v0.2.0) of the workflow requires a one-time set-up.** 
 
 - Add your vaults, one at a time: `oaddvault`
   - Note that Obsidian's help vault has been added by default.
 - To clear all vaults other than Obsidian's help vault: `oclearvaults`
 - To clear a single vault: `oclearvault`
 
-If you use Obsidian's Daily notes plugin, you'll also need to set it up.
+**If you use Obsidian's Daily notes plugin, you'll also need to set it up.**
 
 - Specify daily vault: `odailyvault`
 - Specify daily note format: `odailyformat`
@@ -53,6 +55,9 @@ If you use Obsidian's Daily notes plugin, you'll also need to set it up.
 - Specify daily note template: `odailytemplate`
   - Required only if you have a template for daily notes.
 
+**If you want to append text to an inbox note, you'll have to specify the note you're usinig as your inbox note.**
+
+- Specify inbox note: `oinbox`
 ## Features available after set-up
 
 ### Open a vault with autocomplete: `oo`
@@ -87,6 +92,16 @@ To look for markdown files that are only inside your vaults, use `oss`, `orr`, a
 
 - `on` will ask you to select a vault. Then you'll enter the note name/title. The new note will open in the selected Obsidian vault.
 - If you don't enter a note name, the default note name will look something like `20201121_151123`, which is generated using [Alfred's dynamic placeholders](https://www.alfredapp.com/help/workflows/advanced/placeholders/): `{date:yyyyMMdd_HHmmss}`. 
+
+### Append text as list items (bullet points) to the end of a note
+
+`oi` lets you append text to an end of a note. To use `oi`, you first have to specify which note you want to append to using `oinbox`. Then, `oi Hello world!` will append `- Hello world!` to the end of your inbox note. 
+
+In addition, you can set up hotkey (see image below) to directly append the contents in your clipboard to the end of your inbox notes.
+
+**BECAUSE THIS FEATURE MODIFIES YOUR NOTES, BACK UP YOUR VAULT AND NOTES!**
+
+![](img/append_to_inbox.png)
 
 ### Alfred fallback search
 
