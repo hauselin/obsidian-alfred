@@ -24,7 +24,7 @@ Available Alfred features/keywords (contributors in parentheses)
 
 ## Installation
 
-Download the [latest release](https://github.com/hauselin/obsidian-alfred/archive/v0.3.0.zip). Unzip and add the workflow to Alfred. Only tested in Alfred 4.
+Download the [latest release](https://github.com/hauselin/obsidian-alfred/raw/master/Obsidian.alfredworkflow) and add the workflow to Alfred. Only tested in Alfred 4.
 
 ## Features that require no set-up
 
