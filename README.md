@@ -130,6 +130,7 @@ If the Obsidian app isn't already opened, this workflow will always open the las
 Alphabetical order
 
 - [@hjklapp](https://github.com/hjklapp)
+- [@lastobelus](https://github.com/lastobelus)
 - [@ldebritto](https://github.com/ldebritto)
 - [@luckman212](https://github.com/luckman212)
 - [@LouisInFlow](https://github.com/LouisInFlow)
