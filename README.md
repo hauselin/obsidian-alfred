@@ -39,7 +39,7 @@ All other features require a one-time set-up (v0.2.0 onward).
 **This version (≥ v0.2.0) of the workflow requires a one-time set-up.** 
 
 - Add your vaults, one at a time: `oaddvault`
-  - Note that Obsidian's help vault has been added by default.
+  - Obsidian's help vault has been added by default.
 - To clear all vaults other than Obsidian's help vault: `oclearvaults`
 - To clear a single vault: `oclearvault`
 
@@ -57,9 +57,10 @@ All other features require a one-time set-up (v0.2.0 onward).
 - Specify daily note template: `odailytemplate`
   - Required only if you have a template for daily notes.
 
-**If you want to append text to an inbox note, you'll have to specify the note you're usinig as your inbox note.**
+**If you want to append text to an inbox note, you'll have to specify the note you're using as your inbox note.**
 
 - Specify inbox note: `oinbox`
+ 
 ## Features available after set-up
 
 ### Open a vault with autocomplete: `oo`
