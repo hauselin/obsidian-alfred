@@ -4,7 +4,7 @@
 
 # Alfred workflow for Obsidian
 
-This simple [Alfred](https://www.alfredapp.com/) workflow uses [Obsidian](https://obsidian.md/)'s [URI scheme](https://publish.obsidian.md/help/Advanced+topics/Using+obsidian+URI) and JXA actions/scripts (thanks to [@hjklapp](https://github.com/hjklapp)) to open notes in their vaults. This workflow has been tested in Obsidian 0.11.0.
+This simple [Alfred](https://www.alfredapp.com/) workflow uses [Obsidian](https://obsidian.md/)'s [URI scheme](https://publish.obsidian.md/help/Advanced+topics/Using+obsidian+URI) and JXA actions/scripts (thanks to [@hjklapp](https://github.com/hjklapp)) to open notes in their vaults. This workflow has been tested in Obsidian 0.11.4. See also [known issues](#known-issues).
 
 Available Alfred features/keywords (contributors in parentheses)
 - Open a vault: `ov`,`oo` ([@hjklapp](https://github.com/hjklapp))
@@ -15,14 +15,16 @@ Available Alfred features/keywords (contributors in parentheses)
 - Open a daily note in a vault: `od` ([@technicalpickles](https://github.com/technicalpickles), [@luckman212](https://github.com/luckman212))
   - You can also customize your Hotkey to open your daily note.
 - Create or open tomorrow's daily note: `otmr`
-- Append text to an inbox note: `oi` ([@LouisInFlow](https://github.com/LouisInFlow))
+- Adding text to an inbox note: `oi` ([@LouisInFlow](https://github.com/LouisInFlow))
   - You can also customize your Hotkey to directly append clipboard contents to the inbox note.
+  - Open inbox note with `oii` or customize your Hotkey to open inbox note.
+  - Turn on/off notifications when adding text to inbox note with `onotify`
 - Fallback search when there are no results ([@technicalpickles](https://github.com/technicalpickles))
 - Get help by opening [help vault](https://publish.obsidian.md/help/Index) and [forum](https://forum.obsidian.md/): `o?` 
 
 ## Installation
 
-Download the [latest release](https://github.com/hauselin/obsidian-alfred/archive/v0.2.6.zip). Unzip and add the workflow to Alfred. Only tested in Alfred 4.
+Download the [latest release](https://github.com/hauselin/obsidian-alfred/archive/v0.3.0.zip). Unzip and add the workflow to Alfred. Only tested in Alfred 4.
 
 ## Features that require no set-up
 
@@ -93,13 +95,15 @@ To look for markdown files that are only inside your vaults, use `oss`, `orr`, a
 - `on` will ask you to select a vault. Then you'll enter the note name/title. The new note will open in the selected Obsidian vault.
 - If you don't enter a note name, the default note name will look something like `20201121_151123`, which is generated using [Alfred's dynamic placeholders](https://www.alfredapp.com/help/workflows/advanced/placeholders/): `{date:yyyyMMdd_HHmmss}`. 
 
-### Append text as list items (bullet points) to the end of a note
+### Add text as list items (bullet points) to the end of a note
 
 `oi` lets you append text to an end of a note. To use `oi`, you first have to specify which note you want to append to using `oinbox`. Then, `oi Hello world!` will append `- Hello world!` to the end of your inbox note. 
 
 In addition, you can set up hotkey (see image below) to directly append the contents in your clipboard to the end of your inbox notes.
 
 **BECAUSE THIS FEATURE MODIFIES YOUR NOTES, BACK UP YOUR VAULT AND NOTES!**
+
+To open your inbox note in Obsidian, use `oii` or customize your hotkey.
 
 ![](img/append_to_inbox.png)
 
@@ -116,9 +120,9 @@ When a fallback search is invoked, the workflow will ask which vault you want to
 
 ![](img/fallback2.gif)
 
-## Known bugs
+## Known issues
 
-If the Obsidian app isn't already opened, this workflow will always open the last recently opened vault. This bug is a known issue with Electron apps on MacOS. See [discussion on Obsidian's Discord](https://discordapp.com/channels/686053708261228577/716028884885307432/755203478413902036).
+If the Obsidian app isn't already opened, this workflow will always open the last recently opened vault. This bug is a known issue with Electron apps on MacOS. See [discussion on Obsidian's Discord](https://discordapp.com/channels/686053708261228577/716028884885307432/755203478413902036). To overcome this limitation (see #23), many commands in this workflow (v0.3.0 onward) try to open a note twice (the second attempt happens 3 seconds after the first attempt), so you'll see two Obsidian notifications. 
 
 ## Contributors
 
