@@ -3276,7 +3276,7 @@ inbox_md = interpolate_homepath(inbox_md)
 
 // escape " 
 var query = "{query}";
-query = query.replaceAll('"', '\"');
+query = query.replace(/\"/g, '\"');
 
 // split paragraphs into separate bullet points
 query = query.split("@NEWLISTITEM@")
