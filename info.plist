@@ -1,0 +1,4469 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.hauselin.obsidian</string>
+	<key>category</key>
+	<string>Productivity</string>
+	<key>connections</key>
+	<dict>
+		<key>08189677-1EA8-4DC2-9C09-DC2F2AF0866E</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>2C31829D-621E-4707-B16D-5899AE7907FD</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>0EEA412C-D42E-4C94-9C26-077C1CFEFF9D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>E5FAA23D-08AB-47A3-A5C9-5211B9D677C4</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>0F2ED3A2-F821-40B0-9915-C8E5E2D84A02</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>67E25071-1FF8-4F8B-9A9F-2509093593B6</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>1BD03BB0-06B9-47F5-9346-7A829C38B248</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>86967BF2-99A7-43FB-A22A-7AC2F9A8C34C</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>249B0782-BFFB-4382-A857-5058D7C3D244</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>5ADBB309-EC74-453A-B7F5-9E34E2CDB7E3</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>29B3A4DB-80CD-498F-A079-18F1CA7DD20C</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>0796CFDE-8B84-4EAD-A82D-6558AF6C4D42</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>2CC3DBA2-EDA4-4548-A215-611A436E43DB</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>70AEEB77-35DB-44B9-B633-BE1D2B43D581</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>2D878E69-78A2-499B-B7F1-BE3B30AD5C70</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>6290B8D5-ECEB-4623-848B-E5AB92089E79</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>2EEFE48E-B0E2-406A-BCA9-930F5969A364</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>8B221971-0089-4DAC-A056-EC2C961C6EAB</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>333B2B54-2894-418E-A8DE-522F8BB1F3E5</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>73853368-ED10-4729-A4D0-E231647C3CF4</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>353B5FD9-BF6A-4635-9AA1-313E16E86B05</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>08A7509B-BDA4-455E-A628-38ABF42C04D7</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>9F656256-DD01-4508-BF9F-CDB3168DB9B6</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>39F0A80F-98F0-47BE-B519-26563D139E54</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>CDEBE435-E442-4054-80BE-59ADD7EEA597</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>3B2DA9A3-761D-467C-BDD7-841584877816</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>2C31829D-621E-4707-B16D-5899AE7907FD</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>3BD1A5BF-C96B-4C33-B2A6-2EEB18C41B62</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>3CF13837-2DBB-46AA-93B4-6CA9598A106E</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>3DF54CDE-9D13-4486-B7EC-7921A46C8AE2</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>6FF78F6F-9167-45D0-B022-7BE55106848C</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>3F7FA866-52E3-46A9-84EE-80A4D3244647</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>A70B656D-CA4C-41F9-99E3-988FB6158F5F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>403F9FD9-33F0-42FC-8E20-FEC2C821B083</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>249B0782-BFFB-4382-A857-5058D7C3D244</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>44D69DBA-085D-4208-86A1-CED1CA068AB3</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>46732892-62E0-47CE-B727-EBA967105197</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>46732892-62E0-47CE-B727-EBA967105197</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>2CC3DBA2-EDA4-4548-A215-611A436E43DB</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>54B8D923-3C08-4CD2-8F05-0AF628F5C029</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>0796CFDE-8B84-4EAD-A82D-6558AF6C4D42</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>5ADBB309-EC74-453A-B7F5-9E34E2CDB7E3</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>70AEEB77-35DB-44B9-B633-BE1D2B43D581</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>5DE0CED7-F7E2-4A3F-B3A2-53FF23C8C6D3</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D79944EC-E799-4CC4-9961-A6EBF5D6FBDC</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>65DEE317-811D-4787-87B4-3909B62061EA</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>B1E46976-D5FD-41F9-AC39-C5F7D93F53E7</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>6C92B3BB-C347-4EEE-AC10-2EC7E3381F2A</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>82B5116A-964C-4E76-AA72-45B844D83BEA</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>6F34BFA1-14F5-49E9-B25D-417D71A29AD4</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>DE762236-EFCC-45D3-85CA-A1B6B191762C</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>6FF78F6F-9167-45D0-B022-7BE55106848C</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>C016E20E-3F44-4372-90DC-1B00DA8C07F8</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>76C3031F-7B85-45C6-9D05-DF5802BBC167</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>3E2AE83C-BAFA-4EB9-ADCB-0BB7989CF9E9</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>82B5116A-964C-4E76-AA72-45B844D83BEA</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>39F0A80F-98F0-47BE-B519-26563D139E54</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>834BB1A9-B643-4448-97B4-B6B6582602CB</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>2754DF89-417E-46D0-A435-3ED58F2CB8CF</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>854EB1EE-9017-4F43-BC80-BAF317FC5315</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>2EEFE48E-B0E2-406A-BCA9-930F5969A364</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>86967BF2-99A7-43FB-A22A-7AC2F9A8C34C</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>CD6980A3-E50D-4689-B8D6-1A677CDE1914</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>8B221971-0089-4DAC-A056-EC2C961C6EAB</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>3BD1A5BF-C96B-4C33-B2A6-2EEB18C41B62</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>8C017EEF-38DD-4148-9291-9302EFCE33DE</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>72CFFBA4-02FC-4875-BB2C-562FCF5E43BC</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>9295060C-B513-4806-8F12-52EC6D30C9A3</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>46732892-62E0-47CE-B727-EBA967105197</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>A60FCD19-F3A3-4B26-BDB2-52D548E38686</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>001B3A3A-722E-440B-AA33-3589A525546C</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>A7CCBBCE-F078-4780-BF5C-42D9CE64D568</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>82B5116A-964C-4E76-AA72-45B844D83BEA</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>ADAB8847-A309-4A02-9D42-E8D30C47BC5D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>E6955BE2-FEB7-470D-92BE-03EDF6C498FB</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>B768A804-C61E-4133-AB9C-74C6448BFC62</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>3E2AE83C-BAFA-4EB9-ADCB-0BB7989CF9E9</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>BDE4BB5C-ECD8-439A-B893-A9C70345010D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>001B3A3A-722E-440B-AA33-3589A525546C</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>C016E20E-3F44-4372-90DC-1B00DA8C07F8</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>70AEEB77-35DB-44B9-B633-BE1D2B43D581</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>CD6980A3-E50D-4689-B8D6-1A677CDE1914</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>6F34BFA1-14F5-49E9-B25D-417D71A29AD4</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>CEC4065E-BADA-44B7-A255-4A9D613685E2</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>249B0782-BFFB-4382-A857-5058D7C3D244</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>F118473C-D1EF-472F-A1F6-CC9A8C65ABF2</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>360748C4-EF05-4FC2-8AB9-E4A969D2D256</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>F565051F-71D8-42F7-A733-5DA9F39AAEA2</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>F8C5232B-3EDC-4388-851E-BFE6602C88D0</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>FFD4328D-FE08-4222-8AA1-FD71A1DC33F9</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>6FF78F6F-9167-45D0-B022-7BE55106848C</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Hause Lin</string>
+	<key>description</key>
+	<string>A workflow to open Obsidian vaults, daily note, and search for notes in vaults.</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Obsidian</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>od</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Open Obsidian Daily Note</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>B768A804-C61E-4133-AB9C-74C6448BFC62</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>31</integer>
+				<key>hotmod</key>
+				<integer>1572864</integer>
+				<key>hotstring</key>
+				<string>O</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>BDE4BB5C-ECD8-439A-B893-A9C70345010D</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://forum.obsidian.md/</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>08A7509B-BDA4-455E-A628-38ABF42C04D7</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>paths</key>
+				<array>
+					<string>/Applications/Obsidian.app</string>
+				</array>
+				<key>toggle</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.launchfiles</string>
+			<key>uid</key>
+			<string>001B3A3A-722E-440B-AA33-3589A525546C</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>o?</string>
+				<key>subtext</key>
+				<string>Open help and forum pages</string>
+				<key>text</key>
+				<string>Obsidian help</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>353B5FD9-BF6A-4635-9AA1-313E16E86B05</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string>/* cSpell:disable */
+
+ObjC.import('stdlib');
+console.log('Running script - od')
+
+
+// get the current app to access the standard additions
+app = Application.currentApplication();
+app.includeStandardAdditions = true;
+
+
+function interpolate_homepath(path) {
+  homepath = app.pathTo('home folder')
+  return path.replace(/^~/, homepath)
+}
+
+
+
+// date format
+date_format = $.getenv('dailyformat')
+console.log(date_format)
+
+// vault name
+v = $.getenv('dailyvaultname');
+console.log(v)
+
+// specify the absolute/full path to the directory where you keep your daily notes
+fulldir_daily = $.getenv('dailyabspath');
+fulldir_daily = interpolate_homepath(fulldir_daily)
+console.log(fulldir_daily)
+
+// if you have a template for your daily note, specify the absolute/full path to this note
+fullpath_template = $.getenv('dailytempabspath');
+fullpath_template = interpolate_homepath(fullpath_template)
+console.log(fullpath_template)
+
+
+
+
+
+
+var months = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ]
+var months_short = [ "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" ]
+
+// https://momentjscom.readthedocs.io/en/latest/moment/07-customization/04-weekday-abbreviations/
+var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+var days_short = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
+var days_e = [0, 1, 2, 3, 4, 5, 6]
+var days_E = [7, 1, 2, 3, 4, 5, 6]
+
+// get week of year
+function ISO8601_week_no(dt) {
+     var tdt = new Date(dt.valueOf());
+     var dayn = (dt.getDay() + 6) % 7;
+     tdt.setDate(tdt.getDate() - dayn + 3);
+     var firstThursday = tdt.valueOf();
+     tdt.setMonth(0, 1);
+     if (tdt.getDay() !== 4) {
+         tdt.setMonth(0, 1 + ((4 - tdt.getDay()) + 7) % 7);
+     }
+     return 1 + Math.ceil((firstThursday - tdt) / 604800000);
+}
+
+
+
+
+
+// get today's date
+today = new Date();
+yyyy = today.getFullYear().toString();
+mm = (today.getMonth() + 1).toString();
+dd = today.getDate().toString();
+ww = ISO8601_week_no(today).toString();
+day = today.getDay()
+
+
+
+
+
+
+
+
+
+
+date_format_original = date_format;
+
+// get today's day if requested
+if (date_format.includes('dddd')) {
+    day_string = days[day]
+    date_format = date_format.replace('dddd', 'zzzz')
+} 
+if (date_format.includes('ddd')) {
+    day_string_short = days_short[day]
+    date_format = date_format.replace('ddd', 'zzz')
+}
+
+if (date_format.includes('e')) {
+    date_format = date_format.replace('e', '!')
+} 
+if (date_format.includes('E')) {
+    date_format = date_format.replace('E', '@')
+}
+
+date_format = date_format.toLowerCase();
+console.log('original: ' + date_format_original);
+console.log('date_format: ' + date_format);
+
+// determine no. of y, m, d needed
+n_y = date_format.split('y').length - 1;
+n_m = date_format.split('m').length - 1;
+n_d = date_format.split('d').length - 1;
+n_w = date_format.split('w').length - 1;
+
+if (n_y == 0) {n_y = 1};
+if (n_m == 0) {n_m = 1};
+if (n_d == 0) {n_d = 1};
+if (n_w == 0) {n_w = 1};
+
+
+y_char = "y".repeat(n_y);
+m_char = "m".repeat(n_m);
+d_char = "d".repeat(n_d);
+w_char = "w".repeat(n_w);
+
+console.log('y_char: ' + y_char);
+console.log('m_char: ' + m_char);
+console.log('d_char: ' + d_char);
+console.log('w_char: ' + w_char);
+
+
+// format date according to user specification (e.g., yy, m, d)
+yyyy = yyyy.slice(4-n_y, 4);
+if (mm.length == 1) {mm = mm.padStart(2, '0').slice(2-n_m, 2)};
+if (dd.length == 1) {dd = dd.padStart(2, '0').slice(2-n_d, 2)};
+if (ww.length == 1) {ww = ww.padStart(2, '0').slice(2-n_w, 2)};
+
+date_format = date_format.replace(y_char, yyyy);
+date_format = date_format.replace(m_char, mm);
+date_format = date_format.replace(d_char, dd);
+date_format = date_format.replace(w_char, ww);
+
+console.log('2. date_format: ' + date_format);
+
+// convert to MMM or MMMM
+if (m_char == 'mmmm') {
+    date_format = date_format.replace(mm, months[Number(mm)-1])
+}
+if (m_char == 'mmm') {
+    date_format = date_format.replace(mm, months_short[Number(mm)-1])
+}
+
+// day of week if requested
+if (date_format.includes('zzzz')) {
+    date_format = date_format.replace('zzzz', day_string)
+}
+if (date_format.includes('zzz')) {
+    date_format = date_format.replace('zzz', day_string_short)
+}
+// e is day of week (0, 1, ... 7)
+if (date_format_original.includes('e')) {
+    date_format = date_format.replace('!', days_e[day].toString())
+} 
+if (date_format_original.includes('E')) {
+    date_format = date_format.replace('@', days_E[day].toString())
+}
+
+console.log('3. date_format: ' + date_format);
+
+p = encodeURIComponent(v) + "&amp;file=" + date_format + ".md";
+uri = "obsidian://open?vault=" + p;
+
+
+console.log('uri', uri);
+
+// create new daily note if it doesn't exist
+if (fulldir_daily != "") {
+	// format file path
+	if (fulldir_daily[(fulldir_daily.length-1)] != "/") {fulldir_daily += "/"}
+	filepath = fulldir_daily + date_format + ".md"
+
+  console.log('filepath', filepath);
+
+	// get template content
+	var template_txt = ""
+	if (fullpath_template != "") {
+    console.log('fullpath_template', fullpath_template);
+    var template_path_obj = Path(fullpath_template);
+    console.log('template_path_obj', template_path_obj)
+		template_txt = app.read(Path(fullpath_template))
+	}
+
+  console.log('template_txt', template_txt);
+
+	// create note with template (if exists)
+	var path = Path(filepath)
+	var finderApp = Application("Finder")
+	if (!finderApp.exists(path)) {
+		console.log("Note doesn't exist. Creating note.")
+		var openedFile = app.openForAccess(path, {writePermission: true})
+		app.write(template_txt, { to: openedFile, startingAt: app.getEof(openedFile) })
+		app.closeAccess(openedFile)
+		uri = "obsidian://open?path=" + encodeURIComponent(filepath)
+		// wait a bit for note to show up in file system
+		delay(1)
+	}
+} 
+
+
+if (v == "" | date_format == "2111") {
+	app.displayDialog("Set up the workflow first")
+} else {
+    // open file in vault
+    app.openLocation(uri);
+    console.log(uri);
+}
+
+
+// save today note path
+Application('com.runningwithcrayons.Alfred').setConfiguration("dailytodaypath", {
+    toValue: filepath,
+    exportable: false,
+    inWorkflow: $.getenv('alfred_workflow_bundleid'),
+});</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>7</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>3E2AE83C-BAFA-4EB9-ADCB-0BB7989CF9E9</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>ObjC.import('stdlib');
+console.log('Running script')
+
+// get the current app to access the standard additions
+app = Application.currentApplication();
+app.includeStandardAdditions = true;
+
+homepath = app.pathTo('home folder')
+console.log(homepath)
+
+
+
+function interpolate_homepath(path) {
+  homepath = app.pathTo('home folder')
+  return path.replace(/^~/, homepath)
+}
+
+
+// date format
+date_format = $.getenv('dailyformat')
+console.log(date_format)
+
+// vault name
+v = $.getenv('dailyvaultname');
+console.log(v)
+
+// specify the absolute/full path to the directory where you keep your daily notes
+fulldir_daily = $.getenv('dailyabspath');
+fulldir_daily = interpolate_homepath(fulldir_daily)
+console.log(fulldir_daily)
+
+// if you have a template for your daily note, specify the absolute/full path to this note
+fullpath_template = $.getenv('dailytempabspath');
+fullpath_template = interpolate_homepath(fullpath_template)
+console.log(fullpath_template)
+
+
+
+
+
+
+
+
+
+var months = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ]
+var months_short = [ "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" ]
+
+// https://momentjscom.readthedocs.io/en/latest/moment/07-customization/04-weekday-abbreviations/
+var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+var days_short = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
+var days_e = [0, 1, 2, 3, 4, 5, 6]
+var days_E = [7, 1, 2, 3, 4, 5, 6]
+
+// get week of year
+function ISO8601_week_no(dt) {
+     var tdt = new Date(dt.valueOf());
+     var dayn = (dt.getDay() + 6) % 7;
+     tdt.setDate(tdt.getDate() - dayn + 3);
+     var firstThursday = tdt.valueOf();
+     tdt.setMonth(0, 1);
+     if (tdt.getDay() !== 4) {
+         tdt.setMonth(0, 1 + ((4 - tdt.getDay()) + 7) % 7);
+     }
+     return 1 + Math.ceil((firstThursday - tdt) / 604800000);
+}
+
+
+
+
+// get today's date
+today = new Date()
+// get tomorrrow's date
+tomorrow = new Date(today)
+tomorrow.setDate(tomorrow.getDate() + 1)
+
+yyyy = tomorrow.getFullYear().toString();
+mm = (tomorrow.getMonth() + 1).toString();
+dd = tomorrow.getDate().toString();
+ww = ISO8601_week_no(tomorrow).toString();
+day = tomorrow.getDay()
+
+
+
+
+
+date_format_original = date_format;
+
+// get today's day if requested
+if (date_format.includes('dddd')) {
+    day_string = days[day]
+    date_format = date_format.replace('dddd', 'zzzz')
+} 
+if (date_format.includes('ddd')) {
+    day_string_short = days_short[day]
+    date_format = date_format.replace('ddd', 'zzz')
+}
+
+if (date_format.includes('e')) {
+    date_format = date_format.replace('e', '!')
+} 
+if (date_format.includes('E')) {
+    date_format = date_format.replace('E', '@')
+}
+
+date_format = date_format.toLowerCase();
+console.log('original: ' + date_format_original);
+
+// determine no. of y, m, d needed
+n_y = date_format.split('y').length - 1;
+n_m = date_format.split('m').length - 1;
+n_d = date_format.split('d').length - 1;
+n_w = date_format.split('w').length - 1;
+
+if (n_y == 0) {n_y = 1};
+if (n_m == 0) {n_m = 1};
+if (n_d == 0) {n_d = 1};
+if (n_w == 0) {n_w = 1};
+
+y_char = "y".repeat(n_y);
+m_char = "m".repeat(n_m);
+d_char = "d".repeat(n_d);
+w_char = "w".repeat(n_w);
+
+// format date according to user specification (e.g., yy, m, d)
+yyyy = yyyy.slice(4-n_y, 4);
+if (mm.length == 1) {mm = mm.padStart(2, '0').slice(2-n_m, 2)};
+if (dd.length == 1) {dd = dd.padStart(2, '0').slice(2-n_d, 2)};
+if (ww.length == 1) {ww = ww.padStart(2, '0').slice(2-n_w, 2)};
+
+date_format = date_format.replace(y_char, yyyy);
+date_format = date_format.replace(m_char, mm);
+date_format = date_format.replace(d_char, dd);
+date_format = date_format.replace(w_char, ww);
+
+// convert to MMM or MMMM
+if (m_char == 'mmmm') {
+    date_format = date_format.replace(mm, months[Number(mm)-1])
+}
+if (m_char == 'mmm') {
+    date_format = date_format.replace(mm, months_short[Number(mm)-1])
+}
+
+// day of week if requested
+if (date_format.includes('zzzz')) {
+    date_format = date_format.replace('zzzz', day_string)
+}
+if (date_format.includes('zzz')) {
+    date_format = date_format.replace('zzz', day_string_short)
+}
+// e is day of week (0, 1, ... 7)
+if (date_format_original.includes('e')) {
+    date_format = date_format.replace('!', days_e[day].toString())
+} 
+if (date_format_original.includes('E')) {
+    date_format = date_format.replace('@', days_E[day].toString())
+}
+
+p = encodeURIComponent(v) + "&amp;file=" + date_format + ".md";
+uri = "obsidian://open?vault=" + p;
+
+// create new daily note if it doesn't exist
+if (fulldir_daily != "") {
+	// format file path
+	if (fulldir_daily[(fulldir_daily.length-1)] != "/") {fulldir_daily += "/"}
+	filepath = fulldir_daily + date_format + ".md"
+
+	// get template content
+	var template_txt = ""
+	if (fullpath_template != "") {
+		template_txt = app.read(Path(fullpath_template))
+	}
+
+	// create note with template (if exists)
+	var path = Path(filepath)
+	var finderApp = Application("Finder")
+	if (!finderApp.exists(path)) {
+		console.log("Note doesn't exist. Creating note.")
+		var openedFile = app.openForAccess(path, {writePermission: true})
+		app.write(template_txt, { to: openedFile, startingAt: app.getEof(openedFile) })
+		app.closeAccess(openedFile)
+		uri = "obsidian://open?path=" + encodeURIComponent(filepath)
+		// wait a bit for note to show up in file system
+		delay(1)
+	}
+} 
+
+
+if (v == "" | date_format == "2111") {
+	app.displayDialog("Set up the workflow first")
+} else {
+    // open file in vault
+    app.openLocation(uri);
+    console.log(uri);
+}
+
+
+// save today note path
+Application('com.runningwithcrayons.Alfred').setConfiguration("dailytodaypath", {
+    toValue: filepath,
+    exportable: false,
+    inWorkflow: $.getenv('alfred_workflow_bundleid'),
+});</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>7</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>360748C4-EF05-4FC2-8AB9-E4A969D2D256</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>obs</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Open Obsidian</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>A60FCD19-F3A3-4B26-BDB2-52D548E38686</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>otmr</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Open tomorrow's Obsidian Daily Note</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>F118473C-D1EF-472F-A1F6-CC9A8C65ABF2</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>2</integer>
+				<key>hotmod</key>
+				<integer>393216</integer>
+				<key>hotstring</key>
+				<string>D</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>76C3031F-7B85-45C6-9D05-DF5802BBC167</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://publish.obsidian.md/help/Index</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>9F656256-DD01-4508-BF9F-CDB3168DB9B6</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>ov</string>
+				<key>subtext</key>
+				<string>Available vaults: obsidian help</string>
+				<key>text</key>
+				<string>Open Obsidian {query} Vault</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>29B3A4DB-80CD-498F-A079-18F1CA7DD20C</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string>// NOTE electron bug (if app isn't already opened, it will always open the last opened vault.
+// https://discordapp.com/channels/686053708261228577/716028884885307432/755203478413902036
+
+console.log('Running script - on')
+
+// get the current app to access the standard additions
+app = Application.currentApplication();
+app.includeStandardAdditions = true;
+
+// get vault name
+v="{query}";
+
+// construct uri
+uri = "obsidian://open?vault=" + encodeURIComponent(v);
+
+// open
+app.openLocation(uri);
+console.log(uri);</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>7</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>0796CFDE-8B84-4EAD-A82D-6558AF6C4D42</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<true/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>keyword</key>
+				<string>on</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Specify which vault to create a new note in</string>
+				<key>script</key>
+				<string>ObjC.import('stdlib');
+console.log('Running script')
+
+// get all vaults
+var vaults = []
+var vaultpaths = []  // keep track of vaultpaths to prevent duplicating
+try {
+    for (i = 2; i &lt; 100; i++) {
+        var vidx = 'vault' + i.toString()
+        var vpath = $.getenv(vidx)
+        var vname = $.getenv(vidx + 'name')
+	    if (vname == "") {
+            throw "catch"
+        }
+	    if (!vaultpaths.includes(vpath)) {  // include/list vault only if it doesn't exist yet
+            vaults.push({title: vname, arg: vname, subtitle: vpath, uid: vpath})
+            vaultpaths.push(vpath)
+        }
+    } 
+} catch {
+	console.log('Found ' + (i-1).toString() + ' vaults')
+}
+
+// list vaults 
+JSON.stringify({items: vaults})</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Specify which vault to create a new note in</string>
+				<key>title</key>
+				<string>Create new note in a vault</string>
+				<key>type</key>
+				<integer>7</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>854EB1EE-9017-4F43-BC80-BAF317FC5315</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>subtext</key>
+				<string>{query}.md (default: {var:fname_default})</string>
+				<key>text</key>
+				<string>New note title?</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>8B221971-0089-4DAC-A056-EC2C961C6EAB</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string>/* cSpell:disable */
+
+ObjC.import('stdlib');
+console.log('Running script - on')
+
+// get the current app to access the standard additions
+app = Application.currentApplication();
+app.includeStandardAdditions = true;
+
+var v = $.getenv('vault');
+var fname = $.getenv('fname');
+
+function interpolate_homepath(path) {
+  homepath = app.pathTo('home folder')
+  return path.replace(/^~/, homepath)
+}
+
+if (fname == "") {  // use default title
+    fname = $.getenv('fname_default')
+}
+
+console.log(v)
+console.log(fname)
+
+// get vault path
+for (i = 2; i &lt; 1000; i++) {
+    var vidx = 'vault' + i.toString() + 'name'
+    var temp = $.getenv(vidx)  // throws error if variable doesn't exist
+    console.log(temp)
+    if (temp == v) {
+        var vpath = $.getenv('vault' + i.toString())
+	    vpath = interpolate_homepath(vpath)
+        console.log('vpath: ' + vpath)
+        break
+    }
+}
+
+var filepath = vpath + "/" + fname + ".md";
+console.log("filepath: " + filepath)
+
+// create file
+var path = Path(filepath)
+var finderApp = Application("Finder")
+if (!finderApp.exists(path)) {
+    console.log("Note doesn't exist. Creating note.")
+    var openedFile = app.openForAccess(path, {writePermission: true})
+    app.write("", { to: openedFile, startingAt: app.getEof(openedFile) })
+    app.closeAccess(openedFile)
+    delay(1)
+}
+
+// open file
+// construct uri
+uri = "obsidian://open?vault=" + encodeURIComponent(v) + "&amp;file=" + encodeURIComponent(fname);
+
+// open file in vault
+app.openLocation(uri);
+console.log(uri);
+
+delay(3.0);  // temporary fix for Electron bug (open note twice)
+app.openLocation(uri);</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>7</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>3CF13837-2DBB-46AA-93B4-6CA9598A106E</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>fname</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>3BD1A5BF-C96B-4C33-B2A6-2EEB18C41B62</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>fname_default</key>
+					<string>{date:yyyyMMdd_HHmmss}</string>
+					<key>vault</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>2EEFE48E-B0E2-406A-BCA9-930F5969A364</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<true/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>keyword</key>
+				<string>oo</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>ObjC.import('stdlib');
+console.log('Running script')
+
+// get all vaults
+var vaults = []
+var vaultpaths = []  // keep track of vaultpaths to prevent duplicating
+try {
+    for (i = 1; i &lt; 100; i++) {
+        var vidx = 'vault' + i.toString()
+        var vpath = $.getenv(vidx)
+        var vname = $.getenv(vidx + 'name')
+	    if (vname == "") {
+            throw "catch"
+        }
+	    if (!vaultpaths.includes(vpath)) {  // include/list vault only if it doesn't exist yet
+            vaults.push({title: vname, arg: vname, subtitle: vpath, uid: vpath})
+            vaultpaths.push(vpath)
+        }
+    } 
+} catch {
+	console.log('Found ' + (i-1).toString() + ' vaults')
+}
+
+// list vaults 
+JSON.stringify({items: vaults})</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Type something to autcomplete or space to list vaults</string>
+				<key>title</key>
+				<string>Which vault to open?</string>
+				<key>type</key>
+				<integer>7</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>54B8D923-3C08-4CD2-8F05-0AF628F5C029</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>ObjC.import('stdlib');
+console.log('Running script - fallback search')
+
+// get the current app to access the standard additions
+app = Application.currentApplication();
+app.includeStandardAdditions = true;
+
+var v = $.getenv('vault');
+var fname = $.getenv('fname');
+
+// construct uri
+uri = "obsidian://search?vault=" + encodeURIComponent(v) + "&amp;query=" + encodeURIComponent(fname);
+
+// search in vault
+app.openLocation(uri);
+console.log(uri);</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>7</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>DE762236-EFCC-45D3-85CA-A1B6B191762C</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>text</key>
+				<string>Search Obsidian for {query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.fallback</string>
+			<key>uid</key>
+			<string>1BD03BB0-06B9-47F5-9346-7A829C38B248</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<true/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>ObjC.import('stdlib');
+console.log('Running script - retrieve vaults')
+
+// get all vaults
+var vaults = []
+var vaultpaths = []  // keep track of vaultpaths to prevent duplicating
+try {
+    for (i = 2; i &lt; 100; i++) {
+        var vidx = 'vault' + i.toString()
+        var vpath = $.getenv(vidx)
+        var vname = $.getenv(vidx + 'name')
+	    if (vname == "") {
+            throw "catch"
+        }
+	    if (!vaultpaths.includes(vpath)) {  // include/list vault only if it doesn't exist yet
+            vaults.push({title: vname, arg: vname, subtitle: vpath, uid: vpath})
+            vaultpaths.push(vpath)
+        }
+    } 
+} catch {
+	console.log('Found ' + (i-1).toString() + ' vaults')
+}
+
+// list vaults 
+JSON.stringify({items: vaults})</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Type something to autcomplete or space to list vaults</string>
+				<key>title</key>
+				<string>Which vault to search in?</string>
+				<key>type</key>
+				<integer>7</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>CD6980A3-E50D-4689-B8D6-1A677CDE1914</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>vault</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>6F34BFA1-14F5-49E9-B25D-417D71A29AD4</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>fname</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>86967BF2-99A7-43FB-A22A-7AC2F9A8C34C</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>oss</string>
+				<key>subtext</key>
+				<string>Press enter to continue</string>
+				<key>text</key>
+				<string>Search within vaults</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>44D69DBA-085D-4208-86A1-CED1CA068AB3</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>anchorfields</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>daterange</key>
+				<integer>0</integer>
+				<key>fields</key>
+				<array>
+					<dict>
+						<key>field</key>
+						<string>kMDItemDisplayName</string>
+						<key>not</key>
+						<false/>
+						<key>split</key>
+						<true/>
+						<key>value</key>
+						<string>{query}</string>
+						<key>words</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>field</key>
+						<string>kMDItemFinderComment</string>
+						<key>not</key>
+						<false/>
+						<key>split</key>
+						<true/>
+						<key>value</key>
+						<string>{query}</string>
+						<key>words</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>field</key>
+						<string>kMDItemTextContent</string>
+						<key>not</key>
+						<false/>
+						<key>split</key>
+						<true/>
+						<key>value</key>
+						<string>{query}</string>
+						<key>words</key>
+						<true/>
+					</dict>
+				</array>
+				<key>includesystem</key>
+				<false/>
+				<key>keyword</key>
+				<string>oaddvault</string>
+				<key>limit</key>
+				<integer>0</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>scopes</key>
+				<array/>
+				<key>sortmode</key>
+				<integer>0</integer>
+				<key>subtext</key>
+				<string>Type to search</string>
+				<key>title</key>
+				<string>Add an Obsidian vault</string>
+				<key>types</key>
+				<array>
+					<string>public.folder</string>
+				</array>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.filefilter</string>
+			<key>uid</key>
+			<string>3F7FA866-52E3-46A9-84EE-80A4D3244647</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>ObjC.import('stdlib');
+
+console.log('Running script')
+
+// get vault name from path
+var path = '{query}'
+var idx = path.lastIndexOf("/")
+var vaultname = path.substring(idx+1)
+var vaultpaths = []  // keep track of vaultpaths to prevent duplicating
+
+try { // loop through existing vault variables
+    for (i = 1; i &lt; 1000; i++) {
+        var vidx = 'vault' + i.toString()
+        var temp = $.getenv(vidx)  // throws error if variable doesn't exist
+        if (temp == "") {  // throws error if variable exists but doesn't have value
+            throw "catch"
+        } else {
+            vaultpaths.push(temp)
+        }
+    } 
+} catch {  // create new variable if doesn't exist
+
+	if (!vaultpaths.includes(path)) {  // add vault variable only vault hasn't been added
+   	    // store vault path
+        console.log('Assigned ' + vaultname + ' to ' + vidx)
+        Application('com.runningwithcrayons.Alfred').setConfiguration(vidx, {
+            toValue: path,
+            exportable: false,
+            inWorkflow: $.getenv('alfred_workflow_bundleid'),
+        });
+
+	    // store vault name
+        Application('com.runningwithcrayons.Alfred').setConfiguration(vidx + "name", {
+            toValue: vaultname,
+            exportable: false,
+            inWorkflow: $.getenv('alfred_workflow_bundleid'),
+        });
+    }
+
+}</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>7</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>A70B656D-CA4C-41F9-99E3-988FB6158F5F</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>ObjC.import('stdlib');
+console.log('Running script')
+
+// get all vaults
+var vaults = []
+var vaultpaths = []  // keep track of vaultpaths to prevent duplicating
+try {
+    for (i = 2; i &lt; 100; i++) {
+        var vidx = 'vault' + i.toString()
+        var vpath = $.getenv(vidx)
+        var vname = $.getenv(vidx + 'name')
+	    if (vname == "") {
+            throw "catch"
+        }
+	    if (!vaultpaths.includes(vpath)) {  // include/list vault only if it doesn't exist yet
+            vaults.push({title: vname, arg: vname, subtitle: vpath, uid: vpath})
+            vaultpaths.push(vpath)
+        }
+    } 
+} catch {
+	console.log('Found ' + (i-1).toString() + ' vaults')
+}
+
+
+// create json object to pass to next object
+var jsonobj = {
+  "alfredworkflow" : {
+    "arg" : "{query}",
+    "config" : {
+      "scopes" : vaultpaths,
+    }
+  }
+}
+
+// pass to next object in workflow
+JSON.stringify(jsonobj)</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>7</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>46732892-62E0-47CE-B727-EBA967105197</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>anchorfields</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>daterange</key>
+				<integer>0</integer>
+				<key>fields</key>
+				<array>
+					<dict>
+						<key>field</key>
+						<string>kMDItemDisplayName</string>
+						<key>not</key>
+						<false/>
+						<key>split</key>
+						<true/>
+						<key>value</key>
+						<string>{query}</string>
+						<key>words</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>field</key>
+						<string>kMDItemFinderComment</string>
+						<key>not</key>
+						<false/>
+						<key>split</key>
+						<true/>
+						<key>value</key>
+						<string>{query}</string>
+						<key>words</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>field</key>
+						<string>kMDItemTextContent</string>
+						<key>not</key>
+						<false/>
+						<key>split</key>
+						<true/>
+						<key>value</key>
+						<string>{query}</string>
+						<key>words</key>
+						<true/>
+					</dict>
+				</array>
+				<key>includesystem</key>
+				<false/>
+				<key>keyword</key>
+				<string>os</string>
+				<key>limit</key>
+				<integer>0</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>scopes</key>
+				<array/>
+				<key>sortmode</key>
+				<integer>0</integer>
+				<key>subtext</key>
+				<string>Search for {query}</string>
+				<key>title</key>
+				<string>Search markdown files</string>
+				<key>types</key>
+				<array>
+					<string>net.daringfireball.markdown</string>
+					<string>net.ia.markdown</string>
+					<string>public.plain-text</string>
+				</array>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.filefilter</string>
+			<key>uid</key>
+			<string>2CC3DBA2-EDA4-4548-A215-611A436E43DB</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>0</integer>
+				<key>hotmod</key>
+				<integer>0</integer>
+				<key>hotstring</key>
+				<string></string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>9295060C-B513-4806-8F12-52EC6D30C9A3</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>ObjC.import('stdlib');
+
+console.log('Running script')
+
+// get vault name from path
+var path = '{query}'
+var idx = path.lastIndexOf("/")
+var vaultname = path.substring(idx+1)
+
+Application('com.runningwithcrayons.Alfred').setConfiguration("dailyvault", {
+    toValue: path,
+    exportable: false,
+    inWorkflow: $.getenv('alfred_workflow_bundleid'),
+});
+
+Application('com.runningwithcrayons.Alfred').setConfiguration("dailyvaultname", {
+    toValue: vaultname,
+    exportable: false,
+    inWorkflow: $.getenv('alfred_workflow_bundleid'),
+});</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>7</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>E6955BE2-FEB7-470D-92BE-03EDF6C498FB</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>anchorfields</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>daterange</key>
+				<integer>0</integer>
+				<key>fields</key>
+				<array>
+					<dict>
+						<key>field</key>
+						<string>kMDItemDisplayName</string>
+						<key>not</key>
+						<false/>
+						<key>split</key>
+						<true/>
+						<key>value</key>
+						<string>{query}</string>
+						<key>words</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>field</key>
+						<string>kMDItemFinderComment</string>
+						<key>not</key>
+						<false/>
+						<key>split</key>
+						<true/>
+						<key>value</key>
+						<string>{query}</string>
+						<key>words</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>field</key>
+						<string>kMDItemTextContent</string>
+						<key>not</key>
+						<false/>
+						<key>split</key>
+						<true/>
+						<key>value</key>
+						<string>{query}</string>
+						<key>words</key>
+						<true/>
+					</dict>
+				</array>
+				<key>includesystem</key>
+				<false/>
+				<key>keyword</key>
+				<string>odailyvault</string>
+				<key>limit</key>
+				<integer>0</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>scopes</key>
+				<array/>
+				<key>sortmode</key>
+				<integer>0</integer>
+				<key>subtext</key>
+				<string>Type to search (current: {var:dailyvaultname})</string>
+				<key>title</key>
+				<string>Specify daily note vault</string>
+				<key>types</key>
+				<array>
+					<string>public.folder</string>
+				</array>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.filefilter</string>
+			<key>uid</key>
+			<string>ADAB8847-A309-4A02-9D42-E8D30C47BC5D</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>orr</string>
+				<key>subtext</key>
+				<string>Press enter to continue</string>
+				<key>text</key>
+				<string>Search within vaults (modified last 3 days)</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>403F9FD9-33F0-42FC-8E20-FEC2C821B083</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>odailyformat</string>
+				<key>subtext</key>
+				<string>Examples: yyyy-mm-dd, mddyyyy, dd_MMM_yyyy (current: {var:dailyformat})</string>
+				<key>text</key>
+				<string>Specify daily note format: {query}</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>5DE0CED7-F7E2-4A3F-B3A2-53FF23C8C6D3</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>ObjC.import('stdlib');
+
+console.log('Running script')
+
+Application('com.runningwithcrayons.Alfred').setConfiguration("dailyformat", {
+    toValue: "{query}",
+    exportable: false,
+    inWorkflow: $.getenv('alfred_workflow_bundleid'),
+});</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>7</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>D79944EC-E799-4CC4-9961-A6EBF5D6FBDC</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string>/* cSpell:disable */
+ObjC.import('stdlib');
+console.log('Running script - search')
+
+// absolute file path to file
+p="{query}";
+
+// construct uri
+uri = "obsidian://open?path=" + encodeURIComponent(p);
+console.log(uri)
+
+// get the current app to access the standard additions
+app = Application.currentApplication();
+app.includeStandardAdditions = true;
+
+// open file in vault
+// app.openLocation(uri);
+console.log(p);
+
+
+
+function interpolate_homepath(path) {
+  homepath = app.pathTo('home folder')
+  return path.replace(/^~/, homepath)
+}
+
+
+
+// check if file path contains vault names; if not, append "file://" to it to open in default app
+// get all vaults
+var vaultpaths = []  // keep track of vaultpaths to prevent duplicating
+try {
+    for (i = 2; i &lt; 100; i++) {
+        var vidx = 'vault' + i.toString()
+        var vpath = $.getenv(vidx)
+	    vpath = interpolate_homepath(vpath);
+
+        var vname = $.getenv(vidx + 'name')
+	    if (vname == "") {
+            throw "catch"
+        }
+	    if (!vaultpaths.includes(vpath)) {  // include/list vault only if it doesn't exist yet
+            vaultpaths.push(vpath)
+        }
+    } 
+} catch {
+	console.log('Found ' + (i-1).toString() + ' vaults')
+}
+
+console.log(vaultpaths)
+
+var invault = 0
+for (i=0; i&lt;vaultpaths.length; i++) {
+    if (p.indexOf(vaultpaths[i]) &gt;= 0) {
+		invault = 1
+	}
+}
+
+if (invault == 0) {
+    uri = uri.replace("obsidian://open?path=", "file:///")
+}
+
+app.openLocation(uri);
+console.log(uri);
+delay(3.0);  // temporary fix for Electron bug (open note twice)
+app.openLocation(uri);</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>7</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>70AEEB77-35DB-44B9-B633-BE1D2B43D581</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>ObjC.import('stdlib');
+console.log('Running script')
+
+// get all vaults
+var vaults = []
+var vaultpaths = []  // keep track of vaultpaths to prevent duplicating
+try {
+    for (i = 2; i &lt; 100; i++) {
+        var vidx = 'vault' + i.toString()
+        var vpath = $.getenv(vidx)
+        var vname = $.getenv(vidx + 'name')
+	    if (vname == "") {
+            throw "catch"
+        }
+	    if (!vaultpaths.includes(vpath)) {  // include/list vault only if it doesn't exist yet
+            vaults.push({title: vname, arg: vname, subtitle: vpath, uid: vpath})
+            vaultpaths.push(vpath)
+        }
+    } 
+} catch {
+	console.log('Found ' + (i-1).toString() + ' vaults')
+}
+
+
+// create json object to pass to next object
+var jsonobj = {
+  "alfredworkflow" : {
+    "arg" : "{query}",
+    "config" : {
+      "scopes" : vaultpaths,
+    }
+  }
+}
+
+// pass to next object in workflow
+JSON.stringify(jsonobj)</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>7</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>249B0782-BFFB-4382-A857-5058D7C3D244</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>anchorfields</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>daterange</key>
+				<integer>2</integer>
+				<key>fields</key>
+				<array>
+					<dict>
+						<key>field</key>
+						<string>kMDItemDisplayName</string>
+						<key>not</key>
+						<false/>
+						<key>split</key>
+						<true/>
+						<key>value</key>
+						<string>{query}</string>
+						<key>words</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>field</key>
+						<string>kMDItemFinderComment</string>
+						<key>not</key>
+						<false/>
+						<key>split</key>
+						<true/>
+						<key>value</key>
+						<string>{query}</string>
+						<key>words</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>field</key>
+						<string>kMDItemTextContent</string>
+						<key>not</key>
+						<false/>
+						<key>split</key>
+						<true/>
+						<key>value</key>
+						<string>{query}</string>
+						<key>words</key>
+						<true/>
+					</dict>
+				</array>
+				<key>includesystem</key>
+				<false/>
+				<key>keyword</key>
+				<string>or</string>
+				<key>limit</key>
+				<integer>0</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>scopes</key>
+				<array/>
+				<key>sortmode</key>
+				<integer>0</integer>
+				<key>subtext</key>
+				<string>Search for {query}</string>
+				<key>title</key>
+				<string>Search markdown files (modified last 3 days)</string>
+				<key>types</key>
+				<array>
+					<string>net.daringfireball.markdown</string>
+					<string>net.ia.markdown</string>
+					<string>public.plain-text</string>
+				</array>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.filefilter</string>
+			<key>uid</key>
+			<string>5ADBB309-EC74-453A-B7F5-9E34E2CDB7E3</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>0</integer>
+				<key>hotmod</key>
+				<integer>0</integer>
+				<key>hotstring</key>
+				<string></string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>CEC4065E-BADA-44B7-A255-4A9D613685E2</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>anchorfields</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>daterange</key>
+				<integer>0</integer>
+				<key>fields</key>
+				<array>
+					<dict>
+						<key>field</key>
+						<string>kMDItemDisplayName</string>
+						<key>not</key>
+						<false/>
+						<key>split</key>
+						<true/>
+						<key>value</key>
+						<string>{query}</string>
+						<key>words</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>field</key>
+						<string>kMDItemFinderComment</string>
+						<key>not</key>
+						<false/>
+						<key>split</key>
+						<true/>
+						<key>value</key>
+						<string>{query}</string>
+						<key>words</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>field</key>
+						<string>kMDItemTextContent</string>
+						<key>not</key>
+						<false/>
+						<key>split</key>
+						<true/>
+						<key>value</key>
+						<string>{query}</string>
+						<key>words</key>
+						<true/>
+					</dict>
+				</array>
+				<key>includesystem</key>
+				<false/>
+				<key>keyword</key>
+				<string>odailytemplate</string>
+				<key>limit</key>
+				<integer>0</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>scopes</key>
+				<array/>
+				<key>sortmode</key>
+				<integer>0</integer>
+				<key>subtext</key>
+				<string>Type to search (current: {var:dailytempabspath})</string>
+				<key>title</key>
+				<string>Specify daily note template</string>
+				<key>types</key>
+				<array/>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.filefilter</string>
+			<key>uid</key>
+			<string>F565051F-71D8-42F7-A733-5DA9F39AAEA2</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>ObjC.import('stdlib');
+
+console.log('Running script')
+
+Application('com.runningwithcrayons.Alfred').setConfiguration("dailytempabspath", {
+    toValue: "{query}",
+    exportable: false,
+    inWorkflow: $.getenv('alfred_workflow_bundleid'),
+});</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>7</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>F8C5232B-3EDC-4388-851E-BFE6602C88D0</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>ott</string>
+				<key>subtext</key>
+				<string>Press enter to continue</string>
+				<key>text</key>
+				<string>Search within vaults (modified today)</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>FFD4328D-FE08-4222-8AA1-FD71A1DC33F9</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>ObjC.import('stdlib');
+
+console.log('Running script')
+
+Application('com.runningwithcrayons.Alfred').setConfiguration("dailyabspath", {
+    toValue: "{query}",
+    exportable: false,
+    inWorkflow: $.getenv('alfred_workflow_bundleid'),
+});</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>7</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>72CFFBA4-02FC-4875-BB2C-562FCF5E43BC</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>anchorfields</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>daterange</key>
+				<integer>0</integer>
+				<key>fields</key>
+				<array>
+					<dict>
+						<key>field</key>
+						<string>kMDItemDisplayName</string>
+						<key>not</key>
+						<false/>
+						<key>split</key>
+						<true/>
+						<key>value</key>
+						<string>{query}</string>
+						<key>words</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>field</key>
+						<string>kMDItemFinderComment</string>
+						<key>not</key>
+						<false/>
+						<key>split</key>
+						<true/>
+						<key>value</key>
+						<string>{query}</string>
+						<key>words</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>field</key>
+						<string>kMDItemTextContent</string>
+						<key>not</key>
+						<false/>
+						<key>split</key>
+						<true/>
+						<key>value</key>
+						<string>{query}</string>
+						<key>words</key>
+						<true/>
+					</dict>
+				</array>
+				<key>includesystem</key>
+				<false/>
+				<key>keyword</key>
+				<string>odailypath</string>
+				<key>limit</key>
+				<integer>0</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>scopes</key>
+				<array/>
+				<key>sortmode</key>
+				<integer>0</integer>
+				<key>subtext</key>
+				<string>Type to search (current: {var:dailyabspath})</string>
+				<key>title</key>
+				<string>Specify daily note directory</string>
+				<key>types</key>
+				<array>
+					<string>public.folder</string>
+				</array>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.filefilter</string>
+			<key>uid</key>
+			<string>8C017EEF-38DD-4148-9291-9302EFCE33DE</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>anchorfields</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>daterange</key>
+				<integer>1</integer>
+				<key>fields</key>
+				<array>
+					<dict>
+						<key>field</key>
+						<string>kMDItemDisplayName</string>
+						<key>not</key>
+						<false/>
+						<key>split</key>
+						<true/>
+						<key>value</key>
+						<string>{query}</string>
+						<key>words</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>field</key>
+						<string>kMDItemFinderComment</string>
+						<key>not</key>
+						<false/>
+						<key>split</key>
+						<true/>
+						<key>value</key>
+						<string>{query}</string>
+						<key>words</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>field</key>
+						<string>kMDItemTextContent</string>
+						<key>not</key>
+						<false/>
+						<key>split</key>
+						<true/>
+						<key>value</key>
+						<string>{query}</string>
+						<key>words</key>
+						<true/>
+					</dict>
+				</array>
+				<key>includesystem</key>
+				<false/>
+				<key>keyword</key>
+				<string>ot</string>
+				<key>limit</key>
+				<integer>0</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>scopes</key>
+				<array/>
+				<key>sortmode</key>
+				<integer>0</integer>
+				<key>subtext</key>
+				<string>Search for {query}</string>
+				<key>title</key>
+				<string>Search markdown files (modified today)</string>
+				<key>types</key>
+				<array>
+					<string>net.daringfireball.markdown</string>
+					<string>net.ia.markdown</string>
+					<string>public.plain-text</string>
+				</array>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.filefilter</string>
+			<key>uid</key>
+			<string>C016E20E-3F44-4372-90DC-1B00DA8C07F8</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>ObjC.import('stdlib');
+console.log('Running script')
+
+// get all vaults
+var vaults = []
+var vaultpaths = []  // keep track of vaultpaths to prevent duplicating
+try {
+    for (i = 2; i &lt; 100; i++) {
+        var vidx = 'vault' + i.toString()
+        var vpath = $.getenv(vidx)
+        var vname = $.getenv(vidx + 'name')
+	    if (vname == "") {
+            throw "catch"
+        }
+	    if (!vaultpaths.includes(vpath)) {  // include/list vault only if it doesn't exist yet
+            vaults.push({title: vname, arg: vname, subtitle: vpath, uid: vpath})
+            vaultpaths.push(vpath)
+        }
+    } 
+} catch {
+	console.log('Found ' + (i-1).toString() + ' vaults')
+}
+
+
+// create json object to pass to next object
+var jsonobj = {
+  "alfredworkflow" : {
+    "arg" : "{query}",
+    "config" : {
+      "scopes" : vaultpaths,
+    }
+  }
+}
+
+// pass to next object in workflow
+JSON.stringify(jsonobj)</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>7</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>6FF78F6F-9167-45D0-B022-7BE55106848C</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>0</integer>
+				<key>hotmod</key>
+				<integer>0</integer>
+				<key>hotstring</key>
+				<string></string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>3DF54CDE-9D13-4486-B7EC-7921A46C8AE2</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>oclearvaults</string>
+				<key>subtext</key>
+				<string>Clears all but Obsidian help vault</string>
+				<key>text</key>
+				<string>Clear all vaults</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>834BB1A9-B643-4448-97B4-B6B6582602CB</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>ObjC.import('stdlib');
+
+console.log('Running script')
+
+try { // loop through existing vault variables
+    for (i = 2; i &lt; 100; i++) {
+	    var vidx = 'vault' + i.toString()
+        Application('com.runningwithcrayons.Alfred').removeConfiguration(vidx, {
+            inWorkflow: $.getenv('alfred_workflow_bundleid'),
+        });
+        Application('com.runningwithcrayons.Alfred').removeConfiguration(vidx + 'name', {
+            inWorkflow: $.getenv('alfred_workflow_bundleid'),
+        });
+    } 
+} catch {  
+    console.log("Removed " + (i-1).toString() + " variables");
+}</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>7</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>2754DF89-417E-46D0-A435-3ED58F2CB8CF</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>ObjC.import('stdlib');
+console.log('Running script')
+
+var remove_vault = '{query}';
+console.log(remove_vault)
+
+try { // loop through existing vault variables
+    for (i = 2; i &lt; 100; i++) {
+        var vidx = 'vault' + i.toString()
+        vname = $.getenv(vidx + 'name')
+        if (vname == remove_vault) {
+            console.log("Found vault. Clearing it.")
+            Application('com.runningwithcrayons.Alfred').removeConfiguration(vidx, {
+                inWorkflow: $.getenv('alfred_workflow_bundleid'),
+            });
+            Application('com.runningwithcrayons.Alfred').removeConfiguration(vidx + 'name', {
+                inWorkflow: $.getenv('alfred_workflow_bundleid'),
+            });
+            break
+        }
+    } 
+} catch { 
+    console.log("Vault not found.");
+}</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>7</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>67E25071-1FF8-4F8B-9A9F-2509093593B6</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<true/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>keyword</key>
+				<string>oclearvault</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>ObjC.import('stdlib');
+console.log('Running script')
+
+// get all vaults
+var vaults = []
+var vaultpaths = []  // keep track of vaultpaths to prevent duplicating
+try {
+    for (i = 2; i &lt; 100; i++) {
+        var vidx = 'vault' + i.toString()
+        var vpath = $.getenv(vidx)
+        var vname = $.getenv(vidx + 'name')
+	    if (vname == "") {
+            throw "catch"
+        }
+	    if (!vaultpaths.includes(vpath)) {  // include/list vault only if it doesn't exist yet
+            vaults.push({title: "Clear vault: " + vname, arg: vname, subtitle: vpath, uid: vpath})
+            vaultpaths.push(vpath)
+        }
+    } 
+} catch {
+	console.log('Found ' + (i-1).toString() + ' vaults')
+}
+
+// list vaults 
+JSON.stringify({items: vaults})</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Type something to autcomplete or space to list vaults</string>
+				<key>title</key>
+				<string>Clear one vault</string>
+				<key>type</key>
+				<integer>7</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>0F2ED3A2-F821-40B0-9915-C8E5E2D84A02</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>odailyheader</string>
+				<key>subtext</key>
+				<string>Examples: # Log, ## Inbox</string>
+				<key>text</key>
+				<string>Specify header to append to: {query}</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>0EEA412C-D42E-4C94-9C26-077C1CFEFF9D</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>ObjC.import('stdlib');
+
+console.log('Running script')
+
+Application('com.runningwithcrayons.Alfred').setConfiguration("dailyheader", {
+    toValue: "{query}",
+    exportable: false,
+    inWorkflow: $.getenv('alfred_workflow_bundleid'),
+});</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>7</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>E5FAA23D-08AB-47A3-A5C9-5211B9D677C4</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>oi</string>
+				<key>subtext</key>
+				<string>Append to the end of inbox note: {query}</string>
+				<key>text</key>
+				<string>Append text to an inbox note</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>6C92B3BB-C347-4EEE-AC10-2EC7E3381F2A</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>/* cSpell:disable */
+ObjC.import('stdlib');
+console.log('Running script: oi')
+
+// get the current app to access the standard additions
+app = Application.currentApplication();
+app.includeStandardAdditions = true;
+
+function interpolate_homepath(path) {
+  homepath = app.pathTo('home folder')
+  return path.replace(/^~/, homepath)
+}
+
+// get inbox note path
+var inbox_md = $.getenv('inbox_md');
+inbox_md = interpolate_homepath(inbox_md)
+
+// escape " 
+var query = "{query}";
+query = query.replaceAll('"', '\"');
+
+// split paragraphs into separate bullet points
+query = query.split("@NEWLISTITEM@")
+console.log("query: " + query)
+
+// function to read utf
+// https://github.com/JXA-Cookbook/JXA-Cookbook/issues/25
+ObjC.import('Foundation')
+const readFile = function (path, encoding) {
+    !encoding &amp;&amp; (encoding = $.NSUTF8StringEncoding)
+    const fm = $.NSFileManager.defaultManager
+    const data = fm.contentsAtPath(path)
+    const str = $.NSString.alloc.initWithDataEncoding(data, encoding)
+    return ObjC.unwrap(str)
+}
+
+// read file to append to it
+var filetext = readFile(inbox_md);
+
+// remove newline characters
+while (filetext.endsWith("\n")) {
+    filetext = filetext.slice(0, filetext.length - 1);
+}
+if (filetext == "") {
+    console.log("EMPTY NOTE!")
+} else {
+    filetext += "\n"; // leave one newline character
+}
+
+console.log("CURRENT TEXT (string)");
+console.log(filetext)
+
+// loop through each paragraph and append as separate bullet point
+var formatted_text = ''; 
+for (i = 0; i &lt; query.length; i++) {
+
+    var text2append = query[i];
+    
+    // parse string to remove extra spaces 
+    text2append = text2append.split(" ")
+    text2append = text2append.filter(i =&gt; i.length &gt; 0).join(" ")
+
+    // add bullet point
+    if (!query[i].startsWith("- ")) {
+        text2append = "- " + text2append;
+    }
+    if (text2append == "- ") {
+        continue;
+    }
+
+    if (!text2append.endsWith("\n")) {
+        text2append += "\n";
+    }
+    console.log("TEXT TO APPEND " + (i + 1));
+    console.log(text2append);
+    formatted_text += text2append;    
+}
+
+var final_text = filetext + formatted_text; 
+console.log("FINAL TEXT")
+console.log(final_text)
+
+// write file
+str2write = $.NSString.alloc.initWithUTF8String(final_text);
+str2write.writeToFileAtomicallyEncodingError(inbox_md, true, $.NSUTF8StringEncoding, null);
+
+// notification
+var oinotify = $.getenv('oinotify');
+if (oinotify == "on") {    
+    // https://developer.apple.com/library/archive/documentation/LanguagesUtilities/Conceptual/MacAutomationScriptingGuide/DisplayNotifications.html
+    app.displayNotification("Added text to inbox", { withTitle: 'Obsidian Alfred workfow' })
+}</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>7</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>CDEBE435-E442-4054-80BE-59ADD7EEA597</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>ObjC.import('stdlib');
+
+console.log('Running script')
+
+Application('com.runningwithcrayons.Alfred').setConfiguration("dailytodo", {
+    toValue: "{query}",
+    exportable: false,
+    inWorkflow: $.getenv('alfred_workflow_bundleid'),
+});</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>7</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>B1E46976-D5FD-41F9-AC39-C5F7D93F53E7</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>odailytodoheader</string>
+				<key>subtext</key>
+				<string>Examples: # To do, ## Tasks</string>
+				<key>text</key>
+				<string>Specify todo header to append to: {query}</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>65DEE317-811D-4787-87B4-3909B62061EA</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>matchmode</key>
+				<integer>0</integer>
+				<key>matchstring</key>
+				<string>
+</string>
+				<key>replacestring</key>
+				<string> @NEWLISTITEM@</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.replace</string>
+			<key>uid</key>
+			<string>39F0A80F-98F0-47BE-B519-26563D139E54</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>matchmode</key>
+				<integer>0</integer>
+				<key>matchstring</key>
+				<string>
+
+</string>
+				<key>replacestring</key>
+				<string>@NEWLISTITEM@</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.replace</string>
+			<key>uid</key>
+			<string>82B5116A-964C-4E76-AA72-45B844D83BEA</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>2</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>34</integer>
+				<key>hotmod</key>
+				<integer>1835008</integer>
+				<key>hotstring</key>
+				<string>I</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>A7CCBBCE-F078-4780-BF5C-42D9CE64D568</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>ObjC.import('stdlib');
+
+console.log('Running script')
+
+Application('com.runningwithcrayons.Alfred').setConfiguration("inbox_md", {
+    toValue: "{query}",
+    exportable: false,
+    inWorkflow: $.getenv('alfred_workflow_bundleid'),
+});</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>7</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>73853368-ED10-4729-A4D0-E231647C3CF4</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>anchorfields</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>daterange</key>
+				<integer>0</integer>
+				<key>fields</key>
+				<array>
+					<dict>
+						<key>field</key>
+						<string>kMDItemDisplayName</string>
+						<key>not</key>
+						<false/>
+						<key>split</key>
+						<true/>
+						<key>value</key>
+						<string>{query}</string>
+						<key>words</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>field</key>
+						<string>kMDItemFinderComment</string>
+						<key>not</key>
+						<false/>
+						<key>split</key>
+						<true/>
+						<key>value</key>
+						<string>{query}</string>
+						<key>words</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>field</key>
+						<string>kMDItemTextContent</string>
+						<key>not</key>
+						<false/>
+						<key>split</key>
+						<true/>
+						<key>value</key>
+						<string>{query}</string>
+						<key>words</key>
+						<true/>
+					</dict>
+				</array>
+				<key>includesystem</key>
+				<false/>
+				<key>keyword</key>
+				<string>oinbox</string>
+				<key>limit</key>
+				<integer>0</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>scopes</key>
+				<array/>
+				<key>sortmode</key>
+				<integer>0</integer>
+				<key>subtext</key>
+				<string>Type to search</string>
+				<key>title</key>
+				<string>Specify inbox markdown</string>
+				<key>types</key>
+				<array/>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.filefilter</string>
+			<key>uid</key>
+			<string>333B2B54-2894-418E-A8DE-522F8BB1F3E5</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>0</integer>
+				<key>hotmod</key>
+				<integer>0</integer>
+				<key>hotstring</key>
+				<string></string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>3B2DA9A3-761D-467C-BDD7-841584877816</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>ObjC.import('stdlib');
+console.log('Running script - oinotify')
+
+
+// get current setting
+var oinotify = $.getenv('oinotify');
+console.log('current value: ' + oinotify)
+
+var title_text = 'Toggle notification'
+
+// new value
+if (oinotify == 'on') {
+	oinotify = 'off'
+	var text = 'Disabled notifications'
+} else {
+	oinotify = 'on'
+	var text = 'Enabled notifications'
+}
+
+// change value
+Application('com.runningwithcrayons.Alfred').setConfiguration("oinotify", {
+    toValue: oinotify,
+    exportable: false,
+    inWorkflow: $.getenv('alfred_workflow_bundleid'),
+});
+console.log('new value: ' + oinotify)
+
+
+
+
+// get the current app to access the standard additions
+app = Application.currentApplication();
+app.includeStandardAdditions = true;
+app.displayNotification(text, {withTitle: title_text})</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>7</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>6290B8D5-ECEB-4623-848B-E5AB92089E79</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>oinotify</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Toggle notifications when adding text to inbox note.</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>2D878E69-78A2-499B-B7F1-BE3B30AD5C70</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>/* cSpell:disable */
+
+ObjC.import('stdlib');
+console.log('Running script: oii')
+
+const app = Application.currentApplication()
+app.includeStandardAdditions = true
+
+function interpolate_homepath(path) {
+  homepath = app.pathTo('home folder')
+  return path.replace(/^~/, homepath)
+}
+
+// get inbox note path
+var inbox_md = $.getenv('inbox_md');
+inbox_md = interpolate_homepath(inbox_md);
+console.log(inbox_md)
+
+uri = "obsidian://open?path=" + encodeURIComponent(inbox_md);
+console.log(uri)
+app.openLocation(uri);
+delay(3.0);  // temporary fix for Electron bug (open note twice)
+app.openLocation(uri);</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>7</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>2C31829D-621E-4707-B16D-5899AE7907FD</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>oii</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Open inbox note</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>08189677-1EA8-4DC2-9C09-DC2F2AF0866E</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>A workflow to open Obsidian vaults, daily note, and search for notes in vaults. Tested in Obsidian 0.11.4.
+
+===
+
+RELEASE NOTES
+
+Full documentation: https://github.com/hauselin/obsidian-alfred
+
+v0.3.1
+- Bug fix for paths with ~ @lastobelus #17 #24
+
+v0.3.0
+- oi now works with special characters. Rewritten oi script completely. #19 #21
+- New command oinotify to toggle notification on/off when adding text with oi. Defaults to on. #21
+- oii to open inbox note or specify a hotkey to open inbox note.
+- Temporary fix for Electron bug where notes don't open when Obsidian isn't already running in the background. #23
+
+v0.2.6
+- Added oi to append a list item/bullet point to a note. Use oinbox to specify the note to be used as inbox before using oi. You can also specify a hotkey to directly append clipboard contents as bullet ponitsto your inbox note. #19
+
+v0.2.5
+- Minor changes to allow ~ in environment variables. #17
+
+v0.2.4
+- Accepts W, w, E, e, dddd, ddd datetime format.
+- Open the last-opened vault with keyword obs or your hotkey.
+
+v0.2.3
+- Accepts MMM and MMMM datetime format.
+- Clear a single vault with oclearvault
+
+v0.2.2
+- Opens markdown files in your default editor if os/or/ot finds/tries to open a file that's not in your Obsidian vault.
+
+v0.2.1
+- Added otmr to create/open daily note for tomorrow.
+- os, or, ot no longer requires an extra step to list matching markdown files, but they will now list matching markdown files found *anywhere* and not just inside your vaults; if you want to search only within your vaults, use oss, orr, or ott instead.
+
+v0.2.0
+- Major and breaking changes.
+- Now requires a one-off initial setup to tell the workflow where/what you vaults are etc. Uses workflow environment variables, so your settings will be saved whenever you update/upgrade this workflow to a newer version.
+- Set up: oaddvault, odailyvault, odailyformat, odailypath, odailytemplate, oclearvaults
+- No longer requires users to manually edit any osascripts or settings within the workflow.
+- Fixes the issue of settings not preserving whenever you upgrade to a newer version of this workflow.
+- Create new note in vault with keyword on.
+
+v0.1.5
+- Add fallback search.
+- Daily note keyword (od) can create a new daily note that doesn't exist yet (optional feature). See step 3 in osascript.
+
+v0.1.4
+- Fix bug with daily note (od).
+
+v0.1.3
+- Now supports paths with special characters (thanks to @hjklapp).
+- Uses JXA actions/scripts instead of bash scripts (thanks to @hjklapp).
+
+v0.1.2
+- new keywords: oo
+
+v0.1.1
+- new keywords: ov, od, os, or, ot
+
+## Known bugs
+
+If the Obsidian app isn't already opened, this workflow will always open the last recently opened vault. This bug is a known issue with Electron apps on MacOS.</string>
+	<key>uidata</key>
+	<dict>
+		<key>001B3A3A-722E-440B-AA33-3589A525546C</key>
+		<dict>
+			<key>note</key>
+			<string>Set up: Specify path to Obsidian app. Open Obsidian app.</string>
+			<key>xpos</key>
+			<integer>305</integer>
+			<key>ypos</key>
+			<integer>80</integer>
+		</dict>
+		<key>0796CFDE-8B84-4EAD-A82D-6558AF6C4D42</key>
+		<dict>
+			<key>note</key>
+			<string>Open Obsidian vault.</string>
+			<key>xpos</key>
+			<integer>305</integer>
+			<key>ypos</key>
+			<integer>360</integer>
+		</dict>
+		<key>08189677-1EA8-4DC2-9C09-DC2F2AF0866E</key>
+		<dict>
+			<key>note</key>
+			<string>Open inbox note.</string>
+			<key>xpos</key>
+			<integer>600</integer>
+			<key>ypos</key>
+			<integer>2410</integer>
+		</dict>
+		<key>08A7509B-BDA4-455E-A628-38ABF42C04D7</key>
+		<dict>
+			<key>xpos</key>
+			<integer>765</integer>
+			<key>ypos</key>
+			<integer>45</integer>
+		</dict>
+		<key>0EEA412C-D42E-4C94-9C26-077C1CFEFF9D</key>
+		<dict>
+			<key>note</key>
+			<string>Set up: Specify header of daily note to append list items to.</string>
+			<key>xpos</key>
+			<integer>145</integer>
+			<key>ypos</key>
+			<integer>1700</integer>
+		</dict>
+		<key>0F2ED3A2-F821-40B0-9915-C8E5E2D84A02</key>
+		<dict>
+			<key>note</key>
+			<string>Set up: Clear a selected vault.</string>
+			<key>xpos</key>
+			<integer>150</integer>
+			<key>ypos</key>
+			<integer>1525</integer>
+		</dict>
+		<key>1BD03BB0-06B9-47F5-9346-7A829C38B248</key>
+		<dict>
+			<key>note</key>
+			<string>Invoked when you search for a keyword that doesn't match a result on your local.</string>
+			<key>xpos</key>
+			<integer>1575</integer>
+			<key>ypos</key>
+			<integer>470</integer>
+		</dict>
+		<key>249B0782-BFFB-4382-A857-5058D7C3D244</key>
+		<dict>
+			<key>note</key>
+			<string>Define scope based on vaults.</string>
+			<key>xpos</key>
+			<integer>840</integer>
+			<key>ypos</key>
+			<integer>930</integer>
+		</dict>
+		<key>2754DF89-417E-46D0-A435-3ED58F2CB8CF</key>
+		<dict>
+			<key>xpos</key>
+			<integer>320</integer>
+			<key>ypos</key>
+			<integer>1355</integer>
+		</dict>
+		<key>29B3A4DB-80CD-498F-A079-18F1CA7DD20C</key>
+		<dict>
+			<key>note</key>
+			<string>Edit subtext to remind yourself of your vault names.</string>
+			<key>xpos</key>
+			<integer>115</integer>
+			<key>ypos</key>
+			<integer>280</integer>
+		</dict>
+		<key>2C31829D-621E-4707-B16D-5899AE7907FD</key>
+		<dict>
+			<key>xpos</key>
+			<integer>835</integer>
+			<key>ypos</key>
+			<integer>2345</integer>
+		</dict>
+		<key>2CC3DBA2-EDA4-4548-A215-611A436E43DB</key>
+		<dict>
+			<key>note</key>
+			<string>os. Change settings here.</string>
+			<key>xpos</key>
+			<integer>1030</integer>
+			<key>ypos</key>
+			<integer>605</integer>
+		</dict>
+		<key>2D878E69-78A2-499B-B7F1-BE3B30AD5C70</key>
+		<dict>
+			<key>note</key>
+			<string>Set up: Turn on/off notifications when adding text to inbox  note.</string>
+			<key>xpos</key>
+			<integer>160</integer>
+			<key>ypos</key>
+			<integer>2270</integer>
+		</dict>
+		<key>2EEFE48E-B0E2-406A-BCA9-930F5969A364</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
+			<key>note</key>
+			<string>Store vault name in variable. Default title can be changed here.</string>
+			<key>xpos</key>
+			<integer>835</integer>
+			<key>ypos</key>
+			<integer>415</integer>
+		</dict>
+		<key>333B2B54-2894-418E-A8DE-522F8BB1F3E5</key>
+		<dict>
+			<key>note</key>
+			<string>Set up: Specify markdown file to use as inbox note.</string>
+			<key>xpos</key>
+			<integer>150</integer>
+			<key>ypos</key>
+			<integer>2075</integer>
+		</dict>
+		<key>353B5FD9-BF6A-4635-9AA1-313E16E86B05</key>
+		<dict>
+			<key>note</key>
+			<string>Obsidian help</string>
+			<key>xpos</key>
+			<integer>595</integer>
+			<key>ypos</key>
+			<integer>95</integer>
+		</dict>
+		<key>360748C4-EF05-4FC2-8AB9-E4A969D2D256</key>
+		<dict>
+			<key>xpos</key>
+			<integer>1655</integer>
+			<key>ypos</key>
+			<integer>130</integer>
+		</dict>
+		<key>39F0A80F-98F0-47BE-B519-26563D139E54</key>
+		<dict>
+			<key>note</key>
+			<string>replace newline</string>
+			<key>xpos</key>
+			<integer>920</integer>
+			<key>ypos</key>
+			<integer>1895</integer>
+		</dict>
+		<key>3B2DA9A3-761D-467C-BDD7-841584877816</key>
+		<dict>
+			<key>note</key>
+			<string>Set up: Specify hotkey to open inbox note.</string>
+			<key>xpos</key>
+			<integer>595</integer>
+			<key>ypos</key>
+			<integer>2225</integer>
+		</dict>
+		<key>3BD1A5BF-C96B-4C33-B2A6-2EEB18C41B62</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>6</integer>
+			<key>note</key>
+			<string>Store file name/title in variable.</string>
+			<key>xpos</key>
+			<integer>1095</integer>
+			<key>ypos</key>
+			<integer>415</integer>
+		</dict>
+		<key>3CF13837-2DBB-46AA-93B4-6CA9598A106E</key>
+		<dict>
+			<key>note</key>
+			<string>Open note in Obsidian.</string>
+			<key>xpos</key>
+			<integer>1180</integer>
+			<key>ypos</key>
+			<integer>385</integer>
+		</dict>
+		<key>3DF54CDE-9D13-4486-B7EC-7921A46C8AE2</key>
+		<dict>
+			<key>note</key>
+			<string>Define hotkey to search in vaults.</string>
+			<key>xpos</key>
+			<integer>635</integer>
+			<key>ypos</key>
+			<integer>1350</integer>
+		</dict>
+		<key>3E2AE83C-BAFA-4EB9-ADCB-0BB7989CF9E9</key>
+		<dict>
+			<key>xpos</key>
+			<integer>1185</integer>
+			<key>ypos</key>
+			<integer>105</integer>
+		</dict>
+		<key>3F7FA866-52E3-46A9-84EE-80A4D3244647</key>
+		<dict>
+			<key>note</key>
+			<string>Set up: Add a vault.</string>
+			<key>xpos</key>
+			<integer>145</integer>
+			<key>ypos</key>
+			<integer>585</integer>
+		</dict>
+		<key>403F9FD9-33F0-42FC-8E20-FEC2C821B083</key>
+		<dict>
+			<key>note</key>
+			<string>Search for recent files (default: last 3 days)</string>
+			<key>xpos</key>
+			<integer>645</integer>
+			<key>ypos</key>
+			<integer>860</integer>
+		</dict>
+		<key>44D69DBA-085D-4208-86A1-CED1CA068AB3</key>
+		<dict>
+			<key>note</key>
+			<string>Search for all files.</string>
+			<key>xpos</key>
+			<integer>640</integer>
+			<key>ypos</key>
+			<integer>570</integer>
+		</dict>
+		<key>46732892-62E0-47CE-B727-EBA967105197</key>
+		<dict>
+			<key>note</key>
+			<string>Define scope based on vaults.</string>
+			<key>xpos</key>
+			<integer>840</integer>
+			<key>ypos</key>
+			<integer>605</integer>
+		</dict>
+		<key>54B8D923-3C08-4CD2-8F05-0AF628F5C029</key>
+		<dict>
+			<key>xpos</key>
+			<integer>110</integer>
+			<key>ypos</key>
+			<integer>440</integer>
+		</dict>
+		<key>5ADBB309-EC74-453A-B7F5-9E34E2CDB7E3</key>
+		<dict>
+			<key>note</key>
+			<string>or. Change settings here.</string>
+			<key>xpos</key>
+			<integer>1025</integer>
+			<key>ypos</key>
+			<integer>930</integer>
+		</dict>
+		<key>5DE0CED7-F7E2-4A3F-B3A2-53FF23C8C6D3</key>
+		<dict>
+			<key>note</key>
+			<string>Set up: Specify daily note format.</string>
+			<key>xpos</key>
+			<integer>155</integer>
+			<key>ypos</key>
+			<integer>890</integer>
+		</dict>
+		<key>6290B8D5-ECEB-4623-848B-E5AB92089E79</key>
+		<dict>
+			<key>xpos</key>
+			<integer>360</integer>
+			<key>ypos</key>
+			<integer>2265</integer>
+		</dict>
+		<key>65DEE317-811D-4787-87B4-3909B62061EA</key>
+		<dict>
+			<key>note</key>
+			<string>Set up: Specify header of daily note to append todos to.</string>
+			<key>xpos</key>
+			<integer>155</integer>
+			<key>ypos</key>
+			<integer>1870</integer>
+		</dict>
+		<key>67E25071-1FF8-4F8B-9A9F-2509093593B6</key>
+		<dict>
+			<key>note</key>
+			<string>Clear vault.</string>
+			<key>xpos</key>
+			<integer>325</integer>
+			<key>ypos</key>
+			<integer>1520</integer>
+		</dict>
+		<key>6C92B3BB-C347-4EEE-AC10-2EC7E3381F2A</key>
+		<dict>
+			<key>note</key>
+			<string>Append text to an inbox note.</string>
+			<key>xpos</key>
+			<integer>610</integer>
+			<key>ypos</key>
+			<integer>1805</integer>
+		</dict>
+		<key>6F34BFA1-14F5-49E9-B25D-417D71A29AD4</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
+			<key>note</key>
+			<string>Store vault name in variable.</string>
+			<key>xpos</key>
+			<integer>1995</integer>
+			<key>ypos</key>
+			<integer>495</integer>
+		</dict>
+		<key>6FF78F6F-9167-45D0-B022-7BE55106848C</key>
+		<dict>
+			<key>note</key>
+			<string>Define scope based on vaults.</string>
+			<key>xpos</key>
+			<integer>815</integer>
+			<key>ypos</key>
+			<integer>1230</integer>
+		</dict>
+		<key>70AEEB77-35DB-44B9-B633-BE1D2B43D581</key>
+		<dict>
+			<key>note</key>
+			<string>Open note in Obsidian.</string>
+			<key>xpos</key>
+			<integer>1275</integer>
+			<key>ypos</key>
+			<integer>925</integer>
+		</dict>
+		<key>72CFFBA4-02FC-4875-BB2C-562FCF5E43BC</key>
+		<dict>
+			<key>xpos</key>
+			<integer>325</integer>
+			<key>ypos</key>
+			<integer>1200</integer>
+		</dict>
+		<key>73853368-ED10-4729-A4D0-E231647C3CF4</key>
+		<dict>
+			<key>xpos</key>
+			<integer>350</integer>
+			<key>ypos</key>
+			<integer>2060</integer>
+		</dict>
+		<key>76C3031F-7B85-45C6-9D05-DF5802BBC167</key>
+		<dict>
+			<key>note</key>
+			<string>Daily note.</string>
+			<key>xpos</key>
+			<integer>985</integer>
+			<key>ypos</key>
+			<integer>170</integer>
+		</dict>
+		<key>82B5116A-964C-4E76-AA72-45B844D83BEA</key>
+		<dict>
+			<key>note</key>
+			<string>replace newline</string>
+			<key>xpos</key>
+			<integer>810</integer>
+			<key>ypos</key>
+			<integer>1895</integer>
+		</dict>
+		<key>834BB1A9-B643-4448-97B4-B6B6582602CB</key>
+		<dict>
+			<key>note</key>
+			<string>Set up: Clear all but help vault.</string>
+			<key>xpos</key>
+			<integer>150</integer>
+			<key>ypos</key>
+			<integer>1355</integer>
+		</dict>
+		<key>854EB1EE-9017-4F43-BC80-BAF317FC5315</key>
+		<dict>
+			<key>note</key>
+			<string>Vault to create new note in.</string>
+			<key>xpos</key>
+			<integer>635</integer>
+			<key>ypos</key>
+			<integer>380</integer>
+		</dict>
+		<key>86967BF2-99A7-43FB-A22A-7AC2F9A8C34C</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>6</integer>
+			<key>note</key>
+			<string>Store search query in variable.</string>
+			<key>xpos</key>
+			<integer>1750</integer>
+			<key>ypos</key>
+			<integer>500</integer>
+		</dict>
+		<key>8B221971-0089-4DAC-A056-EC2C961C6EAB</key>
+		<dict>
+			<key>note</key>
+			<string>Title of new note.</string>
+			<key>xpos</key>
+			<integer>925</integer>
+			<key>ypos</key>
+			<integer>385</integer>
+		</dict>
+		<key>8C017EEF-38DD-4148-9291-9302EFCE33DE</key>
+		<dict>
+			<key>note</key>
+			<string>Set up: Specify daily note directory/path.</string>
+			<key>xpos</key>
+			<integer>155</integer>
+			<key>ypos</key>
+			<integer>1200</integer>
+		</dict>
+		<key>9295060C-B513-4806-8F12-52EC6D30C9A3</key>
+		<dict>
+			<key>note</key>
+			<string>Define hotkey to search in vaults.</string>
+			<key>xpos</key>
+			<integer>640</integer>
+			<key>ypos</key>
+			<integer>700</integer>
+		</dict>
+		<key>9F656256-DD01-4508-BF9F-CDB3168DB9B6</key>
+		<dict>
+			<key>xpos</key>
+			<integer>765</integer>
+			<key>ypos</key>
+			<integer>180</integer>
+		</dict>
+		<key>A60FCD19-F3A3-4B26-BDB2-52D548E38686</key>
+		<dict>
+			<key>xpos</key>
+			<integer>120</integer>
+			<key>ypos</key>
+			<integer>140</integer>
+		</dict>
+		<key>A70B656D-CA4C-41F9-99E3-988FB6158F5F</key>
+		<dict>
+			<key>xpos</key>
+			<integer>325</integer>
+			<key>ypos</key>
+			<integer>585</integer>
+		</dict>
+		<key>A7CCBBCE-F078-4780-BF5C-42D9CE64D568</key>
+		<dict>
+			<key>note</key>
+			<string>Set up: Specify hotkey to append clipboard contents inbox note.</string>
+			<key>xpos</key>
+			<integer>610</integer>
+			<key>ypos</key>
+			<integer>1975</integer>
+		</dict>
+		<key>ADAB8847-A309-4A02-9D42-E8D30C47BC5D</key>
+		<dict>
+			<key>note</key>
+			<string>Set up: Specify daily note vault.</string>
+			<key>xpos</key>
+			<integer>150</integer>
+			<key>ypos</key>
+			<integer>735</integer>
+		</dict>
+		<key>B1E46976-D5FD-41F9-AC39-C5F7D93F53E7</key>
+		<dict>
+			<key>xpos</key>
+			<integer>350</integer>
+			<key>ypos</key>
+			<integer>1865</integer>
+		</dict>
+		<key>B768A804-C61E-4133-AB9C-74C6448BFC62</key>
+		<dict>
+			<key>note</key>
+			<string>Open/create today's daily note.</string>
+			<key>xpos</key>
+			<integer>975</integer>
+			<key>ypos</key>
+			<integer>10</integer>
+		</dict>
+		<key>BDE4BB5C-ECD8-439A-B893-A9C70345010D</key>
+		<dict>
+			<key>xpos</key>
+			<integer>120</integer>
+			<key>ypos</key>
+			<integer>15</integer>
+		</dict>
+		<key>C016E20E-3F44-4372-90DC-1B00DA8C07F8</key>
+		<dict>
+			<key>note</key>
+			<string>ot. Change settings here.</string>
+			<key>xpos</key>
+			<integer>1020</integer>
+			<key>ypos</key>
+			<integer>1230</integer>
+		</dict>
+		<key>CD6980A3-E50D-4689-B8D6-1A677CDE1914</key>
+		<dict>
+			<key>xpos</key>
+			<integer>1840</integer>
+			<key>ypos</key>
+			<integer>470</integer>
+		</dict>
+		<key>CDEBE435-E442-4054-80BE-59ADD7EEA597</key>
+		<dict>
+			<key>note</key>
+			<string>Append text to end of note as list item.</string>
+			<key>xpos</key>
+			<integer>1045</integer>
+			<key>ypos</key>
+			<integer>1865</integer>
+		</dict>
+		<key>CEC4065E-BADA-44B7-A255-4A9D613685E2</key>
+		<dict>
+			<key>note</key>
+			<string>Define hotkey to search in vaults.</string>
+			<key>xpos</key>
+			<integer>645</integer>
+			<key>ypos</key>
+			<integer>1010</integer>
+		</dict>
+		<key>D79944EC-E799-4CC4-9961-A6EBF5D6FBDC</key>
+		<dict>
+			<key>xpos</key>
+			<integer>325</integer>
+			<key>ypos</key>
+			<integer>890</integer>
+		</dict>
+		<key>DE762236-EFCC-45D3-85CA-A1B6B191762C</key>
+		<dict>
+			<key>note</key>
+			<string>Open search pane in Obsidian vault.</string>
+			<key>xpos</key>
+			<integer>2075</integer>
+			<key>ypos</key>
+			<integer>465</integer>
+		</dict>
+		<key>E5FAA23D-08AB-47A3-A5C9-5211B9D677C4</key>
+		<dict>
+			<key>xpos</key>
+			<integer>355</integer>
+			<key>ypos</key>
+			<integer>1705</integer>
+		</dict>
+		<key>E6955BE2-FEB7-470D-92BE-03EDF6C498FB</key>
+		<dict>
+			<key>xpos</key>
+			<integer>325</integer>
+			<key>ypos</key>
+			<integer>735</integer>
+		</dict>
+		<key>F118473C-D1EF-472F-A1F6-CC9A8C65ABF2</key>
+		<dict>
+			<key>note</key>
+			<string>Open/create tomorrow's daily note.</string>
+			<key>xpos</key>
+			<integer>1455</integer>
+			<key>ypos</key>
+			<integer>145</integer>
+		</dict>
+		<key>F565051F-71D8-42F7-A733-5DA9F39AAEA2</key>
+		<dict>
+			<key>note</key>
+			<string>Set up: Specify daily note template.</string>
+			<key>xpos</key>
+			<integer>155</integer>
+			<key>ypos</key>
+			<integer>1050</integer>
+		</dict>
+		<key>F8C5232B-3EDC-4388-851E-BFE6602C88D0</key>
+		<dict>
+			<key>xpos</key>
+			<integer>325</integer>
+			<key>ypos</key>
+			<integer>1050</integer>
+		</dict>
+		<key>FFD4328D-FE08-4222-8AA1-FD71A1DC33F9</key>
+		<dict>
+			<key>note</key>
+			<string>Search for files modified today</string>
+			<key>xpos</key>
+			<integer>640</integer>
+			<key>ypos</key>
+			<integer>1185</integer>
+		</dict>
+	</dict>
+	<key>variables</key>
+	<dict>
+		<key>dailyabspath</key>
+		<string></string>
+		<key>dailyformat</key>
+		<string></string>
+		<key>dailyheader</key>
+		<string></string>
+		<key>dailytempabspath</key>
+		<string></string>
+		<key>dailytodaypath</key>
+		<string></string>
+		<key>dailytodo</key>
+		<string></string>
+		<key>dailyvault</key>
+		<string></string>
+		<key>dailyvaultname</key>
+		<string></string>
+		<key>inbox_md</key>
+		<string></string>
+		<key>oinotify</key>
+		<string>on</string>
+		<key>vault1</key>
+		<string>obsidian help</string>
+		<key>vault1name</key>
+		<string>obsidian help</string>
+		<key>vault2</key>
+		<string></string>
+		<key>vault2name</key>
+		<string></string>
+		<key>vault3</key>
+		<string></string>
+		<key>vault3name</key>
+		<string></string>
+	</dict>
+	<key>variablesdontexport</key>
+	<array>
+		<string>vault3name</string>
+		<string>inbox_md</string>
+		<string>vault3</string>
+		<string>dailyvaultname</string>
+		<string>vault2</string>
+		<string>dailyabspath</string>
+		<string>dailytodo</string>
+		<string>vault2name</string>
+		<string>dailyformat</string>
+		<string>dailytodaypath</string>
+		<string>dailytempabspath</string>
+		<string>dailyvault</string>
+		<string>dailyheader</string>
+	</array>
+	<key>version</key>
+	<string>0.3.1</string>
+	<key>webaddress</key>
+	<string>https://github.com/hauselin/obsidian-alfred</string>
+</dict>
+</plist>
