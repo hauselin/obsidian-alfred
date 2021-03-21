@@ -3901,7 +3901,7 @@ RELEASE NOTES
 
 Full documentation: https://github.com/hauselin/obsidian-alfred
 
-v0.3.2
+v0.3.3
 - New command oterm to open terminal in selected vault directory
 - Fix bug with oi query.replaceAll @jamiew #25
 
