@@ -4,7 +4,7 @@
 
 # Alfred workflow for Obsidian
 
-This simple [Alfred](https://www.alfredapp.com/) workflow uses [Obsidian](https://obsidian.md/)'s [URI scheme](https://publish.obsidian.md/help/Advanced+topics/Using+obsidian+URI) and JXA actions/scripts (thanks to [@hjklapp](https://github.com/hjklapp)) to open notes in their vaults. This workflow has been tested in Obsidian 0.11.4. See also [known issues](#known-issues).
+This simple [Alfred](https://www.alfredapp.com/) workflow uses [Obsidian](https://obsidian.md/)'s [URI scheme](https://publish.obsidian.md/help/Advanced+topics/Using+obsidian+URI) and JXA actions/scripts (thanks to [@hjklapp](https://github.com/hjklapp)) to open notes in their vaults. This workflow has been tested in Obsidian 0.11.9. See also [known issues](#known-issues).
 
 Available Alfred features/keywords (contributors in parentheses)
 - Open a vault: `ov`,`oo` ([@hjklapp](https://github.com/hjklapp))
@@ -20,6 +20,7 @@ Available Alfred features/keywords (contributors in parentheses)
   - Open inbox note with `oii` or customize your Hotkey to open inbox note.
   - Turn on/off notifications when adding text to inbox note with `onotify`
 - Fallback search when there are no results ([@technicalpickles](https://github.com/technicalpickles))
+- Open terminal in vault directory: `oterm`
 - Get help by opening [help vault](https://publish.obsidian.md/help/Index) and [forum](https://forum.obsidian.md/): `o?` 
 
 ## Installation
@@ -130,6 +131,7 @@ If the Obsidian app isn't already opened, this workflow will always open the las
 Alphabetical order
 
 - [@hjklapp](https://github.com/hjklapp)
+- [@jamiew](https://github.com/jamiew)
 - [@lastobelus](https://github.com/lastobelus)
 - [@ldebritto](https://github.com/ldebritto)
 - [@luckman212](https://github.com/luckman212)
