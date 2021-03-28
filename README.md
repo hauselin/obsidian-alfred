@@ -107,7 +107,7 @@ In addition, you can set up hotkey (see image below) to directly append the cont
 
 **BECAUSE THIS FEATURE MODIFIES YOUR NOTES, BACK UP YOUR VAULT AND NOTES!**
 
-Timestamps can also be included when adding text (see #27). Use `oinboxtime` to specify whether to prepend or append timestamp. You can also manually configure the format of the timestamp (see screenshot below).
+Timestamps can also be included when adding text ([#27](https://github.com/hauselin/obsidian-alfred/issues/27)). Use `oinboxtime` to specify whether to prepend or append timestamp. You can also manually configure the format of the timestamp (see screenshot below).
 
 To open your inbox note in Obsidian, use `oii` or customize your hotkey.
 
