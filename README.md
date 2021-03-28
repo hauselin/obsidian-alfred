@@ -6,6 +6,8 @@
 
 This simple [Alfred](https://www.alfredapp.com/) workflow uses [Obsidian](https://obsidian.md/)'s [URI scheme](https://publish.obsidian.md/help/Advanced+topics/Using+obsidian+URI) and JXA actions/scripts (thanks to [@hjklapp](https://github.com/hjklapp)) to open notes in their vaults. This workflow has been tested in Obsidian 0.11.10. See also [known issues](#known-issues).
 
+For changelog, see [release notes](https://github.com/hauselin/obsidian-alfred/releases).
+
 Available Alfred features/keywords (contributors in parentheses)
 - Open a vault: `ov`,`oo` ([@hjklapp](https://github.com/hjklapp))
 - Search for *all* markdown files on your computer: `os`, `or`, `ot`
