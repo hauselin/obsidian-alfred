@@ -165,7 +165,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>CDEBE435-E442-4054-80BE-59ADD7EEA597</string>
+				<string>72D894BC-364C-4E9E-9022-99B4A6D7FE91</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -369,6 +369,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>72D894BC-364C-4E9E-9022-99B4A6D7FE91</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>CDEBE435-E442-4054-80BE-59ADD7EEA597</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>76C3031F-7B85-45C6-9D05-DF5802BBC167</key>
 		<array>
 			<dict>
@@ -465,6 +478,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>46732892-62E0-47CE-B727-EBA967105197</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>A606B9DB-2246-4459-B325-ED5831996525</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>83B53E1F-BC75-4636-8D79-D0229D35477F</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -3398,10 +3424,22 @@ function interpolate_homepath(path) {
 var inbox_md = $.getenv('inbox_md');
 inbox_md = interpolate_homepath(inbox_md)
 
+// where to add timestamp
+var inbox_timestamp = $.getenv('inbox_timestamp');
+
+// get timestamp
+var timestamp = $.getenv('date');
+
 // escape " 
 var query = "{query}";
 // query = query.replaceAll('"', '\"');
 query = query.replace(/\"/g, '\"');  // github #25 @jamiew
+
+if (inbox_timestamp == "append") {
+	query += (" " + timestamp);
+} else if (inbox_timestamp == "prepend") {
+	query = timestamp + " " + query;
+}
 
 // split paragraphs into separate bullet points
 query = query.split("@NEWLISTITEM@")
@@ -3576,6 +3614,26 @@ Application('com.runningwithcrayons.Alfred').setConfiguration("dailytodo", {
 			<string>82B5116A-964C-4E76-AA72-45B844D83BEA</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<true/>
+				<key>variables</key>
+				<dict>
+					<key>date</key>
+					<string>{date:yyyyMMdd_HHmmss}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>72D894BC-364C-4E9E-9022-99B4A6D7FE91</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -3891,6 +3949,97 @@ app.openLocation(uri);</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<true/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>keyword</key>
+				<string>oinboxtime</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>ObjC.import('stdlib');
+console.log('Running script - oinboxtime')
+
+// options
+var options = []
+options.push({title: "Append to end of note", arg: "append", uid: "append"})
+options.push({title: "Prepend to beginning of note", arg: "prepend", uid: "prepend"})
+options.push({title: "Don't add timestamp", arg: "none", uid: "none"})
+
+
+// list vaults 
+JSON.stringify({items: options})</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Where to add timestamp?</string>
+				<key>title</key>
+				<string>Specify where to insert inbox timestamp</string>
+				<key>type</key>
+				<integer>7</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>A606B9DB-2246-4459-B325-ED5831996525</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>ObjC.import('stdlib');
+
+console.log('Running script')
+
+Application('com.runningwithcrayons.Alfred').setConfiguration("inbox_timestamp", {
+    toValue: "{query}",
+    exportable: false,
+    inWorkflow: $.getenv('alfred_workflow_bundleid'),
+});</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>7</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>83B53E1F-BC75-4636-8D79-D0229D35477F</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>A workflow to open Obsidian vaults, daily note, and search for notes in vaults. Tested in Obsidian 0.11.4.
@@ -3900,6 +4049,9 @@ app.openLocation(uri);</string>
 RELEASE NOTES
 
 Full documentation: https://github.com/hauselin/obsidian-alfred
+
+v0.3.4
+- Append or prepend timestamp when adding with oi. Use oinboxtime to specify whether to append, prepend, or not add timestamp.
 
 v0.3.3
 - New command oterm to open terminal in selected vault directory
@@ -3988,9 +4140,9 @@ If the Obsidian app isn't already opened, this workflow will always open the las
 			<key>note</key>
 			<string>Open inbox note.</string>
 			<key>xpos</key>
-			<integer>600</integer>
+			<integer>595</integer>
 			<key>ypos</key>
-			<integer>2410</integer>
+			<integer>2400</integer>
 		</dict>
 		<key>08A7509B-BDA4-455E-A628-38ABF42C04D7</key>
 		<dict>
@@ -4081,9 +4233,9 @@ If the Obsidian app isn't already opened, this workflow will always open the las
 			<key>note</key>
 			<string>Set up: Turn on/off notifications when adding text to inbox  note.</string>
 			<key>xpos</key>
-			<integer>160</integer>
+			<integer>140</integer>
 			<key>ypos</key>
-			<integer>2270</integer>
+			<integer>2255</integer>
 		</dict>
 		<key>2EEFE48E-B0E2-406A-BCA9-930F5969A364</key>
 		<dict>
@@ -4126,7 +4278,7 @@ If the Obsidian app isn't already opened, this workflow will always open the las
 			<key>note</key>
 			<string>replace newline</string>
 			<key>xpos</key>
-			<integer>920</integer>
+			<integer>905</integer>
 			<key>ypos</key>
 			<integer>1895</integer>
 		</dict>
@@ -4248,9 +4400,9 @@ If the Obsidian app isn't already opened, this workflow will always open the las
 		<key>6290B8D5-ECEB-4623-848B-E5AB92089E79</key>
 		<dict>
 			<key>xpos</key>
-			<integer>360</integer>
+			<integer>350</integer>
 			<key>ypos</key>
-			<integer>2265</integer>
+			<integer>2250</integer>
 		</dict>
 		<key>65DEE317-811D-4787-87B4-3909B62061EA</key>
 		<dict>
@@ -4315,6 +4467,17 @@ If the Obsidian app isn't already opened, this workflow will always open the las
 			<key>ypos</key>
 			<integer>1200</integer>
 		</dict>
+		<key>72D894BC-364C-4E9E-9022-99B4A6D7FE91</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
+			<key>note</key>
+			<string>Set up: Configure timestamp.</string>
+			<key>xpos</key>
+			<integer>1020</integer>
+			<key>ypos</key>
+			<integer>1895</integer>
+		</dict>
 		<key>73853368-ED10-4729-A4D0-E231647C3CF4</key>
 		<dict>
 			<key>xpos</key>
@@ -4348,6 +4511,13 @@ If the Obsidian app isn't already opened, this workflow will always open the las
 			<integer>150</integer>
 			<key>ypos</key>
 			<integer>1355</integer>
+		</dict>
+		<key>83B53E1F-BC75-4636-8D79-D0229D35477F</key>
+		<dict>
+			<key>xpos</key>
+			<integer>360</integer>
+			<key>ypos</key>
+			<integer>2460</integer>
 		</dict>
 		<key>854EB1EE-9017-4F43-BC80-BAF317FC5315</key>
 		<dict>
@@ -4402,6 +4572,13 @@ If the Obsidian app isn't already opened, this workflow will always open the las
 			<integer>765</integer>
 			<key>ypos</key>
 			<integer>180</integer>
+		</dict>
+		<key>A606B9DB-2246-4459-B325-ED5831996525</key>
+		<dict>
+			<key>xpos</key>
+			<integer>140</integer>
+			<key>ypos</key>
+			<integer>2460</integer>
 		</dict>
 		<key>A60FCD19-F3A3-4B26-BDB2-52D548E38686</key>
 		<dict>
@@ -4479,7 +4656,7 @@ If the Obsidian app isn't already opened, this workflow will always open the las
 			<key>note</key>
 			<string>Append text to end of note as list item.</string>
 			<key>xpos</key>
-			<integer>1045</integer>
+			<integer>1120</integer>
 			<key>ypos</key>
 			<integer>1865</integer>
 		</dict>
@@ -4577,8 +4754,10 @@ If the Obsidian app isn't already opened, this workflow will always open the las
 		<string></string>
 		<key>inbox_md</key>
 		<string></string>
+		<key>inbox_timestamp</key>
+		<string>none</string>
 		<key>oinotify</key>
-		<string>on</string>
+		<string></string>
 		<key>vault1</key>
 		<string>obsidian help</string>
 		<key>vault1name</key>
@@ -4598,6 +4777,7 @@ If the Obsidian app isn't already opened, this workflow will always open the las
 		<string>inbox_md</string>
 		<string>vault3</string>
 		<string>dailyvaultname</string>
+		<string>oinotify</string>
 		<string>vault2</string>
 		<string>dailyabspath</string>
 		<string>dailytodo</string>
@@ -4609,7 +4789,7 @@ If the Obsidian app isn't already opened, this workflow will always open the las
 		<string>dailyheader</string>
 	</array>
 	<key>version</key>
-	<string>0.3.3</string>
+	<string>0.3.4</string>
 	<key>webaddress</key>
 	<string>https://github.com/hauselin/obsidian-alfred</string>
 </dict>

@@ -4,7 +4,7 @@
 
 # Alfred workflow for Obsidian
 
-This simple [Alfred](https://www.alfredapp.com/) workflow uses [Obsidian](https://obsidian.md/)'s [URI scheme](https://publish.obsidian.md/help/Advanced+topics/Using+obsidian+URI) and JXA actions/scripts (thanks to [@hjklapp](https://github.com/hjklapp)) to open notes in their vaults. This workflow has been tested in Obsidian 0.11.9. See also [known issues](#known-issues).
+This simple [Alfred](https://www.alfredapp.com/) workflow uses [Obsidian](https://obsidian.md/)'s [URI scheme](https://publish.obsidian.md/help/Advanced+topics/Using+obsidian+URI) and JXA actions/scripts (thanks to [@hjklapp](https://github.com/hjklapp)) to open notes in their vaults. This workflow has been tested in Obsidian 0.11.10. See also [known issues](#known-issues).
 
 Available Alfred features/keywords (contributors in parentheses)
 - Open a vault: `ov`,`oo` ([@hjklapp](https://github.com/hjklapp))
@@ -61,6 +61,8 @@ All other features require a one-time set-up (v0.2.0 onward).
 **If you want to append text to an inbox note, you'll have to specify the note you're using as your inbox note.**
 
 - Specify inbox note: `oinbox`
+- Specify whether to append or prepend a timestamp when adding to inbox: `oinboxtime`
+  - Run this configuration step only if you want to include timestamp. If not, default is to not add timestamp.
  
 ## Features available after set-up
 
@@ -104,6 +106,8 @@ To look for markdown files that are only inside your vaults, use `oss`, `orr`, a
 In addition, you can set up hotkey (see image below) to directly append the contents in your clipboard to the end of your inbox notes.
 
 **BECAUSE THIS FEATURE MODIFIES YOUR NOTES, BACK UP YOUR VAULT AND NOTES!**
+
+Timestamps can also be included when adding text (#27). Use `oinboxtime` to specify whether to prepend or append timestamp. You can also manually configure the format of the timestamp (see screenshot below).
 
 To open your inbox note in Obsidian, use `oii` or customize your hotkey.
 
