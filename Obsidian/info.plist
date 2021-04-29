@@ -860,14 +860,15 @@ var date_format_original = date_format;
 // get today's day if requested
 if (date_format.includes('dddd')) {
     day_string = days[day]
-    date_format = date_format.replaceAll('dddd', 'zzzz')
+    date_format = date_format.replace('dddd', 'zzzz')
 }
 if (date_format.includes('ddd')) {
     day_string_short = days_short[day]
-    date_format = date_format.replaceAll('ddd', 'zzz')
+    date_format = date_format.replace('ddd', 'zzz')
 }
 
-// TODO clean up code
+// TODO clean up the two blocks of if statements
+// don't replace letter e or E that appear before/after alphabets
 if (date_format.includes('e')) {
     for (var i = 0; i &lt; date_format.length; i++) {
         console.log(date_format.charAt(i));
@@ -1009,17 +1010,17 @@ if (m_char == 'mmm') {
 
 // day of week if requested
 if (date_format.includes('zzzz')) {
-    date_format = date_format.replaceAll('zzzz', day_string)
+    date_format = date_format.replace('zzzz', day_string)
 }
 if (date_format.includes('zzz')) {
-    date_format = date_format.replaceAll('zzz', day_string_short)
+    date_format = date_format.replace('zzz', day_string_short)
 }
 // e is day of week (0, 1, ... 7)
 if (date_format_original.includes('e')) {
-    date_format = date_format.replaceAll('!!!', days_e[day].toString())
+    date_format = date_format.replace('!!!', days_e[day].toString())
 }
 if (date_format_original.includes('E')) {
-    date_format = date_format.replaceAll('@@@', days_E[day].toString())
+    date_format = date_format.replace('@@@', days_E[day].toString())
 }
 
 console.log('3. date_format: ' + date_format);
@@ -1195,11 +1196,11 @@ var date_format_original = date_format;
 // get today's day if requested
 if (date_format.includes('dddd')) {
     day_string = days[day]
-    date_format = date_format.replaceAll('dddd', 'zzzz')
+    date_format = date_format.replace('dddd', 'zzzz')
 }
 if (date_format.includes('ddd')) {
     day_string_short = days_short[day]
-    date_format = date_format.replaceAll('ddd', 'zzz')
+    date_format = date_format.replace('ddd', 'zzz')
 }
 
 // TODO clean up code
@@ -1221,7 +1222,7 @@ if (date_format.includes('e')) {
                 continue
             } else {
                 console.log("replacing this e")
-                // date_format = date_format.replaceAll('e', '!!!')
+                // date_format = date_format.replace('e', '!!!')
                 date_format = date_format.substring(0, i) + '!!!' + date_format.substring(i + 1);
             }
         }
@@ -1229,7 +1230,7 @@ if (date_format.includes('e')) {
 }
 
 // if (date_format.includes('E')) {
-//     date_format = date_format.replaceAll('E', '@@@')
+//     date_format = date_format.replace('E', '@@@')
 // }
 if (date_format.includes('E')) {
     for (var i = 0; i &lt; date_format.length; i++) {
@@ -1249,7 +1250,7 @@ if (date_format.includes('E')) {
                 continue
             } else {
                 console.log("replacing this E")
-                // date_format = date_format.replaceAll('e', '@@@')
+                // date_format = date_format.replace('e', '@@@')
                 date_format = date_format.substring(0, i) + '@@@' + date_format.substring(i + 1);
             }
         }
@@ -1344,17 +1345,17 @@ if (m_char == 'mmm') {
 
 // day of week if requested
 if (date_format.includes('zzzz')) {
-    date_format = date_format.replaceAll('zzzz', day_string)
+    date_format = date_format.replace('zzzz', day_string)
 }
 if (date_format.includes('zzz')) {
-    date_format = date_format.replaceAll('zzz', day_string_short)
+    date_format = date_format.replace('zzz', day_string_short)
 }
 // e is day of week (0, 1, ... 7)
 if (date_format_original.includes('e')) {
-    date_format = date_format.replaceAll('!!!', days_e[day].toString())
+    date_format = date_format.replace('!!!', days_e[day].toString())
 }
 if (date_format_original.includes('E')) {
-    date_format = date_format.replaceAll('@@@', days_E[day].toString())
+    date_format = date_format.replace('@@@', days_E[day].toString())
 }
 
 console.log('3. date_format: ' + date_format);
@@ -4247,6 +4248,9 @@ RELEASE NOTES
 
 Full documentation: https://github.com/hauselin/obsidian-alfred
 
+v0.3.6
+- Remove replaceAll in od and otmr to avoid bug in #25.
+
 v0.3.5
 - Fix od bug. #28 @lh00000000
 
@@ -4989,7 +4993,7 @@ If the Obsidian app isn't already opened, this workflow will always open the las
 		<string>dailyheader</string>
 	</array>
 	<key>version</key>
-	<string>0.3.5</string>
+	<string>0.3.6</string>
 	<key>webaddress</key>
 	<string>https://github.com/hauselin/obsidian-alfred</string>
 </dict>
