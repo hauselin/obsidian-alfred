@@ -775,18 +775,15 @@
 ObjC.import('stdlib');
 console.log('Running script - od')
 
-
 // get the current app to access the standard additions
 app = Application.currentApplication();
 app.includeStandardAdditions = true;
 
-
+// replace ~ with homepath
 function interpolate_homepath(path) {
-  homepath = app.pathTo('home folder')
-  return path.replace(/^~/, homepath)
+    homepath = app.pathTo('home folder')
+    return path.replace(/^~/, homepath)
 }
-
-
 
 // date format
 date_format = $.getenv('dailyformat')
@@ -811,8 +808,8 @@ console.log(fullpath_template)
 
 
 
-var months = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ]
-var months_short = [ "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" ]
+var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+var months_short = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 
 // https://momentjscom.readthedocs.io/en/latest/moment/07-customization/04-weekday-abbreviations/
 var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
@@ -822,17 +819,21 @@ var days_E = [7, 1, 2, 3, 4, 5, 6]
 
 // get week of year
 function ISO8601_week_no(dt) {
-     var tdt = new Date(dt.valueOf());
-     var dayn = (dt.getDay() + 6) % 7;
-     tdt.setDate(tdt.getDate() - dayn + 3);
-     var firstThursday = tdt.valueOf();
-     tdt.setMonth(0, 1);
-     if (tdt.getDay() !== 4) {
-         tdt.setMonth(0, 1 + ((4 - tdt.getDay()) + 7) % 7);
-     }
-     return 1 + Math.ceil((firstThursday - tdt) / 604800000);
+    var tdt = new Date(dt.valueOf());
+    var dayn = (dt.getDay() + 6) % 7;
+    tdt.setDate(tdt.getDate() - dayn + 3);
+    var firstThursday = tdt.valueOf();
+    tdt.setMonth(0, 1);
+    if (tdt.getDay() !== 4) {
+        tdt.setMonth(0, 1 + ((4 - tdt.getDay()) + 7) % 7);
+    }
+    return 1 + Math.ceil((firstThursday - tdt) / 604800000);
 }
 
+
+function isCharacterALetter(char) {
+    return (/[a-zA-Z]/).test(char)
+}
 
 
 
@@ -854,40 +855,122 @@ day = today.getDay()
 
 
 
-date_format_original = date_format;
+var date_format_original = date_format;
 
 // get today's day if requested
 if (date_format.includes('dddd')) {
     day_string = days[day]
-    date_format = date_format.replace('dddd', 'zzzz')
-} 
+    date_format = date_format.replaceAll('dddd', 'zzzz')
+}
 if (date_format.includes('ddd')) {
     day_string_short = days_short[day]
-    date_format = date_format.replace('ddd', 'zzz')
+    date_format = date_format.replaceAll('ddd', 'zzz')
 }
 
+// TODO clean up code
 if (date_format.includes('e')) {
-    date_format = date_format.replace('e', '!')
-} 
-if (date_format.includes('E')) {
-    date_format = date_format.replace('E', '@')
+    for (var i = 0; i &lt; date_format.length; i++) {
+        console.log(date_format.charAt(i));
+        if (i == (date_format.length - 1) &amp;&amp; date_format.charAt(i) == "e") {
+            if (!isCharacterALetter(date_format.charAt(i - 1))) {
+                date_format = date_format.substring(0, i) + '!!!' + date_format.substring(i + 1);
+            } 
+        }
+        if (i == 0 &amp;&amp; date_format.charAt(i) == "e") {
+            if (!isCharacterALetter(date_format.charAt(i + 1))) {
+                date_format = date_format.substring(0, i) + '!!!' + date_format.substring(i + 1);
+            }
+        }
+        if (i &gt; 0 &amp;&amp; i &lt; (date_format.length - 1) &amp;&amp; date_format.charAt(i) == "e") {
+            if (isCharacterALetter(date_format.charAt(i - 1)) || isCharacterALetter(date_format.charAt(i + 1))) {
+                continue
+            } else {
+                console.log("replacing this e")
+                // date_format = date_format.replaceAll('e', '!!!')
+                date_format = date_format.substring(0, i) + '!!!' + date_format.substring(i + 1);
+            }
+        }
+    }    
 }
+
+// if (date_format.includes('E')) {
+//     date_format = date_format.replaceAll('E', '@@@')
+// }
+if (date_format.includes('E')) {
+    for (var i = 0; i &lt; date_format.length; i++) {
+        console.log(date_format.charAt(i));
+        if (i == (date_format.length - 1) &amp;&amp; date_format.charAt(i) == "E") {
+            if (!isCharacterALetter(date_format.charAt(i - 1))) {
+                date_format = date_format.substring(0, i) + '@@@' + date_format.substring(i + 1);
+            }
+        }
+        if (i == 0 &amp;&amp; date_format.charAt(i) == "E") {
+            if (!isCharacterALetter(date_format.charAt(i + 1))) {
+                date_format = date_format.substring(0, i) + '@@@' + date_format.substring(i + 1);
+            }
+        }
+        if (i &gt; 0 &amp;&amp; i &lt; (date_format.length - 1) &amp;&amp; date_format.charAt(i) == "E") {
+            if (isCharacterALetter(date_format.charAt(i - 1)) || isCharacterALetter(date_format.charAt(i + 1))) {
+                continue
+            } else {
+                console.log("replacing this E")
+                // date_format = date_format.replaceAll('e', '@@@')
+                date_format = date_format.substring(0, i) + '@@@' + date_format.substring(i + 1);
+            }
+        }
+    }
+}
+
+
+
 
 date_format = date_format.toLowerCase();
 console.log('original: ' + date_format_original);
 console.log('date_format: ' + date_format);
 
 // determine no. of y, m, d needed
-n_y = date_format.split('y').length - 1;
-n_m = date_format.split('m').length - 1;
-n_d = date_format.split('d').length - 1;
-n_w = date_format.split('w').length - 1;
+function repeatingSeqs(arr) {
+    // 	repeatingSeqs('day-yyyy-mm-dd'.split("")) == [
+    //   [ 'd' ],
+    //   [ 'a' ],
+    //   [ 'y' ],
+    //   [ '-' ],
+    //   [ 'y', 'y', 'y', 'y' ],
+    //   [ '-' ],
+    //   [ 'm', 'm' ],
+    //   [ '-' ],
+    //   [ 'd', 'd' ]
+    // ]
+    return arr.reduce((agg, x) =&gt; {
+        const phrase = agg[agg.length - 1];
+        if (phrase &amp;&amp; phrase.length &amp;&amp; phrase[0] === x) {
+            return [...agg.slice(0, -1), phrase.concat(phrase[0])];
+        } else {
+            return [...agg, [x]];
+        }
+    }, []);
+}
 
-if (n_y == 0) {n_y = 1};
-if (n_m == 0) {n_m = 1};
-if (n_d == 0) {n_d = 1};
-if (n_w == 0) {n_w = 1};
+function maxRepeatingSeqLens(arr) {
+    return repeatingSeqs(arr).reduce(
+        (counts, chain) =&gt; ({
+            ...counts,
+            [chain[0]]:
+                counts[chain[0]] &gt; chain.length
+                    ? counts[chain[0]]
+                    : chain.length,
+        }),
+        {}
+    );
+}
 
+console.log(date_format)
+n_char = maxRepeatingSeqLens(date_format.split(""))
+
+n_y = n_char['y'] || 1
+n_m = n_char['m'] || 1
+n_d = n_char['d'] || 1
+n_w = n_char['w'] || 1
 
 y_char = "y".repeat(n_y);
 m_char = "m".repeat(n_m);
@@ -901,10 +984,10 @@ console.log('w_char: ' + w_char);
 
 
 // format date according to user specification (e.g., yy, m, d)
-yyyy = yyyy.slice(4-n_y, 4);
-if (mm.length == 1) {mm = mm.padStart(2, '0').slice(2-n_m, 2)};
-if (dd.length == 1) {dd = dd.padStart(2, '0').slice(2-n_d, 2)};
-if (ww.length == 1) {ww = ww.padStart(2, '0').slice(2-n_w, 2)};
+yyyy = yyyy.slice(4 - n_y, 4);
+if (mm.length == 1) { mm = mm.padStart(2, '0').slice(2 - n_m, 2) };
+if (dd.length == 1) { dd = dd.padStart(2, '0').slice(2 - n_d, 2) };
+if (ww.length == 1) { ww = ww.padStart(2, '0').slice(2 - n_w, 2) };
 
 date_format = date_format.replace(y_char, yyyy);
 date_format = date_format.replace(m_char, mm);
@@ -915,25 +998,28 @@ console.log('2. date_format: ' + date_format);
 
 // convert to MMM or MMMM
 if (m_char == 'mmmm') {
-    date_format = date_format.replace(mm, months[Number(mm)-1])
+    date_format = date_format.replace(mm, months[Number(mm) - 1])
 }
 if (m_char == 'mmm') {
-    date_format = date_format.replace(mm, months_short[Number(mm)-1])
+    date_format = date_format.replace(mm, months_short[Number(mm) - 1])
 }
+// if (m_char == 'mm') {
+//     date_format = date_format.replace(mm, mm.padStart(2, '0'))
+// }
 
 // day of week if requested
 if (date_format.includes('zzzz')) {
-    date_format = date_format.replace('zzzz', day_string)
+    date_format = date_format.replaceAll('zzzz', day_string)
 }
 if (date_format.includes('zzz')) {
-    date_format = date_format.replace('zzz', day_string_short)
+    date_format = date_format.replaceAll('zzz', day_string_short)
 }
 // e is day of week (0, 1, ... 7)
 if (date_format_original.includes('e')) {
-    date_format = date_format.replace('!', days_e[day].toString())
-} 
+    date_format = date_format.replaceAll('!!!', days_e[day].toString())
+}
 if (date_format_original.includes('E')) {
-    date_format = date_format.replace('@', days_E[day].toString())
+    date_format = date_format.replaceAll('@@@', days_E[day].toString())
 }
 
 console.log('3. date_format: ' + date_format);
@@ -946,40 +1032,40 @@ console.log('uri', uri);
 
 // create new daily note if it doesn't exist
 if (fulldir_daily != "") {
-	// format file path
-	if (fulldir_daily[(fulldir_daily.length-1)] != "/") {fulldir_daily += "/"}
-	filepath = fulldir_daily + date_format + ".md"
+    // format file path
+    if (fulldir_daily[(fulldir_daily.length - 1)] != "/") { fulldir_daily += "/" }
+    filepath = fulldir_daily + date_format + ".md"
 
-  console.log('filepath', filepath);
+    console.log('filepath', filepath);
 
-	// get template content
-	var template_txt = ""
-	if (fullpath_template != "") {
-    console.log('fullpath_template', fullpath_template);
-    var template_path_obj = Path(fullpath_template);
-    console.log('template_path_obj', template_path_obj)
-		template_txt = app.read(Path(fullpath_template))
-	}
+    // get template content
+    var template_txt = ""
+    if (fullpath_template != "") {
+        console.log('fullpath_template', fullpath_template);
+        var template_path_obj = Path(fullpath_template);
+        console.log('template_path_obj', template_path_obj)
+        template_txt = app.read(Path(fullpath_template))
+    }
 
-  console.log('template_txt', template_txt);
+    // console.log('template_txt', template_txt);
 
-	// create note with template (if exists)
-	var path = Path(filepath)
-	var finderApp = Application("Finder")
-	if (!finderApp.exists(path)) {
-		console.log("Note doesn't exist. Creating note.")
-		var openedFile = app.openForAccess(path, {writePermission: true})
-		app.write(template_txt, { to: openedFile, startingAt: app.getEof(openedFile) })
-		app.closeAccess(openedFile)
-		uri = "obsidian://open?path=" + encodeURIComponent(filepath)
-		// wait a bit for note to show up in file system
-		delay(1)
-	}
-} 
+    // create note with template (if exists)
+    var path = Path(filepath)
+    var finderApp = Application("Finder")
+    if (!finderApp.exists(path)) {
+        console.log("Note doesn't exist. Creating note.")
+        var openedFile = app.openForAccess(path, { writePermission: true })
+        app.write(template_txt, { to: openedFile, startingAt: app.getEof(openedFile) })
+        app.closeAccess(openedFile)
+        uri = "obsidian://open?path=" + encodeURIComponent(filepath)
+        // wait a bit for note to show up in file system
+        delay(1)
+    }
+}
 
 
 if (v == "" | date_format == "2111") {
-	app.displayDialog("Set up the workflow first")
+    app.displayDialog("Set up the workflow first")
 } else {
     // open file in vault
     app.openLocation(uri);
@@ -1015,23 +1101,20 @@ Application('com.runningwithcrayons.Alfred').setConfiguration("dailytodaypath", 
 				<key>escaping</key>
 				<integer>68</integer>
 				<key>script</key>
-				<string>ObjC.import('stdlib');
-console.log('Running script')
+				<string>/* cSpell:disable */
+
+ObjC.import('stdlib');
+console.log('Running script - otmr')
 
 // get the current app to access the standard additions
 app = Application.currentApplication();
 app.includeStandardAdditions = true;
 
-homepath = app.pathTo('home folder')
-console.log(homepath)
-
-
-
+// replace ~ with homepath
 function interpolate_homepath(path) {
-  homepath = app.pathTo('home folder')
-  return path.replace(/^~/, homepath)
+    homepath = app.pathTo('home folder')
+    return path.replace(/^~/, homepath)
 }
-
 
 // date format
 date_format = $.getenv('dailyformat')
@@ -1056,11 +1139,8 @@ console.log(fullpath_template)
 
 
 
-
-
-
-var months = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ]
-var months_short = [ "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" ]
+var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+var months_short = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 
 // https://momentjscom.readthedocs.io/en/latest/moment/07-customization/04-weekday-abbreviations/
 var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
@@ -1070,15 +1150,20 @@ var days_E = [7, 1, 2, 3, 4, 5, 6]
 
 // get week of year
 function ISO8601_week_no(dt) {
-     var tdt = new Date(dt.valueOf());
-     var dayn = (dt.getDay() + 6) % 7;
-     tdt.setDate(tdt.getDate() - dayn + 3);
-     var firstThursday = tdt.valueOf();
-     tdt.setMonth(0, 1);
-     if (tdt.getDay() !== 4) {
-         tdt.setMonth(0, 1 + ((4 - tdt.getDay()) + 7) % 7);
-     }
-     return 1 + Math.ceil((firstThursday - tdt) / 604800000);
+    var tdt = new Date(dt.valueOf());
+    var dayn = (dt.getDay() + 6) % 7;
+    tdt.setDate(tdt.getDate() - dayn + 3);
+    var firstThursday = tdt.valueOf();
+    tdt.setMonth(0, 1);
+    if (tdt.getDay() !== 4) {
+        tdt.setMonth(0, 1 + ((4 - tdt.getDay()) + 7) % 7);
+    }
+    return 1 + Math.ceil((firstThursday - tdt) / 604800000);
+}
+
+
+function isCharacterALetter(char) {
+    return (/[a-zA-Z]/).test(char)
 }
 
 
@@ -1100,110 +1185,222 @@ day = tomorrow.getDay()
 
 
 
-date_format_original = date_format;
+
+
+
+
+
+var date_format_original = date_format;
 
 // get today's day if requested
 if (date_format.includes('dddd')) {
     day_string = days[day]
-    date_format = date_format.replace('dddd', 'zzzz')
-} 
+    date_format = date_format.replaceAll('dddd', 'zzzz')
+}
 if (date_format.includes('ddd')) {
     day_string_short = days_short[day]
-    date_format = date_format.replace('ddd', 'zzz')
+    date_format = date_format.replaceAll('ddd', 'zzz')
 }
 
+// TODO clean up code
 if (date_format.includes('e')) {
-    date_format = date_format.replace('e', '!')
-} 
-if (date_format.includes('E')) {
-    date_format = date_format.replace('E', '@')
+    for (var i = 0; i &lt; date_format.length; i++) {
+        console.log(date_format.charAt(i));
+        if (i == (date_format.length - 1) &amp;&amp; date_format.charAt(i) == "e") {
+            if (!isCharacterALetter(date_format.charAt(i - 1))) {
+                date_format = date_format.substring(0, i) + '!!!' + date_format.substring(i + 1);
+            }
+        }
+        if (i == 0 &amp;&amp; date_format.charAt(i) == "e") {
+            if (!isCharacterALetter(date_format.charAt(i + 1))) {
+                date_format = date_format.substring(0, i) + '!!!' + date_format.substring(i + 1);
+            }
+        }
+        if (i &gt; 0 &amp;&amp; i &lt; (date_format.length - 1) &amp;&amp; date_format.charAt(i) == "e") {
+            if (isCharacterALetter(date_format.charAt(i - 1)) || isCharacterALetter(date_format.charAt(i + 1))) {
+                continue
+            } else {
+                console.log("replacing this e")
+                // date_format = date_format.replaceAll('e', '!!!')
+                date_format = date_format.substring(0, i) + '!!!' + date_format.substring(i + 1);
+            }
+        }
+    }
 }
+
+// if (date_format.includes('E')) {
+//     date_format = date_format.replaceAll('E', '@@@')
+// }
+if (date_format.includes('E')) {
+    for (var i = 0; i &lt; date_format.length; i++) {
+        console.log(date_format.charAt(i));
+        if (i == (date_format.length - 1) &amp;&amp; date_format.charAt(i) == "E") {
+            if (!isCharacterALetter(date_format.charAt(i - 1))) {
+                date_format = date_format.substring(0, i) + '@@@' + date_format.substring(i + 1);
+            }
+        }
+        if (i == 0 &amp;&amp; date_format.charAt(i) == "E") {
+            if (!isCharacterALetter(date_format.charAt(i + 1))) {
+                date_format = date_format.substring(0, i) + '@@@' + date_format.substring(i + 1);
+            }
+        }
+        if (i &gt; 0 &amp;&amp; i &lt; (date_format.length - 1) &amp;&amp; date_format.charAt(i) == "E") {
+            if (isCharacterALetter(date_format.charAt(i - 1)) || isCharacterALetter(date_format.charAt(i + 1))) {
+                continue
+            } else {
+                console.log("replacing this E")
+                // date_format = date_format.replaceAll('e', '@@@')
+                date_format = date_format.substring(0, i) + '@@@' + date_format.substring(i + 1);
+            }
+        }
+    }
+}
+
+
+
 
 date_format = date_format.toLowerCase();
 console.log('original: ' + date_format_original);
+console.log('date_format: ' + date_format);
 
 // determine no. of y, m, d needed
-n_y = date_format.split('y').length - 1;
-n_m = date_format.split('m').length - 1;
-n_d = date_format.split('d').length - 1;
-n_w = date_format.split('w').length - 1;
+function repeatingSeqs(arr) {
+    // 	repeatingSeqs('day-yyyy-mm-dd'.split("")) == [
+    //   [ 'd' ],
+    //   [ 'a' ],
+    //   [ 'y' ],
+    //   [ '-' ],
+    //   [ 'y', 'y', 'y', 'y' ],
+    //   [ '-' ],
+    //   [ 'm', 'm' ],
+    //   [ '-' ],
+    //   [ 'd', 'd' ]
+    // ]
+    return arr.reduce((agg, x) =&gt; {
+        const phrase = agg[agg.length - 1];
+        if (phrase &amp;&amp; phrase.length &amp;&amp; phrase[0] === x) {
+            return [...agg.slice(0, -1), phrase.concat(phrase[0])];
+        } else {
+            return [...agg, [x]];
+        }
+    }, []);
+}
 
-if (n_y == 0) {n_y = 1};
-if (n_m == 0) {n_m = 1};
-if (n_d == 0) {n_d = 1};
-if (n_w == 0) {n_w = 1};
+function maxRepeatingSeqLens(arr) {
+    return repeatingSeqs(arr).reduce(
+        (counts, chain) =&gt; ({
+            ...counts,
+            [chain[0]]:
+                counts[chain[0]] &gt; chain.length
+                    ? counts[chain[0]]
+                    : chain.length,
+        }),
+        {}
+    );
+}
+
+console.log(date_format)
+n_char = maxRepeatingSeqLens(date_format.split(""))
+
+n_y = n_char['y'] || 1
+n_m = n_char['m'] || 1
+n_d = n_char['d'] || 1
+n_w = n_char['w'] || 1
 
 y_char = "y".repeat(n_y);
 m_char = "m".repeat(n_m);
 d_char = "d".repeat(n_d);
 w_char = "w".repeat(n_w);
 
+console.log('y_char: ' + y_char);
+console.log('m_char: ' + m_char);
+console.log('d_char: ' + d_char);
+console.log('w_char: ' + w_char);
+
+
 // format date according to user specification (e.g., yy, m, d)
-yyyy = yyyy.slice(4-n_y, 4);
-if (mm.length == 1) {mm = mm.padStart(2, '0').slice(2-n_m, 2)};
-if (dd.length == 1) {dd = dd.padStart(2, '0').slice(2-n_d, 2)};
-if (ww.length == 1) {ww = ww.padStart(2, '0').slice(2-n_w, 2)};
+yyyy = yyyy.slice(4 - n_y, 4);
+if (mm.length == 1) { mm = mm.padStart(2, '0').slice(2 - n_m, 2) };
+if (dd.length == 1) { dd = dd.padStart(2, '0').slice(2 - n_d, 2) };
+if (ww.length == 1) { ww = ww.padStart(2, '0').slice(2 - n_w, 2) };
 
 date_format = date_format.replace(y_char, yyyy);
 date_format = date_format.replace(m_char, mm);
 date_format = date_format.replace(d_char, dd);
 date_format = date_format.replace(w_char, ww);
 
+console.log('2. date_format: ' + date_format);
+
 // convert to MMM or MMMM
 if (m_char == 'mmmm') {
-    date_format = date_format.replace(mm, months[Number(mm)-1])
+    date_format = date_format.replace(mm, months[Number(mm) - 1])
 }
 if (m_char == 'mmm') {
-    date_format = date_format.replace(mm, months_short[Number(mm)-1])
+    date_format = date_format.replace(mm, months_short[Number(mm) - 1])
 }
+// if (m_char == 'mm') {
+//     date_format = date_format.replace(mm, mm.padStart(2, '0'))
+// }
 
 // day of week if requested
 if (date_format.includes('zzzz')) {
-    date_format = date_format.replace('zzzz', day_string)
+    date_format = date_format.replaceAll('zzzz', day_string)
 }
 if (date_format.includes('zzz')) {
-    date_format = date_format.replace('zzz', day_string_short)
+    date_format = date_format.replaceAll('zzz', day_string_short)
 }
 // e is day of week (0, 1, ... 7)
 if (date_format_original.includes('e')) {
-    date_format = date_format.replace('!', days_e[day].toString())
-} 
-if (date_format_original.includes('E')) {
-    date_format = date_format.replace('@', days_E[day].toString())
+    date_format = date_format.replaceAll('!!!', days_e[day].toString())
 }
+if (date_format_original.includes('E')) {
+    date_format = date_format.replaceAll('@@@', days_E[day].toString())
+}
+
+console.log('3. date_format: ' + date_format);
 
 p = encodeURIComponent(v) + "&amp;file=" + date_format + ".md";
 uri = "obsidian://open?vault=" + p;
 
+
+console.log('uri', uri);
+
 // create new daily note if it doesn't exist
 if (fulldir_daily != "") {
-	// format file path
-	if (fulldir_daily[(fulldir_daily.length-1)] != "/") {fulldir_daily += "/"}
-	filepath = fulldir_daily + date_format + ".md"
+    // format file path
+    if (fulldir_daily[(fulldir_daily.length - 1)] != "/") { fulldir_daily += "/" }
+    filepath = fulldir_daily + date_format + ".md"
 
-	// get template content
-	var template_txt = ""
-	if (fullpath_template != "") {
-		template_txt = app.read(Path(fullpath_template))
-	}
+    console.log('filepath', filepath);
 
-	// create note with template (if exists)
-	var path = Path(filepath)
-	var finderApp = Application("Finder")
-	if (!finderApp.exists(path)) {
-		console.log("Note doesn't exist. Creating note.")
-		var openedFile = app.openForAccess(path, {writePermission: true})
-		app.write(template_txt, { to: openedFile, startingAt: app.getEof(openedFile) })
-		app.closeAccess(openedFile)
-		uri = "obsidian://open?path=" + encodeURIComponent(filepath)
-		// wait a bit for note to show up in file system
-		delay(1)
-	}
-} 
+    // get template content
+    var template_txt = ""
+    if (fullpath_template != "") {
+        console.log('fullpath_template', fullpath_template);
+        var template_path_obj = Path(fullpath_template);
+        console.log('template_path_obj', template_path_obj)
+        template_txt = app.read(Path(fullpath_template))
+    }
+
+    // console.log('template_txt', template_txt);
+
+    // create note with template (if exists)
+    var path = Path(filepath)
+    var finderApp = Application("Finder")
+    if (!finderApp.exists(path)) {
+        console.log("Note doesn't exist. Creating note.")
+        var openedFile = app.openForAccess(path, { writePermission: true })
+        app.write(template_txt, { to: openedFile, startingAt: app.getEof(openedFile) })
+        app.closeAccess(openedFile)
+        uri = "obsidian://open?path=" + encodeURIComponent(filepath)
+        // wait a bit for note to show up in file system
+        delay(1)
+    }
+}
 
 
 if (v == "" | date_format == "2111") {
-	app.displayDialog("Set up the workflow first")
+    app.displayDialog("Set up the workflow first")
 } else {
     // open file in vault
     app.openLocation(uri);
@@ -4050,6 +4247,9 @@ RELEASE NOTES
 
 Full documentation: https://github.com/hauselin/obsidian-alfred
 
+v0.3.5
+- Fix od bug. #28 @lh00000000
+
 v0.3.4
 - Append or prepend timestamp when adding with oi. Use oinboxtime to specify whether to append, prepend, or not add timestamp.
 
@@ -4755,7 +4955,7 @@ If the Obsidian app isn't already opened, this workflow will always open the las
 		<key>inbox_md</key>
 		<string></string>
 		<key>inbox_timestamp</key>
-		<string>none</string>
+		<string>prepend</string>
 		<key>oinotify</key>
 		<string></string>
 		<key>vault1</key>
@@ -4789,7 +4989,7 @@ If the Obsidian app isn't already opened, this workflow will always open the las
 		<string>dailyheader</string>
 	</array>
 	<key>version</key>
-	<string>0.3.4</string>
+	<string>0.3.5</string>
 	<key>webaddress</key>
 	<string>https://github.com/hauselin/obsidian-alfred</string>
 </dict>
