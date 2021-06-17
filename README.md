@@ -4,7 +4,7 @@
 
 # Alfred workflow for Obsidian
 
-This simple [Alfred](https://www.alfredapp.com/) workflow uses [Obsidian](https://obsidian.md/)'s [URI scheme](https://publish.obsidian.md/help/Advanced+topics/Using+obsidian+URI) and JXA actions/scripts (thanks to [@hjklapp](https://github.com/hjklapp)) to open notes in their vaults. This workflow has been tested in Obsidian 0.11.10. See also [known issues](#known-issues).
+This simple [Alfred](https://www.alfredapp.com/) workflow uses [Obsidian](https://obsidian.md/)'s [URI scheme](https://publish.obsidian.md/help/Advanced+topics/Using+obsidian+URI) and JXA actions/scripts (thanks to [@hjklapp](https://github.com/hjklapp)) to open notes in their vaults. This workflow has been tested in Obsidian 0.12.5. See also [known issues](#known-issues).
 
 For changelog, see [release notes](https://github.com/hauselin/obsidian-alfred/releases).
 
@@ -17,10 +17,12 @@ Available Alfred features/keywords (contributors in parentheses)
 - Open a daily note in a vault: `od` ([@technicalpickles](https://github.com/technicalpickles), [@luckman212](https://github.com/luckman212))
   - You can also customize your Hotkey to open your daily note.
 - Create or open tomorrow's daily note: `otmr`
-- Adding text to an inbox note: `oi` ([@LouisInFlow](https://github.com/LouisInFlow))
+- Adding/appending text to an inbox note: `oi` ([@LouisInFlow](https://github.com/LouisInFlow))
   - You can also customize your Hotkey to directly append clipboard contents to the inbox note.
   - Open inbox note with `oii` or customize your Hotkey to open inbox note.
   - Turn on/off notifications when adding text to inbox note with `onotify`
+- Adding/appending text to daily note: `odi`
+  - You **must** run the `od` command first (once per day) before you can use `odi`.
 - Fallback search when there are no results ([@technicalpickles](https://github.com/technicalpickles))
 - Open terminal in vault directory: `oterm`
 - Get help by opening [help vault](https://publish.obsidian.md/help/Index) and [forum](https://forum.obsidian.md/): `o?` 
@@ -60,6 +62,8 @@ All other features require a one-time set-up (v0.2.0 onward).
 - Specify daily note template: `odailytemplate`
   - Required only if you have a template for daily notes.
 
+**After setting up the daily notes commands, you can also append text to your daily note with `odi the text you want to append`**. `odi` works like `oi`, but appends to your daily note instead of your inbox note (see below).
+
 **If you want to append text to an inbox note, you'll have to specify the note you're using as your inbox note.**
 
 - Specify inbox note: `oinbox`
@@ -79,6 +83,10 @@ All other features require a one-time set-up (v0.2.0 onward).
 
 - The Daily notes Obsidian plugin must be enabled.
 - `od` opens today's daily note. Alternatively, you can use a hotkey. If you've successfully followed all the set-up steps, `od` will also create today's daily note if it doesn't exist yet. If you see error messages, most likely you haven't set things up properly. Follow the set-up instructions carefully and try again.
+
+### Add text as list items (bullet points) to the end of your daily note 
+
+`odi` lets you append text to the end of your daily note. Before you use `odi` each day, you have to first use the command `od` (or the corresponding keyboard shortcut which you might have set up). You only have to perform this step **once a day** so Alfred knows the path to your daily note; otherwise, `odi` might append the text to your previous day's daily note. 
 
 ### Create or open tomorrow's daily note: `otmr`
 
