@@ -22,7 +22,7 @@ Available Alfred features/keywords (contributors in parentheses)
   - Open inbox note with `oii` or customize your Hotkey to open inbox note.
   - Turn on/off notifications when adding text to inbox note with `onotify`
 - Adding/appending text to daily note: `odi`
-  - You **must** run the `od` command first (once per day) before you can use `odi`.
+  - You **must** run the `od` command first (once per day) before using `odi`.
 - Fallback search when there are no results ([@technicalpickles](https://github.com/technicalpickles))
 - Open terminal in vault directory: `oterm`
 - Get help by opening [help vault](https://publish.obsidian.md/help/Index) and [forum](https://forum.obsidian.md/): `o?` 

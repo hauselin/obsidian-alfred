@@ -125,6 +125,32 @@
 				<false/>
 			</dict>
 		</array>
+		<key>2FCAB39C-C693-4C37-869B-445FF6C20F9E</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>333A611A-1A2F-4C2C-BAD8-11A9AE10CAA4</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>333A611A-1A2F-4C2C-BAD8-11A9AE10CAA4</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>F4814A0F-C578-420F-A442-A86CF87B7D6A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>333B2B54-2894-418E-A8DE-522F8BB1F3E5</key>
 		<array>
 			<dict>
@@ -460,6 +486,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>8C013085-6514-493F-B7AE-18E02A0961A3</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>333A611A-1A2F-4C2C-BAD8-11A9AE10CAA4</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>8C017EEF-38DD-4148-9291-9302EFCE33DE</key>
 		<array>
 			<dict>
@@ -538,6 +577,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>AFFCF1F5-F669-4920-A76E-90E812ED8CFC</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>E4ECA02D-673E-4DC4-A33A-A8E524983C6C</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>B768A804-C61E-4133-AB9C-74C6448BFC62</key>
 		<array>
 			<dict>
@@ -608,6 +660,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>360748C4-EF05-4FC2-8AB9-E4A969D2D256</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>F4814A0F-C578-420F-A442-A86CF87B7D6A</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>AFFCF1F5-F669-4920-A76E-90E812ED8CFC</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -3416,44 +3481,6 @@ JSON.stringify({items: vaults})</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>0</integer>
-				<key>script</key>
-				<string>// NOTE electron bug (if app isn't already opened, it will always open the last opened vault.
-// https://discordapp.com/channels/686053708261228577/716028884885307432/755203478413902036
-
-console.log('Running script - oterm')
-
-// get the current app to access the standard additions
-app = Application.currentApplication();
-app.includeStandardAdditions = true;
-
-// get vault name
-v="{query}";
-
-// https://forum.keyboardmaestro.com/t/open-a-new-terminal-window-for-the-current-finder-folder/1324
-var terminal = Application("Terminal")
-terminal.doScript("cd " + v.replaceAll(" ", "\ "));
-terminal.activate();</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>7</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>15356FC5-2D9E-4997-B906-08EEA245D255</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>alfredfiltersresults</key>
 				<true/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -3527,6 +3554,44 @@ JSON.stringify({items: vaults})</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string>// NOTE electron bug (if app isn't already opened, it will always open the last opened vault.
+// https://discordapp.com/channels/686053708261228577/716028884885307432/755203478413902036
+
+console.log('Running script - oterm')
+
+// get the current app to access the standard additions
+app = Application.currentApplication();
+app.includeStandardAdditions = true;
+
+// get vault name
+v="{query}";
+
+// https://forum.keyboardmaestro.com/t/open-a-new-terminal-window-for-the-current-finder-folder/1324
+var terminal = Application("Terminal")
+terminal.doScript("cd " + v.replaceAll(" ", "\ "));
+terminal.activate();</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>7</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>15356FC5-2D9E-4997-B906-08EEA245D255</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>keyword</key>
@@ -3594,6 +3659,79 @@ Application('com.runningwithcrayons.Alfred').setConfiguration("dailyheader", {
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
 			<string>6C92B3BB-C347-4EEE-AC10-2EC7E3381F2A</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>odi</string>
+				<key>subtext</key>
+				<string>Append to the end of daily note: {query}</string>
+				<key>text</key>
+				<string>Append text to daily note</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>8C013085-6514-493F-B7AE-18E02A0961A3</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>ObjC.import('stdlib');
+
+console.log('Running script')
+
+Application('com.runningwithcrayons.Alfred').setConfiguration("dailytodo", {
+    toValue: "{query}",
+    exportable: false,
+    inWorkflow: $.getenv('alfred_workflow_bundleid'),
+});</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>7</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>B1E46976-D5FD-41F9-AC39-C5F7D93F53E7</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>odailytodoheader</string>
+				<key>subtext</key>
+				<string>Examples: # To do, ## Tasks</string>
+				<key>text</key>
+				<string>Specify todo header to append to: {query}</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>65DEE317-811D-4787-87B4-3909B62061EA</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -3732,15 +3870,111 @@ if (oinotify == "on") {
 				<key>escaping</key>
 				<integer>68</integer>
 				<key>script</key>
-				<string>ObjC.import('stdlib');
+				<string>/* cSpell:disable */
+ObjC.import('stdlib');
+console.log('Running script: oi')
 
-console.log('Running script')
+// get the current app to access the standard additions
+app = Application.currentApplication();
+app.includeStandardAdditions = true;
 
-Application('com.runningwithcrayons.Alfred').setConfiguration("dailytodo", {
-    toValue: "{query}",
-    exportable: false,
-    inWorkflow: $.getenv('alfred_workflow_bundleid'),
-});</string>
+function interpolate_homepath(path) {
+  homepath = app.pathTo('home folder')
+  return path.replace(/^~/, homepath)
+}
+
+// get inbox note path
+var inbox_md = $.getenv('dailytodaypath');
+inbox_md = interpolate_homepath(inbox_md)
+
+// where to add timestamp
+var inbox_timestamp = $.getenv('inbox_timestamp');
+
+// get timestamp
+var timestamp = $.getenv('date');
+
+// escape " 
+var query = "{query}";
+// query = query.replaceAll('"', '\"');
+query = query.replace(/\"/g, '\"');  // github #25 @jamiew
+
+if (inbox_timestamp == "append") {
+	query += (" " + timestamp);
+} else if (inbox_timestamp == "prepend") {
+	query = timestamp + " " + query;
+}
+
+// split paragraphs into separate bullet points
+query = query.split("@NEWLISTITEM@")
+console.log("query: " + query)
+
+// function to read utf
+// https://github.com/JXA-Cookbook/JXA-Cookbook/issues/25
+ObjC.import('Foundation')
+const readFile = function (path, encoding) {
+    !encoding &amp;&amp; (encoding = $.NSUTF8StringEncoding)
+    const fm = $.NSFileManager.defaultManager
+    const data = fm.contentsAtPath(path)
+    const str = $.NSString.alloc.initWithDataEncoding(data, encoding)
+    return ObjC.unwrap(str)
+}
+
+// read file to append to it
+var filetext = readFile(inbox_md);
+
+// remove newline characters
+while (filetext.endsWith("\n")) {
+    filetext = filetext.slice(0, filetext.length - 1);
+}
+if (filetext == "") {
+    console.log("EMPTY NOTE!")
+} else {
+    filetext += "\n"; // leave one newline character
+}
+
+console.log("CURRENT TEXT (string)");
+console.log(filetext)
+
+// loop through each paragraph and append as separate bullet point
+var formatted_text = ''; 
+for (i = 0; i &lt; query.length; i++) {
+
+    var text2append = query[i];
+    
+    // parse string to remove extra spaces 
+    text2append = text2append.split(" ")
+    text2append = text2append.filter(i =&gt; i.length &gt; 0).join(" ")
+
+    // add bullet point
+    if (!query[i].startsWith("- ")) {
+        text2append = "- " + text2append;
+    }
+    if (text2append == "- ") {
+        continue;
+    }
+
+    if (!text2append.endsWith("\n")) {
+        text2append += "\n";
+    }
+    console.log("TEXT TO APPEND " + (i + 1));
+    console.log(text2append);
+    formatted_text += text2append;    
+}
+
+var final_text = filetext + formatted_text; 
+console.log("FINAL TEXT")
+console.log(final_text)
+
+// write file
+str2write = $.NSString.alloc.initWithUTF8String(final_text);
+str2write.writeToFileAtomicallyEncodingError(inbox_md, true, $.NSUTF8StringEncoding, null);
+
+// notification
+var oinotify = $.getenv('oinotify');
+if (oinotify == "on") {    
+    // https://developer.apple.com/library/archive/documentation/LanguagesUtilities/Conceptual/MacAutomationScriptingGuide/DisplayNotifications.html
+    app.displayNotification("Added text to inbox", { withTitle: 'Obsidian Alfred workfow' })
+}</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -3751,30 +3985,9 @@ Application('com.runningwithcrayons.Alfred').setConfiguration("dailytodo", {
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>B1E46976-D5FD-41F9-AC39-C5F7D93F53E7</string>
+			<string>E4ECA02D-673E-4DC4-A33A-A8E524983C6C</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>keyword</key>
-				<string>odailytodoheader</string>
-				<key>subtext</key>
-				<string>Examples: # To do, ## Tasks</string>
-				<key>text</key>
-				<string>Specify todo header to append to: {query}</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>65DEE317-811D-4787-87B4-3909B62061EA</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -3836,6 +4049,63 @@ Application('com.runningwithcrayons.Alfred').setConfiguration("dailytodo", {
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<true/>
+				<key>variables</key>
+				<dict>
+					<key>date</key>
+					<string>{date:yyyyMMdd_HHmmss}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>AFFCF1F5-F669-4920-A76E-90E812ED8CFC</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>matchmode</key>
+				<integer>0</integer>
+				<key>matchstring</key>
+				<string>
+</string>
+				<key>replacestring</key>
+				<string> @NEWLISTITEM@</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.replace</string>
+			<key>uid</key>
+			<string>F4814A0F-C578-420F-A442-A86CF87B7D6A</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>matchmode</key>
+				<integer>0</integer>
+				<key>matchstring</key>
+				<string>
+
+</string>
+				<key>replacestring</key>
+				<string>@NEWLISTITEM@</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.replace</string>
+			<key>uid</key>
+			<string>333A611A-1A2F-4C2C-BAD8-11A9AE10CAA4</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -3861,6 +4131,37 @@ Application('com.runningwithcrayons.Alfred').setConfiguration("dailytodo", {
 			<string>alfred.workflow.trigger.hotkey</string>
 			<key>uid</key>
 			<string>A7CCBBCE-F078-4780-BF5C-42D9CE64D568</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>2</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>2</integer>
+				<key>hotmod</key>
+				<integer>1835008</integer>
+				<key>hotstring</key>
+				<string>D</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>2FCAB39C-C693-4C37-869B-445FF6C20F9E</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -4248,6 +4549,9 @@ RELEASE NOTES
 
 Full documentation: https://github.com/hauselin/obsidian-alfred
 
+v0.3.7
+- Append text to daily note with odi #30 #31
+
 v0.3.6
 - Remove replaceAll in od and otmr to avoid bug in #25.
 
@@ -4378,9 +4682,9 @@ If the Obsidian app isn't already opened, this workflow will always open the las
 			<key>note</key>
 			<string>Open Obsidian vault.</string>
 			<key>xpos</key>
-			<integer>875</integer>
+			<integer>780</integer>
 			<key>ypos</key>
-			<integer>1600</integer>
+			<integer>1595</integer>
 		</dict>
 		<key>1BD03BB0-06B9-47F5-9346-7A829C38B248</key>
 		<dict>
@@ -4452,6 +4756,24 @@ If the Obsidian app isn't already opened, this workflow will always open the las
 			<key>ypos</key>
 			<integer>415</integer>
 		</dict>
+		<key>2FCAB39C-C693-4C37-869B-445FF6C20F9E</key>
+		<dict>
+			<key>note</key>
+			<string>Set up: Specify hotkey to append clipboard contents to daily note.</string>
+			<key>xpos</key>
+			<integer>1485</integer>
+			<key>ypos</key>
+			<integer>2010</integer>
+		</dict>
+		<key>333A611A-1A2F-4C2C-BAD8-11A9AE10CAA4</key>
+		<dict>
+			<key>note</key>
+			<string>replace newline</string>
+			<key>xpos</key>
+			<integer>1735</integer>
+			<key>ypos</key>
+			<integer>1965</integer>
+		</dict>
 		<key>333B2B54-2894-418E-A8DE-522F8BB1F3E5</key>
 		<dict>
 			<key>note</key>
@@ -4482,9 +4804,9 @@ If the Obsidian app isn't already opened, this workflow will always open the las
 			<key>note</key>
 			<string>replace newline</string>
 			<key>xpos</key>
-			<integer>905</integer>
+			<integer>1010</integer>
 			<key>ypos</key>
-			<integer>1895</integer>
+			<integer>1950</integer>
 		</dict>
 		<key>3B2DA9A3-761D-467C-BDD7-841584877816</key>
 		<dict>
@@ -4536,9 +4858,9 @@ If the Obsidian app isn't already opened, this workflow will always open the las
 			<key>note</key>
 			<string>Open terminal in vault directory.</string>
 			<key>xpos</key>
-			<integer>635</integer>
+			<integer>615</integer>
 			<key>ypos</key>
-			<integer>1600</integer>
+			<integer>1560</integer>
 		</dict>
 		<key>3F7FA866-52E3-46A9-84EE-80A4D3244647</key>
 		<dict>
@@ -4631,9 +4953,9 @@ If the Obsidian app isn't already opened, this workflow will always open the las
 			<key>note</key>
 			<string>Append text to an inbox note.</string>
 			<key>xpos</key>
-			<integer>610</integer>
+			<integer>615</integer>
 			<key>ypos</key>
-			<integer>1805</integer>
+			<integer>1820</integer>
 		</dict>
 		<key>6F34BFA1-14F5-49E9-B25D-417D71A29AD4</key>
 		<dict>
@@ -4678,9 +5000,9 @@ If the Obsidian app isn't already opened, this workflow will always open the las
 			<key>note</key>
 			<string>Set up: Configure timestamp.</string>
 			<key>xpos</key>
-			<integer>1020</integer>
+			<integer>1115</integer>
 			<key>ypos</key>
-			<integer>1895</integer>
+			<integer>1955</integer>
 		</dict>
 		<key>73853368-ED10-4729-A4D0-E231647C3CF4</key>
 		<dict>
@@ -4703,9 +5025,9 @@ If the Obsidian app isn't already opened, this workflow will always open the las
 			<key>note</key>
 			<string>replace newline</string>
 			<key>xpos</key>
-			<integer>810</integer>
+			<integer>895</integer>
 			<key>ypos</key>
-			<integer>1895</integer>
+			<integer>1950</integer>
 		</dict>
 		<key>834BB1A9-B643-4448-97B4-B6B6582602CB</key>
 		<dict>
@@ -4751,6 +5073,15 @@ If the Obsidian app isn't already opened, this workflow will always open the las
 			<integer>925</integer>
 			<key>ypos</key>
 			<integer>385</integer>
+		</dict>
+		<key>8C013085-6514-493F-B7AE-18E02A0961A3</key>
+		<dict>
+			<key>note</key>
+			<string>Append text to daily note.</string>
+			<key>xpos</key>
+			<integer>1490</integer>
+			<key>ypos</key>
+			<integer>1835</integer>
 		</dict>
 		<key>8C017EEF-38DD-4148-9291-9302EFCE33DE</key>
 		<dict>
@@ -4801,11 +5132,11 @@ If the Obsidian app isn't already opened, this workflow will always open the las
 		<key>A7CCBBCE-F078-4780-BF5C-42D9CE64D568</key>
 		<dict>
 			<key>note</key>
-			<string>Set up: Specify hotkey to append clipboard contents inbox note.</string>
+			<string>Set up: Specify hotkey to append clipboard contents to inbox note.</string>
 			<key>xpos</key>
-			<integer>610</integer>
+			<integer>615</integer>
 			<key>ypos</key>
-			<integer>1975</integer>
+			<integer>1985</integer>
 		</dict>
 		<key>ADAB8847-A309-4A02-9D42-E8D30C47BC5D</key>
 		<dict>
@@ -4815,6 +5146,17 @@ If the Obsidian app isn't already opened, this workflow will always open the las
 			<integer>150</integer>
 			<key>ypos</key>
 			<integer>735</integer>
+		</dict>
+		<key>AFFCF1F5-F669-4920-A76E-90E812ED8CFC</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
+			<key>note</key>
+			<string>Set up: Configure timestamp.</string>
+			<key>xpos</key>
+			<integer>1960</integer>
+			<key>ypos</key>
+			<integer>1960</integer>
 		</dict>
 		<key>B1E46976-D5FD-41F9-AC39-C5F7D93F53E7</key>
 		<dict>
@@ -4860,9 +5202,9 @@ If the Obsidian app isn't already opened, this workflow will always open the las
 			<key>note</key>
 			<string>Append text to end of note as list item.</string>
 			<key>xpos</key>
-			<integer>1120</integer>
+			<integer>1235</integer>
 			<key>ypos</key>
-			<integer>1865</integer>
+			<integer>1910</integer>
 		</dict>
 		<key>CEC4065E-BADA-44B7-A255-4A9D613685E2</key>
 		<dict>
@@ -4889,6 +5231,15 @@ If the Obsidian app isn't already opened, this workflow will always open the las
 			<key>ypos</key>
 			<integer>465</integer>
 		</dict>
+		<key>E4ECA02D-673E-4DC4-A33A-A8E524983C6C</key>
+		<dict>
+			<key>note</key>
+			<string>Append text to end of note as list item.</string>
+			<key>xpos</key>
+			<integer>2070</integer>
+			<key>ypos</key>
+			<integer>1930</integer>
+		</dict>
 		<key>E5FAA23D-08AB-47A3-A5C9-5211B9D677C4</key>
 		<dict>
 			<key>xpos</key>
@@ -4911,6 +5262,15 @@ If the Obsidian app isn't already opened, this workflow will always open the las
 			<integer>1455</integer>
 			<key>ypos</key>
 			<integer>145</integer>
+		</dict>
+		<key>F4814A0F-C578-420F-A442-A86CF87B7D6A</key>
+		<dict>
+			<key>note</key>
+			<string>replace newline</string>
+			<key>xpos</key>
+			<integer>1850</integer>
+			<key>ypos</key>
+			<integer>1965</integer>
 		</dict>
 		<key>F565051F-71D8-42F7-A733-5DA9F39AAEA2</key>
 		<dict>
@@ -4993,7 +5353,7 @@ If the Obsidian app isn't already opened, this workflow will always open the las
 		<string>dailyheader</string>
 	</array>
 	<key>version</key>
-	<string>0.3.6</string>
+	<string>0.3.7</string>
 	<key>webaddress</key>
 	<string>https://github.com/hauselin/obsidian-alfred</string>
 </dict>
