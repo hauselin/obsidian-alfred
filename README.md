@@ -58,6 +58,7 @@ All other features require a one-time set-up (v0.2.0 onward).
     - If your date format is `1_3-90`, enter `d_m-yy`
     - If your date format is `1 March 1990`, enter `d MMMM yyyy`
     - If your date format is `Mar 01, 90`, enter `MM dd, yy`
+    - If your date format is `2021-05-15-Fri`, enter `yyyy-mm-dd-ddd`
 - Specify daily note directory/path: `odailypath`
 - Specify daily note template: `odailytemplate`
   - Required only if you have a template for daily notes.
@@ -77,7 +78,6 @@ All other features require a one-time set-up (v0.2.0 onward).
 - To autofill and autocomplete Obsidian vaults (suggested by [@hjklapp](https://github.com/hjklapp)): `oo your_vault_name`
 
 ![](img/oo.gif)
-
 
 ### Open daily note: `od`
 
@@ -133,12 +133,17 @@ When a fallback search is invoked, the workflow will ask which vault you want to
 
 - Go to Alfred's **Features** pane, click **Default Results pane**, click **Setup fallback results** at the bottom, click the **+** icon, add a **Workflow Trigger**, add **Search Obsidian for {query}**, reorder the fallback searches however you prefer, and click **Save**.
 
-
 ![](img/fallback2.gif)
 
-## Known issues
+## Known and common issues
 
-If the Obsidian app isn't already opened, this workflow will always open the last recently opened vault. This bug is a known issue with Electron apps on MacOS. See [discussion on Obsidian's Discord](https://discordapp.com/channels/686053708261228577/716028884885307432/755203478413902036). To overcome this limitation (see #23), many commands in this workflow (v0.3.0 onward) try to open a note twice (the second attempt happens 3 seconds after the first attempt), so you'll see two Obsidian notifications. 
+If the Obsidian app isn't already opened, this workflow will always open the last recently opened vault. This bug is a known issue with Electron apps on MacOS. See [discussion on Obsidian's Discord](https://discordapp.com/channels/686053708261228577/716028884885307432/755203478413902036). To overcome this limitation (see [#23](https://github.com/hauselin/obsidian-alfred/issues/23)), many commands in this workflow (v0.3.0 onward) try to open a note twice (the second attempt happens 3 seconds after the first attempt), so you'll see two Obsidian notifications. 
+
+If your vault is located in your iCloud drive, make sure to add iCloud drive's path to Alfred's default search scope (Features -> Default Results -> Search Scope). [#30](https://github.com/hauselin/obsidian-alfred/issues/30)
+
+If you run into issues configuring this workflow, you can try to manually specify the workflow's environment variables. Navigate to the workflow in Alfred and click the button highlighted below. You should see a list of name-value pairs. For example, `dailyvault` is the name of the variable that keeps track of the value of the path to the vault that contains your daily note. `dailyformat` stores the format of your daily note (e.g., `yyyy-mm-dd`).
+
+![](img/configure.png)
 
 ## Contributors
 
